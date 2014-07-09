@@ -1,0 +1,81 @@
+spriteWidth($sprite) {
+    width: $sprite[4];
+}
+
+spriteHeight($sprite) {
+    height: $sprite[5];
+}
+
+spritePosition($sprite) {
+    background-position: $sprite[2] $sprite[3];
+}
+
+spriteImage($sprite) {
+    background-image: url(../img/$sprite[8]);
+}
+
+sprite($sprite) {
+    spriteImage($sprite)
+    spritePosition($sprite)
+    spriteWidth($sprite)
+    spriteHeight($sprite)
+}
+
+support-for-ie ?= true 
+
+opacity(n) 
+    opacity n 
+    if support-for-ie
+        filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+
+transform-scale(n)
+    -ms-transform scale(n)
+    -webkit-transform scale(n)
+    transform scale(n)
+
+transform(n)
+    -ms-transform n
+    -webkit-transform n
+    transform n
+
+transition(n)
+    -webkit-transition n
+    -moz-transition n
+    transition n
+
+box-shadow(n)
+    -webkit-box-shadow n
+    -moz-box-shadow n
+    box-shadow n
+
+background-size(n)
+    -webkit-background-size n
+    -moz-background-size n
+    -o-background-size n
+    background-size n
+
+gradient(n1, n2, n3)
+    background: n1, n2, n3;
+    background: -moz-linear-gradient(n1, n2, n3);
+    background: -webkit-linear-gradient(n1, n2, n3);
+    background: -o-linear-gradient(n1, n2, n3);
+    background: -ms-linear-gradient(n1, n2, n3);
+    background: linear-gradient(n1, n2, n3);
+
+placholder(n)
+    *::-webkit-input-placeholder {
+        color: n;
+        opacity: 1;
+    }    
+    *:-moz-placeholder {
+        color: n;
+        opacity: 1;
+    }
+    *::-moz-placeholder {
+        color: n;
+        opacity: 1;
+    }    
+    *:-ms-input-placeholder {
+        color: n;
+        opacity: 1;
+    }

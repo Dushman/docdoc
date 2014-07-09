@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "gulp": "*",
+    "gulp-watch": "*",
+    "gulp-concat": "*",
+    "gulp-stylus": "*",
+    "gulp-coffee": "*",
+    "gulp-jade": "*",
+    "gulp-bower": "*",
+    "gulp-wrap-amd": "*",
+    "gulp-myth": "*",
+    "gulp-notify": "*",
+    "gulp-requirejs": "*",
+    "gulp-uglify": "*",
+    "gulp-prettify": "*",
+    "gulp-imagemin": "*",
+    "gulp.spritesmith": "*",
+    "imagemin-pngcrush": "*"
+  },
+  "name": "",
+  "version": "0.0.1",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {}
+}

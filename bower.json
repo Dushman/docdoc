@@ -1,0 +1,11 @@
+{
+  "name": "assets",
+  "version": "0.0.0",
+  "authors": [
+    ""
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery-mobile": "1.4.3"
+  }
+}
