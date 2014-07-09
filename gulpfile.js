@@ -28,7 +28,7 @@ gulp.task('jade', function() {
     .pipe(jade({client: false}))  
     .on('error', console.log) 
     .pipe(prettify({indentSize: 4}))   
-    .pipe(gulp.dest('public/')) 
+    .pipe(gulp.dest('')) 
 });
 
 gulp.task('fonts', function(){
