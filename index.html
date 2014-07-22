@@ -9,8 +9,52 @@
 </head>
 
 <body>
-    <h1>Index page</h1>
+    <div data-role="page" id="index-page">
+        <div data-role="header">
+            <div class="city-dropdown-wrapper"><span>Москва</span>
+                <ul>
+                    <li>Екатеринбург</li>
+                    <li>Санкт-Петербург</li>
+                </ul><i></i>
+            </div>
+        </div>
+        <div class="index-img-wrapper"><i></i>
+        </div>
+        <div role="main" class="ui-content">
+            <div class="index-main-block-wrapper">
+                <div class="index-main-block">
+                    <h3>Я ищу врача:</h3>
+                    <div class="imb-content">
+                        <p>Ищите врачей, указав ближайшую станцию метро. Система подберет врачей, работающих в вашем районе.</p>
+                        <div class="top-index-link f-s"><a href="#select-metro" data-transition="slideup">Выбрать специалиста...<span></span><i></i></a>
+                        </div>
+                        <div class="top-index-link f-m"><a href="#select-specialist" data-transition="slideup">Ближайшее метро...<span></span><i></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="find-doctor"><a href="#find-doctor" data-transition="slideup">Найти врача</a><i></i>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer">
+            <div class="call-us"><strong>Поможем найти врача </strong><span>звоните <a href='tel:84952367276'>8 (495) 236-72-76</a></span>
+            </div><a href="http://docdoc.ru/" class="link-to-site">Перейти на основную версию сайта</a><i></i>
+        </div>
+    </div>
+    <div data-role="page" id="select-specialist" style="background:red">
+        <div role="main" class="ui-content"><a href="#index-page" data-transition="slidedown">Back</a>
+        </div>
+    </div>
+    <div data-role="page" id="select-metro" style="background:green">
+        <div role="main" class="ui-content"><a href="#index-page" data-transition="slidedown">Back</a>
+        </div>
+    </div>
+    <div data-role="page" id="find-doctor" style="background:yellow">
+        <div role="main" class="ui-content"><a href="#index-page" data-transition="slidedown">Back</a>
+        </div>
+    </div>
     <script src="./public/js/libs/jquery/jquery.min.js"></script>
+    <script src="./public/js/libs/jquery-mobile/jquery-mobile-min.js"></script>
     <script src="./public/js/script.js"></script>
 </body>
 

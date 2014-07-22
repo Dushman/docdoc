@@ -45,7 +45,7 @@ gulp.task('sprite', function() {
                 cssName: 'sprite.styl',
                 cssFormat: 'stylus',
                 algorithm: 'binary-tree',
-                cssTemplate: './assets/sprites.template.mustache',
+                cssTemplate: 'assets/sprites.template.mustache',
                 cssVarMap: function(sprite) {
                     sprite.name = 's-' + sprite.name
                 }

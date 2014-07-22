@@ -1,0 +1,33 @@
+div(data-role='page', id='index-page')
+	div(data-role='header')
+		div.city-dropdown-wrapper 
+			span Москва
+			ul 
+				li Екатеринбург
+				li Санкт-Петербург 
+			i
+	div.index-img-wrapper 
+		i
+	div.ui-content(role='main')
+		.index-main-block-wrapper
+			.index-main-block
+				h3 Я ищу врача:
+				.imb-content 
+					p Ищите врачей, указав ближайшую станцию метро. Система подберет врачей, работающих в вашем районе.
+					.top-index-link.f-s
+						a(href='#select-metro', data-transition='slideup') Выбрать специалиста...
+							span
+							i
+					.top-index-link.f-m
+						a(href='#select-specialist', data-transition='slideup') Ближайшее метро...
+							span
+							i
+			.find-doctor
+				a(href='#find-doctor', data-transition='slideup') Найти врача
+				i
+	div(data-role='footer')
+		div.call-us
+			strong Поможем найти врача 
+			span звоните <a href='tel:84952367276'>8 (495) 236-72-76</a>
+		a.link-to-site(href='http://docdoc.ru/') Перейти на основную версию сайта
+		i
