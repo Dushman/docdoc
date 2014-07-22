@@ -5062,7 +5062,7 @@ a:hover {
 }
 
 #index-page div[data-role='header'] {
-  padding: 1em 2em;
+  padding: 1em 2em 0 2em;
   display: table;
   width: 100%;
 }
@@ -5092,6 +5092,7 @@ a:hover {
   padding-bottom: 5px;
   border-bottom: 2px dotted #29aaac;
   font-size: 24px;
+  cursor: pointer;
 }
 
 .city-dropdown-wrapper > ul {
