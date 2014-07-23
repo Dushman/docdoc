@@ -24,7 +24,7 @@ gulp.task('stylus', function() {
 });	
 
 gulp.task('jade', function() {
-    gulp.src(['assets/templates/*.jade', '!assets/templates/_*.jade'])
+    gulp.src(['assets/templates/*.jade'])
     .pipe(jade({client: false}))  
     .on('error', console.log) 
     .pipe(prettify({indentSize: 4}))   

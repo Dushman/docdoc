@@ -8,6 +8,19 @@ div(data-role='page', id='index-page')
 			i
 	div.index-img-wrapper 
 		i
+	ul.items-listing
+		li.item-1
+			strong 56487
+			span записей
+			i
+		li.item-2
+			strong 23678
+			span врачей
+			i
+		li.item-3
+			strong 45123
+			span отзывов
+			i
 	div.ui-content(role='main')
 		.index-main-block-wrapper
 			.index-main-block
@@ -15,19 +28,20 @@ div(data-role='page', id='index-page')
 				.imb-content 
 					p Ищите врачей, указав ближайшую станцию метро. Система подберет врачей, работающих в вашем районе.
 					.top-index-link.f-s
-						a(href='#select-metro', data-transition='slideup') Выбрать специалиста...
+						a(href='#select-specialist', data-transition='slideup') Выбрать специалиста
 							span
 							i
 					.top-index-link.f-m
-						a(href='#select-specialist', data-transition='slideup') Ближайшее метро...
+						a(href='#select-metro', data-transition='slideup') Ближайшее метро
 							span
 							i
 			.find-doctor
-				a(href='#find-doctor', data-transition='slideup') Найти врача
-				i
+				a(href='#find-doctor', data-transition='slide') Найти врача
+					i
 	div(data-role='footer')
 		div.call-us
 			strong Поможем найти врача 
 			span звоните <a href='tel:84952367276'>8 (495) 236-72-76</a>
+			i.iphone-bg
 		a.link-to-site(href='http://docdoc.ru/') Перейти на основную версию сайта
 		i

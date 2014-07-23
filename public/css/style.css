@@ -105,21 +105,6 @@ label.ui-btn {
   bottom: 0.6em;
 }
 
-.ui-shadow {
-  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.15);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
-}
-
-.ui-shadow-inset {
-  -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
-}
-
-.ui-overlay-shadow {
-  -webkit-box-shadow: 0 0 12px rgba(0,0,0,0.6);
-  box-shadow: 0 0 12px rgba(0,0,0,0.6);
-}
-
 .ui-btn-icon-left:after,
 .ui-btn-icon-right:after,
 .ui-btn-icon-top:after,
@@ -220,10 +205,9 @@ html body .ui-group-theme-a .ui-bar-inherit {
 .ui-overlay-a,
 .ui-page-theme-a,
 .ui-page-theme-a .ui-panel-wrapper {
-  background-color: #f9f9f9;
-  border-color: #bbb;
-  color: #333;
-  text-shadow: 0 1px 0 #f3f3f3;
+  background-color: #fff;
+  border-color: #fff;
+  color: #000;
 }
 
 .ui-body-a,
@@ -247,28 +231,28 @@ html .ui-panel-page-container-a {
 html .ui-bar-a a,
 html .ui-body-a a,
 html body .ui-group-theme-a a {
-  color: #38c;
+  color: #29aaac;
 }
 
 .ui-page-theme-a a:visited,
 html .ui-bar-a a:visited,
 html .ui-body-a a:visited,
 html body .ui-group-theme-a a:visited {
-  color: #38c;
+  color: #29aaac;
 }
 
 .ui-page-theme-a a:hover,
 html .ui-bar-a a:hover,
 html .ui-body-a a:hover,
 html body .ui-group-theme-a a:hover {
-  color: #059;
+  color: #29aaac;
 }
 
 .ui-page-theme-a a:active,
 html .ui-bar-a a:active,
 html .ui-body-a a:active,
 html body .ui-group-theme-a a:active {
-  color: #059;
+  color: #29aaac;
 }
 
 .ui-page-theme-a .ui-btn,
@@ -776,30 +760,7 @@ div.ui-mobile-viewport {
   padding: 1em;
 }
 
-.ui-corner-all > .ui-header:first-child,
-.ui-corner-all > .ui-content:first-child,
-.ui-corner-all > .ui-footer:first-child {
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-}
-
-.ui-corner-all > .ui-header:last-child,
-.ui-corner-all > .ui-content:last-child,
-.ui-corner-all > .ui-footer:last-child {
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-}
-
 .ui-btn {
-  font-size: 16px;
-  margin: 0.5em 0;
-  padding: 0.7em 1em;
-  display: block;
-  position: relative;
-  text-align: center;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -4853,6 +4814,15 @@ body {
   font-family: 'Circe-regular';
 }
 
+button,
+a,
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 blockquote {
   margin: 1em 40px;
 }
@@ -5013,6 +4983,7 @@ a:hover,
 a:active {
   text-decoration: underline;
   cursor: pointer;
+  color: #29aaac;
 }
 
 a:hover {
@@ -5140,11 +5111,11 @@ html body .ui-group-theme-a .ui-bar-inherit {
   color: #fff;
   display: block;
   position: relative;
-  padding: 22px 70px;
+  padding: 22px 80px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 24px;
+  font-size: 26px;
   text-shadow: none;
 }
 
@@ -5156,7 +5127,28 @@ html body .ui-group-theme-a .ui-bar-inherit {
   border-color: transparent;
   border-top-color: #fff;
   right: 25px;
-  top: 28px;
+  top: 30px;
+}
+
+.top-index-link a span {
+  display: block;
+  position: absolute;
+  left: 8px;
+  top: 6px;
+}
+
+.f-s a span {
+  background-image: url("../img/sprite.png");
+  background-position: -128px -98px;
+  width: 57px;
+  height: 57px;
+}
+
+.f-m a span {
+  background-image: url("../img/sprite.png");
+  background-position: -185px -98px;
+  width: 57px;
+  height: 57px;
 }
 
 .index-main-block-wrapper {
@@ -5176,6 +5168,10 @@ html body .ui-group-theme-a .ui-bar-inherit {
   border-bottom: 1px solid #bfbfbf;
   border-radius: 0 0 40px 40px;
   padding: 1.5em 2em 2.5em 2em;
+  background: #fefefe, #fafafa, #fafafa;
+  background: -webkit-linear-gradient(#fefefe, #fafafa, #fafafa);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), color-stop(#fafafa), to(#fafafa));
+  background: linear-gradient(#fefefe, #fafafa, #fafafa);
 }
 
 .imb-content p {
@@ -5197,6 +5193,10 @@ html body .ui-group-theme-a .ui-bar-inherit {
   font-size: 35px;
   color: #29aaac;
   font-family: 'Circe-bold';
+  background: #fff, #fff, #fefefe;
+  background: -webkit-linear-gradient(#fff, #fff, #fefefe);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(#fff), to(#fefefe));
+  background: linear-gradient(#fff, #fff, #fefefe);
 }
 
 .f-s {
@@ -5221,20 +5221,29 @@ html body .ui-group-theme-a .ui-bar-inherit {
   border: 4px solid #ce4417;
   background-color: #fe5822;
   position: relative;
-  padding: 25px 0 25px 65px;
+  padding: 25px 0 23px 65px;
   font-size: 30px;
-  letter-spacing: 1px;
-  line-height: 30px;
+  letter-spacing: 2px;
   border-radius: 48px;
 }
 
-#index-page div[data-role='footer'] {
-  min-height: 250px;
-  position: relative;
-  padding: 0 6em;
+.find-doctor a.ui-link i {
+  display: block;
+  position: absolute;
+  right: 25px;
+  top: 17px;
+  background-image: url("../img/sprite.png");
+  background-position: -273px -98px;
+  width: 40px;
+  height: 39px;
 }
 
-#index-page div[data-role='footer'] i {
+#index-page div[data-role='footer'] {
+  position: relative;
+  padding: 10px 97px 36px 71px;
+}
+
+#index-page div[data-role='footer'] > i {
   background-image: url("../img/sprite.png");
   background-position: 0px 0px;
   width: 128px;
@@ -5246,7 +5255,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
 }
 
 #index-page div[data-role='footer'] a.link-to-site {
-  text-decoration: underline;
+  text-decoration: underline !important;
   background: none;
   border: none;
   text-shadow: none;
@@ -5255,4 +5264,109 @@ html body .ui-group-theme-a .ui-bar-inherit {
   display: block;
   margin: 0;
   padding: 0;
+  color: #29aaac;
+  font-size: 24px;
+  font-family: 'Circe-bold';
+  text-align: left;
+  text-overflow: none;
+  overflow: visible;
+  line-height: 32px;
+}
+
+#index-page div[data-role='footer'] .call-us {
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+  position: relative;
+  overflow: hidden;
+  clear: both;
+  padding: 28px 0 30px 50px;
+  margin: 8px 55px 30px 0;
+}
+
+#index-page div[data-role='footer'] .call-us > strong {
+  display: block;
+  clear: both;
+  color: #000;
+  font-family: 'Circe-bold';
+  font-size: 30px;
+  margin-bottom: 1px;
+}
+
+#index-page div[data-role='footer'] .call-us > span {
+  display: block;
+  clear: both;
+  font-size: 24px;
+}
+
+#index-page div[data-role='footer'] .call-us > span > a {
+  text-decoration: none;
+}
+
+#index-page div[data-role='footer'] .call-us i.iphone-bg {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 28px;
+  background-image: url("../img/sprite.png");
+  background-position: -242px -98px;
+  width: 31px;
+  height: 51px;
+}
+
+#index-page ul.items-listing {
+  overflow: hidden;
+  clear: both;
+  position: relative;
+  padding: 3em 4em 1em 4em;
+}
+
+#index-page ul.items-listing li {
+  float: left;
+  width: 33.333%;
+  padding-left: 10%;
+  position: relative;
+}
+
+#index-page ul.items-listing li strong,
+#index-page ul.items-listing li span {
+  display: block;
+  clear: both;
+}
+
+#index-page ul.items-listing li strong {
+  color: #fe5822;
+  font-size: 25px;
+}
+
+#index-page ul.items-listing li span {
+  color: #545454;
+  font-size: 18px;
+}
+
+#index-page ul.items-listing li i {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+}
+
+#index-page ul.items-listing li.item-1 i {
+  background-image: url("../img/sprite.png");
+  background-position: -343px -98px;
+  width: 28px;
+  height: 37px;
+}
+
+#index-page ul.items-listing li.item-2 i {
+  background-image: url("../img/sprite.png");
+  background-position: -313px -98px;
+  width: 30px;
+  height: 37px;
+}
+
+#index-page ul.items-listing li.item-3 i {
+  background-image: url("../img/sprite.png");
+  background-position: -371px -98px;
+  width: 29px;
+  height: 37px;
 }

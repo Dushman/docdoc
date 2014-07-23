@@ -61,11 +61,11 @@
 	color #fff
 	display block
 	position relative
-	padding 22px 70px
+	padding 22px 80px
 	overflow hidden
 	white-space nowrap
 	text-overflow ellipsis
-	font-size 24px
+	font-size 26px
 	text-shadow none
 
 .top-index-link a i 
@@ -76,7 +76,19 @@
 	border-color transparent
 	border-top-color #fff
 	right 25px
-	top 28px
+	top 30px
+
+.top-index-link a span
+	display block
+	position absolute
+	left 8px
+	top 6px
+
+.f-s a span 
+	sprite($s-doctor-bg)
+	
+.f-m a span 
+	sprite($s-metro-bg)
 
 .index-main-block-wrapper
 	position relative 
@@ -94,6 +106,7 @@
 	border-bottom 1px solid #bfbfbf
 	border-radius 0 0 40px 40px
 	padding 1.5em 2em 2.5em 2em
+	gradient(#fefefe, #fafafa, #fafafa)
 
 .imb-content p 
 	text-align center
@@ -113,6 +126,7 @@
 	font-size 35px
 	color #29aaac
 	font-family 'Circe-bold'
+	gradient(#fff, #fff, #fefefe)
 
 .f-s 
 	margin-bottom 22px
@@ -134,18 +148,23 @@
 	border 4px solid #ce4417
 	background-color #fe5822
 	position relative
-	padding 25px 0 25px 65px
+	padding 25px 0 23px 65px
 	font-size 30px
-	letter-spacing 1px
-	line-height 30px
+	letter-spacing 2px
 	border-radius 48px
 
+.find-doctor a.ui-link i
+	display block
+	position absolute
+	right 25px 
+	top 17px
+	sprite($s-lupa)
+
 #index-page div[data-role='footer'] 
-	min-height 250px 
 	position relative
-	padding 0 6em
+	padding 10px 97px 36px 71px
 	
-#index-page div[data-role='footer'] i
+#index-page div[data-role='footer'] > i
 	sprite($s-doctor) 
 	display block 
 	position absolute 
@@ -153,7 +172,7 @@
 	bottom 0
 
 #index-page div[data-role='footer'] a.link-to-site 
-	text-decoration underline
+	text-decoration underline!important
 	background none
 	border none
 	text-shadow none
@@ -161,3 +180,82 @@
 	display block
 	margin 0
 	padding 0
+	color #29aaac
+	font-size 24px
+	font-family 'Circe-bold'
+	text-align left
+	text-overflow none
+	overflow visible
+	line-height 32px
+
+#index-page div[data-role='footer'] .call-us
+	border-top 1px solid #bfbfbf
+	border-bottom 1px solid #bfbfbf
+	position relative
+	overflow hidden
+	clear both
+	padding 28px 0 30px 50px
+	margin 8px 55px 30px 0
+
+#index-page div[data-role='footer'] .call-us > strong
+	display block
+	clear both
+	color #000
+	font-family 'Circe-bold'
+	font-size 30px
+	margin-bottom 1px
+
+#index-page div[data-role='footer'] .call-us > span
+	display block
+	clear both
+	font-size 24px
+
+#index-page div[data-role='footer'] .call-us > span > a
+	text-decoration none
+
+#index-page div[data-role='footer'] .call-us i.iphone-bg
+	display block
+	position absolute
+	left 0
+	top 28px
+	sprite($s-iphone-bg)
+
+#index-page ul.items-listing 
+	overflow hidden
+	clear both
+	position relative
+	padding 3em 4em 1em 4em
+
+#index-page ul.items-listing li 
+	float left
+	width 33.333%
+	padding-left 10%
+	position relative
+
+#index-page ul.items-listing li strong,
+#index-page ul.items-listing li span
+	display block
+	clear both
+
+#index-page ul.items-listing li strong
+	color #fe5822
+	font-size 25px
+
+#index-page ul.items-listing li span
+	color #545454
+	font-size 18px
+
+#index-page ul.items-listing li i
+	position absolute
+	display block
+	left 0
+	top 0
+
+#index-page ul.items-listing li.item-1 i
+	sprite($s-notes-icon)
+
+#index-page ul.items-listing li.item-2 i
+	sprite($s-doctors-icon)
+
+#index-page ul.items-listing li.item-3 i
+	sprite($s-reviews-icon)
