@@ -51,10 +51,32 @@
     </div>
     <div data-role="page" id="select-specialist">
         <div data-role="header" data-position="fixed" class="fixed">
-            <div class="fixed-inn"><a href="#index-page" data-transition="slidedown" class="back-link">Back</a>
+            <div class="fixed-inn"><a href="#index-page" data-transition="slidedown" class="back-link">Back</a><strong>Выбрать специалиста:</strong>
             </div>
+            <form class="ui-filterable">
+                <input id="filterBasic-input" data-type="search" placeholder="Быстрый поиск"><i></i>
+            </form>
         </div>
-        <div role="main" class="ui-content"></div>
+        <div role="main" class="ui-content">
+            <ul datarole="listview" data-filter="true" data-input="#filterBasic-input">
+                <li><strong>Акушер</strong><span>оказание помощи беременным и роженицам во время родов</span>
+                </li>
+                <li><strong>Аллерголог</strong><span>лечение и профилактика аллергических заболеваний</span>
+                </li>
+                <li><strong>Андролог</strong><span>лечение органов мужской мочеполовой системы</span>
+                </li>
+                <li><strong>Анестезиолог</strong><span>подготовка к операции и реабилитация после  </span>
+                </li>
+                <li><strong>Венеролог</strong><span>диагностика и лечение венерических, кожных и урологических заболеваний</span>
+                </li>
+                <li><strong>Гастроэнтеролог</strong><span>диагностика и лечение заболеваний органов желудочно-кишечного тракта</span>
+                </li>
+                <li><strong>Гастроэндекренолог</strong><span>подготовка к операции и реабилитация после </span>
+                </li>
+                <li><strong>Анестезиолог</strong><span>диагностика и лечение заболеваний органов желудочно-кишечного тракта</span>
+                </li>
+            </ul>
+        </div>
     </div>
     <div data-role="page" id="select-metro" style="background:green">
         <div role="main" class="ui-content"><a href="#index-page" data-transition="slide">Back</a>

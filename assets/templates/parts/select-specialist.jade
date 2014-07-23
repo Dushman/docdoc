@@ -2,5 +2,33 @@ div(data-role='page', id='select-specialist')
 	div.fixed(data-role='header', data-position='fixed')
 		.fixed-inn
 			a.back-link(href='#index-page', data-transition='slidedown') Back
+			strong Выбрать специалиста:
+		form.ui-filterable
+			input#filterBasic-input(data-type='search', placeholder='Быстрый поиск')
+			i
 	div.ui-content(role='main')
-		
+		ul(datarole='listview', data-filter='true', data-input='#filterBasic-input')
+			li 
+				strong Акушер
+				span оказание помощи беременным и роженицам во время родов
+			li
+				strong Аллерголог
+				span лечение и профилактика аллергических заболеваний
+			li
+				strong Андролог
+				span лечение органов мужской мочеполовой системы
+			li
+				strong Анестезиолог
+				span подготовка к операции и реабилитация после  
+			li
+				strong Венеролог
+				span диагностика и лечение венерических, кожных и урологических заболеваний
+			li
+				strong Гастроэнтеролог
+				span диагностика и лечение заболеваний органов желудочно-кишечного тракта
+			li
+				strong Гастроэндекренолог
+				span подготовка к операции и реабилитация после 
+			li
+				strong Анестезиолог
+				span диагностика и лечение заболеваний органов желудочно-кишечного тракта

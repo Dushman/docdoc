@@ -1,13 +1,58 @@
 div.fixed[data-role='header']
 	background-color #fff
-	height 97px
+	padding 0 1em
 
 .fixed-inn
 	position relative 
-	padding 0 2em
-
-.fixed .back-link
+	overflow hidden
+	border-bottom 1px solid #dbdbdb
+	padding 1em 0
+	
+.fixed .fixed-inn .back-link
 	text-indent -9999px
 	display block
 	border none
-	background red
+	sprite($s-back-link-bg)
+	position absolute
+	top 1em
+	left 0
+
+.fixed .fixed-inn > strong
+	font-size 18px
+	font-family 'Circe-bold'
+	text-align center
+	display block
+	overflow hidden
+
+.fixed form.ui-filterable
+	display block
+	padding 1em 1em 0 1em
+	position relative
+
+.fixed form.ui-filterable > i
+	display block
+	position absolute
+	right 27px
+	top 23px
+	sprite($s-search-icon)
+
+.fixed form.ui-filterable input
+	background-color #fff
+	color #000
+	font-size 13px
+	font-family 'Circe-Regular'
+	border 2px solid #dbdbdb
+	padding 8px 35px 8px 20px
+	text-shadow none
+	border-radius 30px
+
+::-webkit-input-placeholder 
+	color #000
+	opacity 1
+
+::-moz-placeholder
+	color #000
+	opacity 1
+
+.fixed .ui-input-has-clear
+	padding-right 0
