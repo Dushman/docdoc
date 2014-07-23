@@ -5041,15 +5041,15 @@ a:hover {
 .city-dropdown-wrapper {
   float: right;
   position: relative;
-  padding-right: 20px;
+  padding-right: 15px;
 }
 
 .city-dropdown-wrapper i {
   position: absolute;
   display: block;
   right: 0;
-  top: 10px;
-  border-width: 7px;
+  top: 5px;
+  border-width: 4px;
   border-style: solid;
   border-color: transparent;
   border-top-color: #29aaac;
@@ -5060,9 +5060,9 @@ a:hover {
   font-family: 'Circe-Regular';
   display: block;
   position: relative;
-  padding-bottom: 5px;
-  border-bottom: 2px dotted #29aaac;
-  font-size: 24px;
+  padding-bottom: 2.5px;
+  border-bottom: 1px dotted #29aaac;
+  font-size: 12px;
   cursor: pointer;
 }
 
@@ -5086,23 +5086,23 @@ html body .ui-group-theme-a .ui-bar-inherit {
   position: relative;
   overflow: hidden;
   clear: both;
-  height: 98px;
+  height: 49px;
 }
 
 .index-img-wrapper i {
   display: block;
   margin: 0 auto;
   background-image: url("../img/sprite.png");
-  background-position: -128px 0px;
-  width: 306px;
-  height: 98px;
+  background-position: -64px 0px;
+  width: 153px;
+  height: 49px;
 }
 
 .top-index-link {
   clear: both;
   position: relative;
   overflow: hidden;
-  border-radius: 35px;
+  border-radius: 17.5px;
 }
 
 .ui-page-theme-a .top-index-link a {
@@ -5111,44 +5111,44 @@ html body .ui-group-theme-a .ui-bar-inherit {
   color: #fff;
   display: block;
   position: relative;
-  padding: 22px 80px;
+  padding: 11px 40px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 26px;
+  font-size: 13px;
   text-shadow: none;
 }
 
 .top-index-link a i {
   display: block;
   position: absolute;
-  border-width: 12px;
+  border-width: 5px;
   border-style: solid;
   border-color: transparent;
   border-top-color: #fff;
-  right: 25px;
-  top: 30px;
+  right: 12px;
+  top: 15px;
 }
 
 .top-index-link a span {
   display: block;
   position: absolute;
-  left: 8px;
-  top: 6px;
+  left: 4px;
+  top: 3px;
 }
 
 .f-s a span {
   background-image: url("../img/sprite.png");
-  background-position: -128px -98px;
-  width: 57px;
-  height: 57px;
+  background-position: -64px -49px;
+  width: 28px;
+  height: 28px;
 }
 
 .f-m a span {
   background-image: url("../img/sprite.png");
-  background-position: -185px -98px;
-  width: 57px;
-  height: 57px;
+  background-position: -92px -49px;
+  width: 28px;
+  height: 28px;
 }
 
 .index-main-block-wrapper {
@@ -5162,12 +5162,12 @@ html body .ui-group-theme-a .ui-bar-inherit {
   position: relative;
   overflow: hidden;
   clear: both;
-  margin-bottom: 35px;
+  margin-bottom: 18px;
   border-left: 1px solid #bfbfbf;
   border-right: 1px solid #bfbfbf;
   border-bottom: 1px solid #bfbfbf;
-  border-radius: 0 0 40px 40px;
-  padding: 1.5em 2em 2.5em 2em;
+  border-radius: 0 0 20px 20px;
+  padding: 1em 1em 1.5em 1em;
   background: #fefefe, #fafafa, #fafafa;
   background: -webkit-linear-gradient(#fefefe, #fafafa, #fafafa);
   background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), color-stop(#fafafa), to(#fafafa));
@@ -5177,8 +5177,8 @@ html body .ui-group-theme-a .ui-bar-inherit {
 .imb-content p {
   text-align: center;
   color: #000;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 12px;
+  line-height: 15px;
   margin-bottom: 1.2em;
 }
 
@@ -5189,8 +5189,8 @@ html body .ui-group-theme-a .ui-bar-inherit {
   border: 1px solid #bfbfbf;
   padding: 1em 0;
   text-align: center;
-  border-radius: 40px 40px 0 0;
-  font-size: 35px;
+  border-radius: 20px 20px 0 0;
+  font-size: 17px;
   color: #29aaac;
   font-family: 'Circe-bold';
   background: #fff, #fff, #fefefe;
@@ -5200,16 +5200,16 @@ html body .ui-group-theme-a .ui-bar-inherit {
 }
 
 .f-s {
-  margin-bottom: 22px;
+  margin-bottom: 11px;
 }
 
 .find-doctor {
   position: relative;
   overflow: hidden;
   clear: both;
-  margin: 0 2em;
-  border: 6px solid #e9dad5;
-  border-radius: 50px;
+  margin: 0 1em;
+  border: 3px solid #e9dad5;
+  border-radius: 28px;
 }
 
 .find-doctor a.ui-link {
@@ -5218,36 +5218,36 @@ html body .ui-group-theme-a .ui-bar-inherit {
   text-transform: uppercase;
   text-shadow: none;
   color: #fff;
-  border: 4px solid #ce4417;
+  border: 3px solid #ce4417;
   background-color: #fe5822;
   position: relative;
-  padding: 25px 0 23px 65px;
-  font-size: 30px;
-  letter-spacing: 2px;
-  border-radius: 48px;
+  padding: 13px 0 12px 32px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 26px;
 }
 
 .find-doctor a.ui-link i {
   display: block;
   position: absolute;
-  right: 25px;
-  top: 17px;
+  right: 12px;
+  top: 8px;
   background-image: url("../img/sprite.png");
-  background-position: -273px -98px;
-  width: 40px;
-  height: 39px;
+  background-position: -135px -49px;
+  width: 20px;
+  height: 20px;
 }
 
 #index-page div[data-role='footer'] {
   position: relative;
-  padding: 10px 97px 36px 71px;
+  padding: 5px 0 1em 3em;
 }
 
 #index-page div[data-role='footer'] > i {
   background-image: url("../img/sprite.png");
   background-position: 0px 0px;
-  width: 128px;
-  height: 227px;
+  width: 64px;
+  height: 114px;
   display: block;
   position: absolute;
   right: 10px;
@@ -5265,12 +5265,12 @@ html body .ui-group-theme-a .ui-bar-inherit {
   margin: 0;
   padding: 0;
   color: #29aaac;
-  font-size: 24px;
+  font-size: 12px;
   font-family: 'Circe-bold';
   text-align: left;
   text-overflow: none;
   overflow: visible;
-  line-height: 32px;
+  line-height: 16px;
 }
 
 #index-page div[data-role='footer'] .call-us {
@@ -5279,8 +5279,8 @@ html body .ui-group-theme-a .ui-bar-inherit {
   position: relative;
   overflow: hidden;
   clear: both;
-  padding: 28px 0 30px 50px;
-  margin: 8px 55px 30px 0;
+  padding: 14px 0 15px 25px;
+  margin: 4px 80px 15px 0;
 }
 
 #index-page div[data-role='footer'] .call-us > strong {
@@ -5288,14 +5288,14 @@ html body .ui-group-theme-a .ui-bar-inherit {
   clear: both;
   color: #000;
   font-family: 'Circe-bold';
-  font-size: 30px;
+  font-size: 15px;
   margin-bottom: 1px;
 }
 
 #index-page div[data-role='footer'] .call-us > span {
   display: block;
   clear: both;
-  font-size: 24px;
+  font-size: 12px;
 }
 
 #index-page div[data-role='footer'] .call-us > span > a {
@@ -5306,18 +5306,18 @@ html body .ui-group-theme-a .ui-bar-inherit {
   display: block;
   position: absolute;
   left: 0;
-  top: 28px;
+  top: 14px;
   background-image: url("../img/sprite.png");
-  background-position: -242px -98px;
-  width: 31px;
-  height: 51px;
+  background-position: -120px -49px;
+  width: 15px;
+  height: 25px;
 }
 
 #index-page ul.items-listing {
   overflow: hidden;
   clear: both;
   position: relative;
-  padding: 3em 4em 1em 4em;
+  padding: 1em 3em 0 3em;
 }
 
 #index-page ul.items-listing li {
@@ -5335,12 +5335,12 @@ html body .ui-group-theme-a .ui-bar-inherit {
 
 #index-page ul.items-listing li strong {
   color: #fe5822;
-  font-size: 25px;
+  font-size: 12px;
 }
 
 #index-page ul.items-listing li span {
   color: #545454;
-  font-size: 18px;
+  font-size: 9px;
 }
 
 #index-page ul.items-listing li i {
@@ -5352,21 +5352,38 @@ html body .ui-group-theme-a .ui-bar-inherit {
 
 #index-page ul.items-listing li.item-1 i {
   background-image: url("../img/sprite.png");
-  background-position: -343px -98px;
-  width: 28px;
-  height: 37px;
+  background-position: -170px -49px;
+  width: 14px;
+  height: 19px;
 }
 
 #index-page ul.items-listing li.item-2 i {
   background-image: url("../img/sprite.png");
-  background-position: -313px -98px;
-  width: 30px;
-  height: 37px;
+  background-position: -155px -49px;
+  width: 15px;
+  height: 19px;
 }
 
 #index-page ul.items-listing li.item-3 i {
   background-image: url("../img/sprite.png");
-  background-position: -371px -98px;
-  width: 29px;
-  height: 37px;
+  background-position: -184px -49px;
+  width: 15px;
+  height: 19px;
+}
+
+div.fixed[data-role='header'] {
+  background-color: #fff;
+  height: 97px;
+}
+
+.fixed-inn {
+  position: relative;
+  padding: 0 2em;
+}
+
+.fixed .back-link {
+  text-indent: -9999px;
+  display: block;
+  border: none;
+  background: #f00;
 }
