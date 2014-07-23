@@ -26,14 +26,14 @@ div.fixed[data-role='header']
 
 .fixed form.ui-filterable
 	display block
-	padding 1em 1em 0 1em
+	padding 1em 1em .5em 1em
 	position relative
 
 .fixed form.ui-filterable > i
 	display block
 	position absolute
 	right 27px
-	top 23px
+	top 25px
 	sprite($s-search-icon)
 
 .fixed form.ui-filterable input
@@ -42,9 +42,10 @@ div.fixed[data-role='header']
 	font-size 13px
 	font-family 'Circe-Regular'
 	border 2px solid #dbdbdb
-	padding 8px 35px 8px 20px
+	padding 0 35px 0 20px
 	text-shadow none
 	border-radius 30px
+	height 40px
 
 ::-webkit-input-placeholder 
 	color #000
@@ -56,3 +57,44 @@ div.fixed[data-role='header']
 
 .fixed .ui-input-has-clear
 	padding-right 0
+
+.ui-content.c-content
+	padding-right 0
+	padding-left 2em
+	overflow-y auto
+
+.c-content ul[datarole='listview'] li
+	position relative
+	overflow hidden
+	clear both
+	border-top 1px solid #d9d9d9
+	padding 1em 4em 1em 0
+
+.c-content ul[datarole='listview'] li > strong
+	display block
+	clear botn
+	color #6f6f6f
+	font-size 13px
+	margin-bottom 3px
+
+.c-content ul[datarole='listview'] li > span
+	font-size 11px
+
+.c-content ul[datarole='listview'] li > em
+	color #bfbfbf
+	position absolute
+	font-style normal
+	top 13px 
+	right 35px
+	font-size 11px
+
+#select-metro .c-content ul[datarole="listview"] li > strong
+	margin-bottom 0
+
+.c-content ul[datarole='listview'] li > i
+	display block
+	sprite($s-arrow)
+	position absolute
+	top 50%
+	margin-top -9px
+	right 15px

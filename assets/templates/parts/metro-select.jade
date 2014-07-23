@@ -1,3 +1,41 @@
-div(data-role='page', id='select-metro', style='background:green')
-	div.ui-content(role='main')
-		a(href='#index-page', data-transition='slide') Back
+div(data-role='page', id='select-metro')
+	div.fixed(data-role='header', data-position='fixed')
+		.fixed-inn
+			a.back-link(href='#index-page', data-transition='slide') Back
+			strong Ближайшее метро:
+		form.ui-filterable
+			input#filterMetro-input(data-type='search', placeholder='Поиск по названию...')
+			i
+	div.ui-content.c-content(role='main')
+		ul(datarole='listview', data-filter='true', data-input='#filterMetro-input')
+			li 
+				strong Авиамоторная
+				i
+			li
+				strong Автозаводская
+				i
+			li
+				strong Академическая
+				i
+			li
+				strong Александровский сад
+				i
+			li
+				strong Менделеевская
+				i
+			li
+				strong Краснопресненская
+				i
+			li
+				strong Новослободская
+				i
+			li
+				strong Серпуховская
+				i
+			li
+				strong Шоссе Энтузиастов
+				i
+			li
+				strong Александровский сад
+				i
+				
