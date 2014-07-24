@@ -5218,7 +5218,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
   text-overflow: none;
   overflow: visible;
   line-height: 16px;
-  letter-spacing: -0.5px;
+  letter-spacing: -1px;
 }
 
 #index-page div[data-role='footer'] .call-us {
