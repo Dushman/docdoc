@@ -834,22 +834,18 @@ div.ui-mobile-viewport {
   left: 0.5625em;
 }
 
-.ui-btn-icon-right:after {
-  right: 0.5625em;
-}
-
 .ui-mini.ui-btn-icon-left:after,
 .ui-mini .ui-btn-icon-left:after,
 .ui-header .ui-btn-icon-left:after,
 .ui-footer .ui-btn-icon-left:after {
-  left: 0.37em;
+  display: none;
 }
 
 .ui-mini.ui-btn-icon-right:after,
 .ui-mini .ui-btn-icon-right:after,
 .ui-header .ui-btn-icon-right:after,
 .ui-footer .ui-btn-icon-right:after {
-  right: 0.37em;
+  display: none;
 }
 
 .ui-btn-icon-notext:after,
@@ -4990,10 +4986,11 @@ a:hover {
   border-top-color: #29aaac;
 }
 
-.city-dropdown-wrapper > span:first-child {
+.city-dropdown-wrapper #select-3-button span:first-child {
   color: #29aaac;
   font-family: 'Circe-Regular';
   display: block;
+  font-weight: 400;
   position: relative;
   padding-bottom: 2.5px;
   border-bottom: 1px dotted #29aaac;
@@ -5001,9 +4998,23 @@ a:hover {
   cursor: pointer;
 }
 
-.city-dropdown-wrapper > ul {
-  display: none;
-  position: absolute;
+.city-dropdown-wrapper .ui-select {
+  margin: 0;
+}
+
+#select-3-button {
+  background: none;
+  border: none;
+  text-shadow: none;
+  right: 0;
+}
+
+.ui-btn-icon-right {
+  padding: 0;
+}
+
+#select-3-button:after {
+  right: 0;
 }
 
 .ui-bar-a,
@@ -5097,12 +5108,12 @@ html body .ui-group-theme-a .ui-bar-inherit {
   position: relative;
   overflow: hidden;
   clear: both;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   border-left: 1px solid #bfbfbf;
   border-right: 1px solid #bfbfbf;
   border-bottom: 1px solid #bfbfbf;
   border-radius: 0 0 20px 20px;
-  padding: 1em 1em 1.5em 1em;
+  padding: 1em;
   background: #fefefe, #fafafa, #fafafa;
   background: -webkit-linear-gradient(#fefefe, #fafafa, #fafafa);
   background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), color-stop(#fafafa), to(#fafafa));
@@ -5122,7 +5133,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
   clear: both;
   overflow: hidden;
   border: 1px solid #bfbfbf;
-  padding: 1em 0;
+  padding: 0.5em 0;
   text-align: center;
   border-radius: 20px 20px 0 0;
   font-size: 17px;
@@ -5215,7 +5226,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
   overflow: hidden;
   clear: both;
   padding: 14px 0 15px 25px;
-  margin: 4px 80px 15px 0;
+  margin: 4px 80px 10px 0;
 }
 
 #index-page div[data-role='footer'] .call-us > strong {
@@ -5304,6 +5315,14 @@ html body .ui-group-theme-a .ui-bar-inherit {
   background-position: -148px -78px;
   width: 15px;
   height: 19px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .index-img-wrapper i {
+    background-image: url("../img/retina/logo.png");
+    -webkit-background-size: 50%;
+    background-size: 50%;
+  }
 }
 
 div.fixed[data-role='header'] {
