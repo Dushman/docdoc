@@ -5326,6 +5326,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
     height: 49px;
     -webkit-background-size: 153px;
     background-size: 153px;
+    background-repeat: no-repeat;
   }
 
   #index-page div[data-role="footer"] > i {
@@ -5335,6 +5336,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
     background-size: 64px;
     width: 64px;
     height: 114px;
+    background-repeat: no-repeat;
   }
 
   #index-page ul.items-listing li.item-1 i {
@@ -5343,7 +5345,8 @@ html body .ui-group-theme-a .ui-bar-inherit {
     -webkit-background-size: 14px;
     background-size: 14px;
     width: 14px;
-    height: 19px;
+    height: 18.5px;
+    background-repeat: no-repeat;
   }
 
   #index-page ul.items-listing li.item-2 i {
@@ -5352,7 +5355,8 @@ html body .ui-group-theme-a .ui-bar-inherit {
     -webkit-background-size: 15px;
     background-size: 15px;
     width: 15px;
-    height: 19px;
+    height: 18.5px;
+    background-repeat: no-repeat;
   }
 
   #index-page ul.items-listing li.item-3 i {
@@ -5361,7 +5365,8 @@ html body .ui-group-theme-a .ui-bar-inherit {
     -webkit-background-size: 15px;
     background-size: 15px;
     width: 15px;
-    height: 19px;
+    height: 18.5px;
+    background-repeat: no-repeat;
   }
 
   .f-s a span {
@@ -5371,6 +5376,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
     background-size: 28px;
     width: 28px;
     height: 28px;
+    background-repeat: no-repeat;
   }
 
   .f-m a span {
@@ -5380,6 +5386,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
     background-size: 28px;
     width: 28px;
     height: 28px;
+    background-repeat: no-repeat;
   }
 
   .find-doctor a.ui-link i {
@@ -5389,6 +5396,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
     background-size: 20px;
     width: 20px;
     height: 19.5px;
+    background-repeat: no-repeat;
   }
 
   #index-page div[data-role="footer"] .call-us i.iphone-bg {
@@ -5398,10 +5406,11 @@ html body .ui-group-theme-a .ui-bar-inherit {
     background-size: 15px;
     width: 15px;
     height: 25px;
+    background-repeat: no-repeat;
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) and (orientation: landscape) {
+@media only screen and (device-width: 480px) and (orientation: landscape) {
   #index-page ul.items-listing {
     padding: 1em 7em 0;
   }
