@@ -5337,6 +5337,51 @@ html body .ui-group-theme-a .ui-bar-inherit {
     width: 64px;
     height: 114px;
   }
+
+  #index-page ul.items-listing li.item-1 i {
+    background-image: url("../img/retina/notes-icon.png");
+    background-position: 0 0;
+    -webkit-background-size: 14px;
+    background-size: 14px;
+    width: 14px;
+    height: 19px;
+  }
+
+  #index-page ul.items-listing li.item-2 i {
+    background-image: url("../img/retina/doctors-icon.png");
+    background-position: 0 0;
+    -webkit-background-size: 15px;
+    background-size: 15px;
+    width: 15px;
+    height: 19px;
+  }
+
+  #index-page ul.items-listing li.item-3 i {
+    background-image: url("../img/retina/reviews-icon.png");
+    background-position: 0 0;
+    -webkit-background-size: 15px;
+    background-size: 15px;
+    width: 15px;
+    height: 19px;
+  }
+
+  .f-s a span {
+    background-image: url("../img/retina/doctor-bg.png");
+    background-position: 0 0;
+    -webkit-background-size: 28px;
+    background-size: 28px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .f-m a span {
+    background-image: url("../img/retina/metro-bg.png");
+    background-position: 0 0;
+    -webkit-background-size: 28px;
+    background-size: 28px;
+    width: 28px;
+    height: 28px;
+  }
 }
 
 div.fixed[data-role='header'] {
