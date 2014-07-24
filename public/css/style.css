@@ -5033,6 +5033,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
   overflow: hidden;
   clear: both;
   height: 49px;
+  margin-top: -10px;
 }
 
 .index-img-wrapper i {
