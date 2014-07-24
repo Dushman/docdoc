@@ -351,3 +351,37 @@ only screen and (min-resolution: 192dpi) {
     }
 
 }
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : landscape) {
+    #index-page ul.items-listing{
+    	padding:1em 7em 0;
+    }
+
+    #index-page div[data-role="header"]{
+    	padding:1em 18em 0;
+    }
+
+    #index-page .ui-content{
+    	padding:1em 5em;
+    }
+
+    #index-page .find-doctor{
+    	margin:0 4em;
+    }
+
+    #index-page div[data-role="footer"]{
+    	padding:5px 0 1em 6em;
+    }
+
+    #index-page div[data-role="footer"] .call-us{
+    	margin:4px 215px 10px 0;
+    }
+
+    #index-page div[data-role="footer"] > i{
+    	right:135px;
+    }
+}
+
