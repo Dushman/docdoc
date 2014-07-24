@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>DocDoc</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, userscalable=no">
     <link href="./public/css/style.css" rel="stylesheet">
 </head>
 
@@ -112,9 +112,26 @@
         </div>
     </div>
     <div data-role="page" id="find-doctor">
-        <div data-role="header">
-            <div role="main" class="ui-content"><a href="#index-page" data-transition="slide">можем найти врача</a>
+        <div id="rightPanel" data-role="panel" data-position="right" data-display="reveal">
+            <h1>Hello!</h1>
+        </div>
+        <div data-role="header" data-position="fixed" class="fixed">
+            <div class="fixed-inn">
+                <a href="#index-page" data-transition="slide" class="back-link"></a><strong>Анестезиологи (1 824)</strong><span>м. Войковская</span>
+                <a href="#rightPanel" class="panel-btn"></a>
             </div>
+            <div class="fixed-inn">
+                <p class="description">На нашем портале вы можете выбрать врача и записаться к нему на прием. Найти первоклассного специалиста вам помогут анкеты врачей, а также отзывы пацентов.</p>
+            </div>
+            <div class="top-sort-block">
+                <div class="left-block"><a href="#">Сортировать по рейтингу</a><span></span>
+                </div>
+                <a href="#" class="location-link"></a>
+            </div>
+        </div>
+        <div role="main" class="ui-content"></div>
+        <div data-role="footer" data-position="fixed">
+            <div class="fixed-inn"></div>
         </div>
     </div>
     <script src="./public/js/libs/jquery/jquery.min.js"></script>
