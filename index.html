@@ -54,7 +54,7 @@
             <div class="fixed-inn"><a href="#index-page" data-transition="slidedown" class="back-link">Back</a><strong>Выбрать специалиста:</strong>
             </div>
             <form class="ui-filterable">
-                <input id="filterBasic-input" data-type="search" placeholder="Быстрый поиск"><i></i>
+                <input id="filterBasic-input" data-type="search" placeholder="Быстрый поиск" data-clear-btn="false"><i></i>
             </form>
         </div>
         <div role="main" class="ui-content c-content">
@@ -83,7 +83,7 @@
             <div class="fixed-inn"><a href="#index-page" data-transition="slide" class="back-link">Back</a><strong>Ближайшее метро:</strong>
             </div>
             <form class="ui-filterable">
-                <input id="filterMetro-input" data-type="search" placeholder="Поиск по названию..."><i></i>
+                <input id="filterMetro-input" data-type="search" placeholder="Поиск по названию..." data-clear-btn="false"><i></i>
             </form>
         </div>
         <div role="main" class="ui-content c-content">
@@ -111,8 +111,10 @@
             </ul>
         </div>
     </div>
-    <div data-role="page" id="find-doctor" style="background:yellow">
-        <div role="main" class="ui-content"><a href="#index-page" data-transition="slide">Back</a>
+    <div data-role="page" id="find-doctor">
+        <div data-role="header">
+            <div role="main" class="ui-content"><a href="#index-page" data-transition="slide">можем найти врача</a>
+            </div>
         </div>
     </div>
     <script src="./public/js/libs/jquery/jquery.min.js"></script>
