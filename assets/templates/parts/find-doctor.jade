@@ -1,6 +1,39 @@
 div(data-role='page', id='find-doctor')
 	div#rightPanel(data-role='panel', data-position='right', data-display='reveal')
-		h1 Hello!
+		.aside-header
+			span.logo-small
+			div.city-dropdown-wrapper 
+				span Москва
+				ul 
+					li Екатеринбург
+					li Санкт-Петербург 
+				i
+		.aside-description
+			p На нашем портале вы можете выбрать врача и записаться к нему на прием.
+			p Мы поможем вам найти хорошего специалиста!
+		.aside-block.mb-15
+			strong О проекте
+			ul
+				li
+					a(href='#') О сервисе
+					i
+				li
+					a(href='#') Все врачи
+					i
+				li
+					a(href='#') Все клиники
+					i
+		.aside-block
+			strong Врачам и клиникам
+			ul
+				li
+					a(href='#') Личный кабинет
+					i
+				li
+					a(href='#') Регистрация
+					i
+		.aside-foo
+			a(href='http://docdoc.ru/') Перейти на основную версию сайта
 	div.fixed(data-role='header', data-position='fixed')
 		.fixed-inn
 			a.back-link(href='#index-page', data-transition='slide')
@@ -18,3 +51,4 @@ div(data-role='page', id='find-doctor')
 
 	div(data-role='footer', data-position='fixed')
 		.fixed-inn
+			span подобрать врача по номеру

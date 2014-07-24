@@ -54,11 +54,11 @@
             <div class="fixed-inn"><a href="#index-page" data-transition="slidedown" class="back-link">Back</a><strong>Выбрать специалиста:</strong>
             </div>
             <form class="ui-filterable">
-                <input id="filterBasic-input" data-type="search" placeholder="Быстрый поиск" data-clear-btn="false"><i></i>
+                <input id="filterSpec-input" data-type="search" placeholder="Быстрый поиск" data-clear-btn="false"><i></i>
             </form>
         </div>
         <div role="main" class="ui-content c-content">
-            <ul datarole="listview" data-filter="true" data-input="#filterBasic-input">
+            <ul datarole="listview" data-filter="true" data-input="#filterSpec-input">
                 <li><strong>Акушер</strong><span>оказание помощи беременным и роженицам во время родов</span><em>235</em><i></i>
                 </li>
                 <li><strong>Аллерголог</strong><span>лечение и профилактика аллергических заболеваний</span><em>46</em><i></i>
@@ -113,7 +113,38 @@
     </div>
     <div data-role="page" id="find-doctor">
         <div id="rightPanel" data-role="panel" data-position="right" data-display="reveal">
-            <h1>Hello!</h1>
+            <div class="aside-header"><span class="logo-small"></span>
+                <div class="city-dropdown-wrapper"><span>Москва</span>
+                    <ul>
+                        <li>Екатеринбург</li>
+                        <li>Санкт-Петербург</li>
+                    </ul><i></i>
+                </div>
+            </div>
+            <div class="aside-description">
+                <p>На нашем портале вы можете выбрать врача и записаться к нему на прием.</p>
+                <p>Мы поможем вам найти хорошего специалиста!</p>
+            </div>
+            <div class="aside-block mb-15"><strong>О проекте</strong>
+                <ul>
+                    <li><a href="#">О сервисе</a><i></i>
+                    </li>
+                    <li><a href="#">Все врачи</a><i></i>
+                    </li>
+                    <li><a href="#">Все клиники</a><i></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="aside-block"><strong>Врачам и клиникам</strong>
+                <ul>
+                    <li><a href="#">Личный кабинет</a><i></i>
+                    </li>
+                    <li><a href="#">Регистрация</a><i></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="aside-foo"><a href="http://docdoc.ru/">Перейти на основную версию сайта</a>
+            </div>
         </div>
         <div data-role="header" data-position="fixed" class="fixed">
             <div class="fixed-inn">
@@ -131,7 +162,8 @@
         </div>
         <div role="main" class="ui-content"></div>
         <div data-role="footer" data-position="fixed">
-            <div class="fixed-inn"></div>
+            <div class="fixed-inn"><span>подобрать врача по номеру</span>
+            </div>
         </div>
     </div>
     <script src="./public/js/libs/jquery/jquery.min.js"></script>
