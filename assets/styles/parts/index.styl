@@ -182,7 +182,7 @@
 	display block 
 	position absolute 
 	right 10px  
-	bottom 0
+	bottom -16px
 
 #index-page div[data-role='footer'] a.link-to-site 
 	text-decoration underline!important
@@ -356,6 +356,7 @@ only screen and (min-resolution: 192dpi) {
 and (min-device-width : 320px) 
 and (max-device-width : 480px) 
 and (orientation : landscape) {
+
     #index-page ul.items-listing{
     	padding:1em 7em 0;
     }
@@ -382,6 +383,10 @@ and (orientation : landscape) {
 
     #index-page div[data-role="footer"] > i{
     	right:135px;
+    }
+
+    #index-page div[data-role="footer"] > i{
+    	bottom:0;
     }
 }
 
