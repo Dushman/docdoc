@@ -5321,6 +5321,8 @@ html body .ui-group-theme-a .ui-bar-inherit {
   .index-img-wrapper i {
     background-image: url("../img/retina/logo.png");
     background-position: 0 0;
+    -webkit-background-size: 50%;
+    background-size: 50%;
   }
 
   #index-page div[data-role="footer"] > i {
