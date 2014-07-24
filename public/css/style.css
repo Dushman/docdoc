@@ -5382,6 +5382,24 @@ html body .ui-group-theme-a .ui-bar-inherit {
     width: 28px;
     height: 28px;
   }
+
+  .find-doctor a.ui-link i {
+    background-image: url("../img/retina/lupa.png");
+    background-position: 0 0;
+    -webkit-background-size: 20px;
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  #index-page div[data-role="footer"] .call-us i.iphone-bg {
+    background-image: url("../img/retina/iphone-bg.png");
+    background-position: 0 0;
+    -webkit-background-size: 15px;
+    background-size: 15px;
+    width: 15px;
+    height: 25px;
+  }
 }
 
 div.fixed[data-role='header'] {
