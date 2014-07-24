@@ -5324,6 +5324,10 @@ html body .ui-group-theme-a .ui-bar-inherit {
     -webkit-background-size: 50%;
     background-size: 50%;
   }
+
+  #index-page div[data-role="footer"] > i {
+    background-image: url("../img/retina/doctor.png");
+  }
 }
 
 div.fixed[data-role='header'] {
