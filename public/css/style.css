@@ -5320,6 +5320,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .index-img-wrapper i {
     background-image: url("../img/retina/logo.png");
+    background-repeat: no-repeat;
     -webkit-background-size: 50%;
     background-size: 50%;
   }
