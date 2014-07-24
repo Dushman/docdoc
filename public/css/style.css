@@ -5212,13 +5212,12 @@ html body .ui-group-theme-a .ui-bar-inherit {
   margin: 0;
   padding: 0;
   color: #29aaac;
-  font-size: 11px;
+  font-size: 10px;
   font-family: 'Circe-bold';
   text-align: left;
   text-overflow: none;
   overflow: visible;
   line-height: 16px;
-  letter-spacing: -1px;
 }
 
 #index-page div[data-role='footer'] .call-us {
@@ -5389,7 +5388,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
     -webkit-background-size: 20px;
     background-size: 20px;
     width: 20px;
-    height: 20px;
+    height: 19.5px;
   }
 
   #index-page div[data-role="footer"] .call-us i.iphone-bg {
