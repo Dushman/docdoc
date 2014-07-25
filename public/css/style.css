@@ -5473,6 +5473,7 @@ div.fixed[data-role='header'] {
   position: absolute;
   top: 1em;
   left: 0;
+  padding: 15px;
 }
 
 .fixed .fixed-inn > strong {
