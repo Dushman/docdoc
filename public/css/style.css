@@ -5410,37 +5410,6 @@ html body .ui-group-theme-a .ui-bar-inherit {
   }
 }
 
-@media only screen and (device-width: 480px) and (orientation: landscape) {
-  #index-page ul.items-listing {
-    padding: 1em 7em 0;
-  }
-
-  #index-page div[data-role="header"] {
-    padding: 1em 21.5em 0;
-  }
-
-  #index-page .ui-content {
-    padding: 1em 5em;
-  }
-
-  #index-page .find-doctor {
-    margin: 0 4em;
-  }
-
-  #index-page div[data-role="footer"] {
-    padding: 5px 0 1em 6em;
-  }
-
-  #index-page div[data-role="footer"] .call-us {
-    margin: 4px 215px 10px 0;
-  }
-
-  #index-page div[data-role="footer"] > i {
-    right: 135px;
-    bottom: 0;
-  }
-}
-
 div.fixed[data-role='header'] {
   background-color: #fff;
   padding: 0 1em;
