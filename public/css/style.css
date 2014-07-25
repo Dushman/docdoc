@@ -4960,7 +4960,21 @@ a:hover {
   font-family: 'Circe-Extrabold';
   font-style: normal;
   font-weight: 400;
-  src: local('☺'), url("fonts/Circe-ExtraBold.woff") format('woff'), url("fonts/Circe-ExtraBold.ttf") format('truetype'), url("fonts/Circe-ExtraBold.svg#Circe-Bold") format('svg');
+  src: local('☺'), url("fonts/Circe-ExtraBold.woff") format('woff'), url("fonts/Circe-ExtraBold.ttf") format('truetype'), url("fonts/Circe-ExtraBold.svg#Circe-ExtraBold") format('svg');
+}
+
+@font-face {
+  font-family: 'Glyphter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('☺'), url("fonts/Glyphter.woff") format('woff'), url("fonts/Glyphter.ttf") format('truetype'), url("fonts/Glyphter.svg#Glyphter") format('svg');
+}
+
+@font-face {
+  font-family: 'ALSRublRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('☺'), url("fonts/rouble.woff") format('woff'), url("fonts/rouble.ttf") format('truetype'), url("fonts/rouble.svg#ALSRubl") format('svg');
 }
 
 #index-page div[data-role='header'] {
@@ -4979,11 +4993,15 @@ a:hover {
   position: absolute;
   display: block;
   right: 0;
-  top: 5px;
+  top: 6px;
   border-width: 4px;
   border-style: solid;
   border-color: transparent;
   border-top-color: #29aaac;
+}
+
+#index-page .city-dropdown-wrapper i {
+  top: 8px;
 }
 
 .city-dropdown-wrapper span:first-child {
@@ -5264,6 +5282,8 @@ html body .ui-group-theme-a .ui-bar-inherit {
   clear: both;
   position: relative;
   padding: 1em 3em 0 3em;
+  max-width: 340px;
+  margin: 0 auto;
 }
 
 #index-page ul.items-listing li {
@@ -5361,9 +5381,9 @@ html body .ui-group-theme-a .ui-bar-inherit {
   #index-page ul.items-listing li.item-3 i {
     background-image: url("../img/retina/reviews-icon.png");
     background-position: 0 0;
-    -webkit-background-size: 15px;
-    background-size: 15px;
-    width: 15px;
+    -webkit-background-size: 14.5px;
+    background-size: 14.5px;
+    width: 15.5px;
     height: 18.5px;
     background-repeat: no-repeat;
   }
@@ -5736,4 +5756,26 @@ p.description {
 
 .aside-header .city-dropdown-wrapper {
   top: 7px;
+}
+
+.sort-doctor-wrapper {
+  float: left;
+}
+
+.sort-doctor-wrapper .ui-select {
+  margin: 0;
+}
+
+.sort-doctor-wrapper .ui-select .ui-btn {
+  background: transparent none;
+  border: none;
+}
+
+.sort-doctor-wrapper .ui-select .ui-btn > span:first-child {
+  color: #fc5412;
+  text-decoration: none;
+  border-bottom: 2px dotted #fc5412;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Circe-regular';
 }

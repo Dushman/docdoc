@@ -52,7 +52,8 @@
     </div>
     <div data-role="page" id="select-specialist">
         <div data-role="header" data-position="fixed" class="fixed">
-            <div class="fixed-inn"><a href="#index-page" data-transition="slidedown" class="back-link">Back</a><strong>Выбрать специалиста:</strong>
+            <div class="fixed-inn">
+                <a href="#index-page" data-transition="slidedown" class="back-link"></a><strong>Выбрать специалиста:</strong>
             </div>
             <form class="ui-filterable">
                 <input id="filterSpec-input" data-type="search" placeholder="Быстрый поиск" data-clear-btn="false"><i></i>
@@ -81,7 +82,8 @@
     </div>
     <div data-role="page" id="select-metro">
         <div data-role="header" data-position="fixed" class="fixed">
-            <div class="fixed-inn"><a href="#index-page" data-transition="slidedown" class="back-link">Back</a><strong>Ближайшее метро:</strong>
+            <div class="fixed-inn">
+                <a href="#index-page" data-transition="slidedown" class="back-link"></a><strong>Ближайшее метро:</strong>
             </div>
             <form class="ui-filterable">
                 <input id="filterMetro-input" data-type="search" placeholder="Поиск по названию..." data-clear-btn="false"><i></i>
@@ -117,9 +119,9 @@
             <div class="aside-header"><span class="logo-small"></span>
                 <div class="city-dropdown-wrapper">
                     <select>
+                        <option>Екатеринбург</option>
                         <option>Москва</option>
                         <option>Санкт-Петербург</option>
-                        <option>Екатеринбург</option>
                     </select><i></i>
                 </div>
             </div>
@@ -157,7 +159,13 @@
                 <p class="description">На нашем портале вы можете выбрать врача и записаться к нему на прием. Найти первоклассного специалиста вам помогут анкеты врачей, а также отзывы пацентов.</p>
             </div>
             <div class="top-sort-block">
-                <div class="left-block"><a href="#">Сортировать по рейтингу</a><span></span>
+                <div class="sort-doctor-wrapper">
+                    <select>
+                        <option>Сортировать по рейтингу</option>
+                        <option>Сортировать по рейтингу</option>
+                        <option>Сортировать по рейтингу</option>
+                        <option>Сортировать по рейтингу</option><span></span>
+                    </select>
                 </div>
                 <a href="#" class="location-link"></a>
             </div>

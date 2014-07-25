@@ -3,10 +3,10 @@ div(data-role='page', id='find-doctor')
 		.aside-header
 			span.logo-small
 			div.city-dropdown-wrapper 
-				select
-					option Москва
-					option Санкт-Петербург
+				select 
 					option Екатеринбург
+					option Москва
+					option Санкт-Петербург 
 				i
 		.aside-description
 			p На нашем портале вы можете выбрать врача и записаться к нему на прием.
@@ -43,12 +43,16 @@ div(data-role='page', id='find-doctor')
 		.fixed-inn
 			p.description На нашем портале вы можете выбрать врача и записаться к нему на прием. Найти первоклассного специалиста вам помогут анкеты врачей, а также отзывы пацентов.
 		.top-sort-block
-			.left-block
-				a(href='#') Сортировать по рейтингу
-				span
+			.sort-doctor-wrapper
+				select
+					option Сортировать по рейтингу
+					option Сортировать по рейтингу
+					option Сортировать по рейтингу
+					option Сортировать по рейтингу
+					span
 			a.location-link(href='#')
 	div.ui-content(role='main')
-
+		
 	div(data-role='footer', data-position='fixed')
 		.fixed-inn
 			span подобрать врача по номеру
