@@ -5057,7 +5057,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
   display: block;
   margin: 0 auto;
   background-image: url("../img/sprite.png");
-  background-position: -64px 0px;
+  background-position: -128px 0px;
   width: 153px;
   height: 49px;
 }
@@ -5103,14 +5103,14 @@ html body .ui-group-theme-a .ui-bar-inherit {
 
 .f-s a span {
   background-image: url("../img/sprite.png");
-  background-position: -152px -49px;
+  background-position: -216px -49px;
   width: 28px;
   height: 28px;
 }
 
 .f-m a span {
   background-image: url("../img/sprite.png");
-  background-position: -180px -49px;
+  background-position: -244px -49px;
   width: 28px;
   height: 28px;
 }
@@ -5197,7 +5197,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
   right: 12px;
   top: 8px;
   background-image: url("../img/sprite.png");
-  background-position: -79px -78px;
+  background-position: -143px -78px;
   width: 20px;
   height: 20px;
 }
@@ -5211,7 +5211,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
   background-image: url("../img/sprite.png");
   background-position: 0px 0px;
   width: 64px;
-  height: 114px;
+  height: 138px;
   display: block;
   position: absolute;
   right: 10px;
@@ -5272,7 +5272,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
   left: 0;
   top: 14px;
   background-image: url("../img/sprite.png");
-  background-position: -64px -78px;
+  background-position: -128px -78px;
   width: 15px;
   height: 25px;
 }
@@ -5318,21 +5318,21 @@ html body .ui-group-theme-a .ui-bar-inherit {
 
 #index-page ul.items-listing li.item-1 i {
   background-image: url("../img/sprite.png");
-  background-position: -134px -78px;
+  background-position: -198px -78px;
   width: 14px;
   height: 19px;
 }
 
 #index-page ul.items-listing li.item-2 i {
   background-image: url("../img/sprite.png");
-  background-position: -119px -78px;
+  background-position: -183px -78px;
   width: 15px;
   height: 19px;
 }
 
 #index-page ul.items-listing li.item-3 i {
   background-image: url("../img/sprite.png");
-  background-position: -148px -78px;
+  background-position: -212px -78px;
   width: 15px;
   height: 19px;
 }
@@ -5354,7 +5354,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
     -webkit-background-size: 64px;
     background-size: 64px;
     width: 64px;
-    height: 114px;
+    height: 138px;
     background-repeat: no-repeat;
   }
 
@@ -5467,7 +5467,7 @@ div.fixed[data-role='header'] {
   display: block;
   border: none;
   background-image: url("../img/sprite.png");
-  background-position: -186px -78px;
+  background-position: -250px -78px;
   width: 22px;
   height: 15px;
   position: absolute;
@@ -5504,7 +5504,7 @@ div.fixed[data-role='header'] {
   right: 27px;
   top: 25px;
   background-image: url("../img/sprite.png");
-  background-position: -99px -78px;
+  background-position: -163px -78px;
   width: 20px;
   height: 20px;
 }
@@ -5589,7 +5589,7 @@ div.fixed[data-role='header'] {
 .c-content ul[datarole='listview'] li > i {
   display: block;
   background-image: url("../img/sprite.png");
-  background-position: -176px -78px;
+  background-position: -240px -78px;
   width: 10px;
   height: 18px;
   position: absolute;
@@ -5622,7 +5622,7 @@ div[data-role='footer'] .fixed-inn span {
   right: 0;
   top: 1em;
   background-image: url("../img/sprite.png");
-  background-position: 0px -114px;
+  background-position: -128px -103px;
   width: 20px;
   height: 13px;
 }
@@ -5664,7 +5664,7 @@ p.description {
 .top-sort-block .location-link {
   float: right;
   background-image: url("../img/sprite.png");
-  background-position: -163px -78px;
+  background-position: -227px -78px;
   width: 13px;
   height: 18px;
 }
@@ -5755,7 +5755,7 @@ p.description {
 .aside-block ul li i {
   display: block;
   background-image: url("../img/sprite.png");
-  background-position: -176px -78px;
+  background-position: -240px -78px;
   width: 10px;
   height: 18px;
   position: absolute;
@@ -5771,7 +5771,7 @@ p.description {
 .logo-small {
   float: left;
   background-image: url("../img/sprite.png");
-  background-position: -64px -49px;
+  background-position: -128px -49px;
   width: 88px;
   height: 29px;
 }
