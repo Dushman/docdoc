@@ -4986,7 +4986,7 @@ a:hover {
   border-top-color: #29aaac;
 }
 
-.city-dropdown-wrapper #select-3-button span:first-child {
+.city-dropdown-wrapper span:first-child {
   color: #29aaac;
   font-family: 'Circe-Regular';
   display: block;
@@ -5002,19 +5002,18 @@ a:hover {
   margin: 0;
 }
 
-#select-3-button {
+.city-dropdown-wrapper .ui-btn,
+.city-dropdown-wrapper .ui-btn:hover {
   background: none;
   border: none;
   text-shadow: none;
   right: 0;
-}
-
-.ui-btn-icon-right {
   padding: 0;
 }
 
-#select-3-button:after {
+.city-dropdown-wrapper .ui-btn:after {
   right: 0;
+  display: none;
 }
 
 .ui-bar-a,
