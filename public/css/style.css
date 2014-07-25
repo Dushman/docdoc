@@ -5517,6 +5517,8 @@ div.fixed[data-role='header'] {
   color: #6f6f6f;
   font-size: 13px;
   margin-bottom: 3px;
+  font-weight: 400;
+  font-family: 'Circe-regular';
 }
 
 .c-content ul[datarole='listview'] li > span {
@@ -5533,8 +5535,13 @@ div.fixed[data-role='header'] {
   font-size: 11px;
 }
 
-#select-metro .c-content ul[datarole="listview"] li > strong {
+#select-metro .c-content ul[datarole='listview'] li > strong {
   margin-bottom: 0;
+}
+
+.c-content ul[datarole='listview'] li.selected > strong,
+.c-content ul[datarole='listview'] li.selected > em {
+  color: #fe5822;
 }
 
 .c-content ul[datarole='listview'] li > i {
