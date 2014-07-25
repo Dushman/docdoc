@@ -5429,9 +5429,9 @@ html body .ui-group-theme-a .ui-bar-inherit {
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
   .ui-page {
-    width: 600px !important;
+    width: 500px !important;
     margin: 0 auto !important;
     position: relative !important;
   }
