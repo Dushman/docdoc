@@ -226,11 +226,12 @@ p.description
 	overflow hidden
 	border 2px solid #257b7e
 	border-radius 5px
-	margin-bottom 10px
+	margin-bottom 8px
 
 .list-of-doctors > li > a .left-block .rating-wrap
 	overflow hidden
 	clear both
+	margin-bottom 3px
 
 .list-of-doctors > li > a .left-block .rating-wrap strong:first-child
 	float left
@@ -246,7 +247,14 @@ p.description
 
 .list-of-doctors > li > a .left-block .rating-wrap ul li
 	float left
-	margin 0 0 0 2px
+	margin 0 0 0 1px
+	text-indent -9999em
+
+.list-of-doctors > li > a .left-block .rating-wrap ul li.full
+	sprite($s-star-full)
+
+.list-of-doctors > li > a .left-block .rating-wrap ul li.empty
+	sprite($s-star-empty)
 
 .list-of-doctors > li > a .left-block .rating-wrap ul li:first-child
 	margin-left 0
@@ -270,6 +278,7 @@ p.description
 	color #343131
 	font-size 16px
 	font-weight 400
+	line-height 20px
 
 .list-of-doctors > li > a .right-block .prof
 	display block
@@ -284,6 +293,7 @@ p.description
 .list-of-doctors > li > a .right-block .skills-wrap
 	clear both
 	overflow hidden
+	margin-bottom 10px
 
 .list-of-doctors > li > a .right-block .skills-wrap > span
 	float left
@@ -296,6 +306,30 @@ p.description
 
 .list-of-doctors > li > a .right-block .skills-wrap > span.left b
 	color #343131
+
+.list-of-doctors > li > a .right-block .skills-wrap > span.right b
+	color #fe5822
+
+.list-of-doctors > li > a .right-block .skills-wrap > span.right b span
+	font-family 'ALSRublRegular'
+	font-weight 400
+
+.address-wrap
+	position relative
+	overflow hidden
+	clear both
+	padding 0 0 0 15px
+	color #9a9a9a
+	font-size 11px
+	height 13px
+	line=height 13px
+
+.address-wrap > i:first-child
+	display block
+	position absolute
+	left 0
+	top 0
+	sprite($s-location-icon-green)
 
 .list-of-doctors > li > a > i
 	display block

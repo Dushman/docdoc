@@ -5197,7 +5197,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
   right: 12px;
   top: 8px;
   background-image: url("../img/sprite.png");
-  background-position: -143px -78px;
+  background-position: -163px -78px;
   width: 20px;
   height: 20px;
 }
@@ -5332,7 +5332,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
 
 #index-page ul.items-listing li.item-3 i {
   background-image: url("../img/sprite.png");
-  background-position: -183px -78px;
+  background-position: -193px -78px;
   width: 15px;
   height: 19px;
 }
@@ -5361,7 +5361,7 @@ div.fixed[data-role='header'] {
   top: 50%;
   margin-top: -7.5px;
   left: 0;
-  padding: 15px;
+  padding-bottom: 15px;
 }
 
 .fixed .fixed-inn > strong {
@@ -5392,7 +5392,7 @@ div.fixed[data-role='header'] {
   right: 27px;
   top: 25px;
   background-image: url("../img/sprite.png");
-  background-position: -163px -78px;
+  background-position: -143px -78px;
   width: 20px;
   height: 20px;
 }
@@ -5477,7 +5477,7 @@ div.fixed[data-role='header'] {
 .c-content ul[datarole='listview'] li > i {
   display: block;
   background-image: url("../img/sprite.png");
-  background-position: -237px -78px;
+  background-position: -250px -78px;
   width: 10px;
   height: 18px;
   position: absolute;
@@ -5556,7 +5556,7 @@ p.description {
 .top-sort-block .location-link {
   float: right;
   background-image: url("../img/sprite.png");
-  background-position: -247px -78px;
+  background-position: -237px -78px;
   width: 13px;
   height: 18px;
 }
@@ -5648,7 +5648,7 @@ p.description {
 .aside-block ul li i {
   display: block;
   background-image: url("../img/sprite.png");
-  background-position: -237px -78px;
+  background-position: -250px -78px;
   width: 10px;
   height: 18px;
   position: absolute;
@@ -5767,12 +5767,13 @@ p.description {
   overflow: hidden;
   border: 2px solid #257b7e;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .list-of-doctors > li > a .left-block .rating-wrap {
   overflow: hidden;
   clear: both;
+  margin-bottom: 3px;
 }
 
 .list-of-doctors > li > a .left-block .rating-wrap strong:first-child {
@@ -5791,7 +5792,22 @@ p.description {
 
 .list-of-doctors > li > a .left-block .rating-wrap ul li {
   float: left;
-  margin: 0 0 0 2px;
+  margin: 0 0 0 1px;
+  text-indent: -9999em;
+}
+
+.list-of-doctors > li > a .left-block .rating-wrap ul li.full {
+  background-image: url("../img/sprite.png");
+  background-position: -272px -58px;
+  width: 9px;
+  height: 9px;
+}
+
+.list-of-doctors > li > a .left-block .rating-wrap ul li.empty {
+  background-image: url("../img/sprite.png");
+  background-position: -272px -49px;
+  width: 9px;
+  height: 9px;
 }
 
 .list-of-doctors > li > a .left-block .rating-wrap ul li:first-child {
@@ -5819,6 +5835,7 @@ p.description {
   color: #343131;
   font-size: 16px;
   font-weight: 400;
+  line-height: 20px;
 }
 
 .list-of-doctors > li > a .right-block .prof {
@@ -5835,6 +5852,7 @@ p.description {
 .list-of-doctors > li > a .right-block .skills-wrap {
   clear: both;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .list-of-doctors > li > a .right-block .skills-wrap > span {
@@ -5852,13 +5870,43 @@ p.description {
   color: #343131;
 }
 
+.list-of-doctors > li > a .right-block .skills-wrap > span.right b {
+  color: #fe5822;
+}
+
+.list-of-doctors > li > a .right-block .skills-wrap > span.right b span {
+  font-family: 'ALSRublRegular';
+  font-weight: 400;
+}
+
+.address-wrap {
+  position: relative;
+  overflow: hidden;
+  clear: both;
+  padding: 0 0 0 15px;
+  color: #9a9a9a;
+  font-size: 11px;
+  height: 13px;
+}
+
+.address-wrap > i:first-child {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("../img/sprite.png");
+  background-position: -150px -103px;
+  width: 10px;
+  height: 13px;
+}
+
 .list-of-doctors > li > a > i {
   display: block;
   position: absolute;
   right: 15px;
   top: 26px;
   background-image: url("../img/sprite.png");
-  background-position: -198px -78px;
+  background-position: -183px -78px;
   width: 10px;
   height: 19px;
 }
@@ -6024,6 +6072,36 @@ p.description {
     height: 18.5px;
     background-repeat: no-repeat;
   }
+
+  .address-wrap > i:first-child {
+    background-image: url("../img/retina/location-icon-green.png");
+    background-position: 0 0;
+    -webkit-background-size: 9.5px;
+    background-size: 9.5px;
+    width: 9.5px;
+    height: 12.5px;
+    background-repeat: no-repeat;
+  }
+
+  .list-of-doctors > li > a .left-block .rating-wrap ul li.full {
+    background-image: url("../img/retina/star-full.png");
+    background-position: 0 0;
+    -webkit-background-size: 8.5px;
+    background-size: 8.5px;
+    width: 8.5px;
+    height: 8.5px;
+    background-repeat: no-repeat;
+  }
+
+  .list-of-doctors > li > a .left-block .rating-wrap ul li.empty {
+    background-image: url("../img/retina/star-empty.png");
+    background-position: 0 0;
+    -webkit-background-size: 8.5px;
+    background-size: 8.5px;
+    width: 8.5px;
+    height: 8.5px;
+    background-repeat: no-repeat;
+  }
 }
 
 @media only screen and (min-width: 500px) {
@@ -6060,6 +6138,7 @@ p.description {
 
   .ui-panel-page-content-open {
     width: 47%;
+    min-width: 320px;
     left: 53% !important;
   }
 
