@@ -5911,6 +5911,10 @@ p.description {
   height: 19px;
 }
 
+#page-doctor .ui-panel-page-content-open + .mask-overlay {
+  display: block;
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .index-img-wrapper i {
     background-image: url("../img/retina/logo.png");

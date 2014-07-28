@@ -1,0 +1,50 @@
+div(data-role='page', id='page-doctor')
+	div#rightPanel(data-role='panel', data-position='right', data-display='reveal')
+		.aside-header
+			span.logo-small
+			div.city-dropdown-wrapper 
+				select 
+					option Екатеринбург
+					option Москва
+					option Санкт-Петербург 
+				i
+		.aside-description
+			p На нашем портале вы можете выбрать врача и записаться к нему на прием.
+			p Мы поможем вам найти хорошего специалиста!
+		.aside-block.mb-15
+			strong О проекте
+			ul
+				li
+					a(href='#') О сервисе
+					i
+				li
+					a(href='#') Все врачи
+					i
+				li
+					a(href='#') Все клиники
+					i
+		.aside-block
+			strong Врачам и клиникам
+			ul
+				li
+					a(href='#') Личный кабинет
+					i
+				li
+					a(href='#') Регистрация
+					i
+		.aside-foo
+			a(href='http://docdoc.ru/') Перейти на основную версию сайта
+	div.fixed(data-role='header', data-position='fixed')
+		.fixed-inn
+			a.back-link(href='#find-doctor', data-transition='slide', data-direction='reverse')
+			strong Информация о враче
+			a.panel-btn(href='#rightPanel')
+		.fixed-inn.w-500
+			
+	div.ui-content(role='main')
+
+	div(data-role='footer', data-position='fixed')
+		.fixed-inn
+			.w-500
+				a.to-form-doctor-btn(htef='#') записаться
+	div.mask-overlay

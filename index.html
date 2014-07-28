@@ -111,7 +111,7 @@
         <div role="main" class="ui-content padding-zero">
             <ul class="list-of-doctors">
                 <li>
-                    <a href="#">
+                    <a href="#page-doctor" data-transition="slide">
                         <div class="left-block">
                             <img src="./public/img/pics/ava65-2.png" alt="Мельков Евгений Евгеньевич">
                             <div class="rating-wrap"><strong>6.4</strong>
@@ -135,7 +135,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#page-doctor" data-transition="slide">
                         <div class="left-block">
                             <img src="./public/img/pics/ava65.png" alt="Саркисова Наталья Георгиевна">
                             <div class="rating-wrap"><strong>8.2</strong>
@@ -159,7 +159,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#page-doctor" data-transition="slide">
                         <div class="left-block">
                             <img src="./public/img/pics/ava65-2.png" alt="Мельков Евгений Евгеньевич">
                             <div class="rating-wrap"><strong>9.9</strong>
@@ -183,7 +183,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#page-doctor" data-transition="slide">
                         <div class="left-block">
                             <img src="./public/img/pics/ava65.png" alt="Саркисова Наталья Георгиевна">
                             <div class="rating-wrap"><strong>8.3</strong>
@@ -207,7 +207,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#page-doctor" data-transition="slide">
                         <div class="left-block">
                             <img src="./public/img/pics/ava65-2.png" alt="Мельков Евгений Евгеньевич">
                             <div class="rating-wrap"><strong>9.9</strong>
@@ -231,7 +231,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#page-doctor" data-transition="slide">
                         <div class="left-block">
                             <img src="./public/img/pics/ava65-2.png" alt="Мельков Евгений Евгеньевич">
                             <div class="rating-wrap"><strong>6.4</strong>
@@ -255,7 +255,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#page-doctor" data-transition="slide">
                         <div class="left-block">
                             <img src="./public/img/pics/ava65.png" alt="Саркисова Наталья Георгиевна">
                             <div class="rating-wrap"><strong>8.2</strong>
@@ -279,7 +279,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#page-doctor" data-transition="slide">
                         <div class="left-block">
                             <img src="./public/img/pics/ava65-2.png" alt="Мельков Евгений Евгеньевич">
                             <div class="rating-wrap"><strong>9.9</strong>
@@ -303,7 +303,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#page-doctor" data-transition="slide">
                         <div class="left-block">
                             <img src="./public/img/pics/ava65.png" alt="Саркисова Наталья Георгиевна">
                             <div class="rating-wrap"><strong>8.3</strong>
@@ -327,7 +327,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#page-doctor" data-transition="slide">
                         <div class="left-block">
                             <img src="./public/img/pics/ava65-2.png" alt="Мельков Евгений Евгеньевич">
                             <div class="rating-wrap"><strong>9.9</strong>
@@ -353,7 +353,61 @@
             </ul>
         </div>
         <div data-role="footer" data-position="fixed">
-            <div class="fixed-inn"><span>подобрать врача по номеру</span>
+            <div class="fixed-inn">
+                <div class="w-500"><span>подобрать врача по номеру</span>
+                </div>
+            </div>
+        </div>
+        <div class="mask-overlay"></div>
+    </div>
+    <div data-role="page" id="page-doctor">
+        <div id="rightPanel" data-role="panel" data-position="right" data-display="reveal">
+            <div class="aside-header"><span class="logo-small"></span>
+                <div class="city-dropdown-wrapper">
+                    <select>
+                        <option>Екатеринбург</option>
+                        <option>Москва</option>
+                        <option>Санкт-Петербург</option>
+                    </select><i></i>
+                </div>
+            </div>
+            <div class="aside-description">
+                <p>На нашем портале вы можете выбрать врача и записаться к нему на прием.</p>
+                <p>Мы поможем вам найти хорошего специалиста!</p>
+            </div>
+            <div class="aside-block mb-15"><strong>О проекте</strong>
+                <ul>
+                    <li><a href="#">О сервисе</a><i></i>
+                    </li>
+                    <li><a href="#">Все врачи</a><i></i>
+                    </li>
+                    <li><a href="#">Все клиники</a><i></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="aside-block"><strong>Врачам и клиникам</strong>
+                <ul>
+                    <li><a href="#">Личный кабинет</a><i></i>
+                    </li>
+                    <li><a href="#">Регистрация</a><i></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="aside-foo"><a href="http://docdoc.ru/">Перейти на основную версию сайта</a>
+            </div>
+        </div>
+        <div data-role="header" data-position="fixed" class="fixed">
+            <div class="fixed-inn">
+                <a href="#find-doctor" data-transition="slide" data-direction="reverse" class="back-link"></a><strong>Информация о враче</strong>
+                <a href="#rightPanel" class="panel-btn"></a>
+            </div>
+            <div class="fixed-inn w-500"></div>
+        </div>
+        <div role="main" class="ui-content"></div>
+        <div data-role="footer" data-position="fixed">
+            <div class="fixed-inn">
+                <div class="w-500"><a htef="#" class="to-form-doctor-btn">записаться</a>
+                </div>
             </div>
         </div>
         <div class="mask-overlay"></div>
