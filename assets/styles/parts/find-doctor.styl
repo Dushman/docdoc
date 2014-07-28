@@ -58,6 +58,7 @@ p.description
 
 #rightPanel.ui-panel-position-right.ui-panel-display-reveal
 	box-shadow(none)
+	z-index 1001
 
 .aside-foo
 	position relative
@@ -177,3 +178,16 @@ p.description
 	position absolute
 	right 17px
 	top 7px
+
+.mask-overlay 
+	background rgba(0,0,0,.5)
+	position absolute 
+	left 0
+	top 0
+	bottom 0
+	right 0
+	z-index 1000
+	display none
+
+#find-doctor div[data-role='footer'].ui-panel-page-content-open + .mask-overlay
+	display block
