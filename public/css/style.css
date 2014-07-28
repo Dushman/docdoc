@@ -5921,4 +5921,29 @@ p.description {
     width: 47%;
     left: 53% !important;
   }
+
+  #index-page ul.items-listing {
+    padding-top: 1.5em;
+  }
+
+  #index-page .ui-content {
+    padding: 1.5em 1em;
+  }
+
+  .index-main-block > h3:first-child {
+    padding: 1em 0;
+  }
+
+  .imb-content {
+    padding: 1.5em 1em 1.7em 1em;
+    margin-bottom: 20px;
+  }
+
+  .imb-content p {
+    margin-bottom: 1.5em;
+  }
+
+  .f-s {
+    margin-bottom: 20px;
+  }
 }
