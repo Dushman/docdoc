@@ -5687,6 +5687,12 @@ p.description {
   font-size: 14px;
   font-weight: 400;
   font-family: 'Circe-regular';
+  text-shadow: none;
+}
+
+.sort-doctor-wrapper .ui-select .ui-btn > span:first-child:avtive,
+.sort-doctor-wrapper .ui-select .ui-btn > span:first-child:focus {
+  text-shadow: none;
 }
 
 .top-sort-block > .left-block > span {
@@ -5827,6 +5833,16 @@ p.description {
     -webkit-background-size: 12.5px;
     background-size: 12.5px;
     width: 12.5px;
+    height: 18px;
+    background-repeat: no-repeat;
+  }
+
+  .c-content ul[datarole="listview"] li > i {
+    background-image: url("../img/retina/gray-arrow.png");
+    background-position: 0 0;
+    -webkit-background-size: 9.5px;
+    background-size: 9.5px;
+    width: 9.5px;
     height: 18px;
     background-repeat: no-repeat;
   }
