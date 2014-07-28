@@ -17,7 +17,8 @@ div[data-role='footer'] .fixed-inn span
 	text-indent -9999em
 	position absolute
 	right 0
-	top 1em
+	top 50%
+	margin-top -6.5px
 	sprite($s-menu_btn)
 	padding-left 15px
 	padding-top 15px
@@ -192,7 +193,113 @@ p.description
 #find-doctor .ui-panel-page-content-open + .mask-overlay
 	display block
 
+.padding-zero
+	padding 0
+
 .list-of-doctors
 	position relative
 	overflow hidden
 	clear both
+	padding 0 0 0 1em
+
+.list-of-doctors > li
+	position relative
+	overflow hidden
+	clear both
+	border-top 1px solid #dedede
+	padding 12px 30px 12px 0
+
+.list-of-doctors > li:first-child
+	border none
+
+.list-of-doctors > li > a
+	display block
+	text-decoration none
+
+.list-of-doctors > li > a .left-block
+	float left
+	margin-right 1em
+
+.list-of-doctors > li > a .left-block img
+	display block
+	clear both
+	overflow hidden
+	border 2px solid #257b7e
+	border-radius 5px
+	margin-bottom 10px
+
+.list-of-doctors > li > a .left-block .rating-wrap
+	overflow hidden
+	clear both
+
+.list-of-doctors > li > a .left-block .rating-wrap strong:first-child
+	float left
+	color #fc5412
+	font-size 12px
+	line-height 12px
+	font-weight 400
+
+.list-of-doctors > li > a .left-block .rating-wrap ul
+	float left
+	clear none
+	padding-left 5px
+
+.list-of-doctors > li > a .left-block .rating-wrap ul li
+	float left
+	margin 0 0 0 2px
+
+.list-of-doctors > li > a .left-block .rating-wrap ul li:first-child
+	margin-left 0
+
+.list-of-doctors > li > a .left-block .qty-reviews
+	display block
+	clear both
+	overflow hidden
+	text-align center
+	text-transform uppercase
+	color #9a9a9a
+	font-size 9px
+	letter-spacing 2px
+
+.list-of-doctors > li > a .right-block
+	overflow hidden
+
+.list-of-doctors > li > a .right-block h3.name
+	margin 0 0 10px 0
+	padding 0
+	color #343131
+	font-size 16px
+	font-weight 400
+
+.list-of-doctors > li > a .right-block .prof
+	display block
+	clear both
+	color #18b1ac
+	text-transform uppercase
+	font-weight 400
+	font-size 11px
+	letter-spacing 1px
+	margin-bottom 3px
+
+.list-of-doctors > li > a .right-block .skills-wrap
+	clear both
+	overflow hidden
+
+.list-of-doctors > li > a .right-block .skills-wrap > span
+	float left
+	margin-left 15px
+	color #9a9a9a
+	font-size 11px
+
+.list-of-doctors > li > a .right-block .skills-wrap > span:first-child
+	margin-left 0
+
+.list-of-doctors > li > a .right-block .skills-wrap > span.left b
+	color #343131
+
+.list-of-doctors > li > a > i
+	display block
+	position absolute
+	right 15px
+	top 26px
+	sprite($s-green-arrow)
