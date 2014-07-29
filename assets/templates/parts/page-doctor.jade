@@ -39,15 +39,158 @@ div(data-role='page', id='page-doctor')
 			a.back-link(href='#find-doctor', data-transition='slide', data-direction='reverse')
 			strong Информация о враче
 			a.panel-btn(href='#rightPanelDoctor')
-		.fixed-inn.w-500
-			
-	div.ui-content(role='main')
-
+		.fixed-inn.w-500.doctor-info-block
+			.left-block
+				img(src='./public/img/pics/ava65-2.png', alt='Мельков Евгений Евгеньевич')
+				.rating-wrap
+					strong 6.4
+					ul
+						li.full
+						li.full
+						li.full
+						li.empty
+						li.empty
+				span.qty-reviews 2 отзыва
+			.right-block
+				h3.name Мельков Евгений Евгеньевич
+				strong.prof Хирург, Анестезиолог 
+				.skills-wrap
+					span.left Стаж: <b>25 лет</b>
+					span.right Прием: <b>1 200 <span>i</span></b>
+				.address-wrap <i></i> ул. Клары Цеткин, д. 33, к. 28
+				.metro-wrap <i></i> Войсковая
+				a.link-to-map(href='#') 
+	div.ui-content.doctor-info-content(role='main')
+		p.main-info Врач-хирург, трансфузиолог. Проводит удаление элементов кожи (невусы,папилломы, кератомы и др.), иссечение атером, липом, бородавок, лечение фурункулов, абсцессов, вросшего ногтя, в т.ч. запущенных,осложненных форм, а также квантовую терапию крови (ВЛОК, ВУФОК), плазмаферез, детоксикацию и лечение экстремальных состояний.
+		.doctor-info-item
+			strong.w-img.img-1 <i></i> Специализация
+			ul.skills-listing
+				li Удаление элементов кожи (невусы, папилломы, кератомы и др.);
+				li иссечение атером, липом, бородавок;
+				li лечение фурункулов, абсцессов, вросшего ногтя, в т.ч.  запущенных, осложненных форм; 
+				li владение  радиоволновой хирургией (аппарат "Сургитрон"), общехирургическими, методиками;
+				li квантовая терапия крови <a href='#'>(ВЛОК, ВУФОК)</a>;
+				li гравитационная хирургия крови (плазмаферез);
+				li комбинированная внутривенная терапия;
+				li детоксикация и лечение экстремальных состояний.
+		.doctor-info-item
+			strong.w-img.img-2 <i></i> Образование
+			ul.skills-listing
+				li Первый Московский государственный <a href='#'>медицинский институт им. И.М. Сеченова</a> (1985г.)
+				li Интернатура по хирургии на базе <a href='#'>городской клинической больницы №7, Москва</a> (1986 г.)
+				li Ординатура по анестезиологии-реаниматологии на базе <a href='#'>Научно-исследовательского трансплантологии и искусственных органов</a> (1992г.)
+		.doctor-info-item
+			strong.w-img.img-3 <i></i> Курсы повышения квалификации
+			ul.skills-listing
+				li Профессиональная переподготовка по хирургии и трансфузиологии на базе Московского областного научно-исследовательского клинического института им. М.Ф. Владимирского (2008 г.)
+		.doctor-info-item
+			strong.w-img.img-4 <i></i> Отзывы пациентов о враче:
+			.total-review-block
+				strong Общее мнение пациентов по 2м отзывам:
+				span.total Хорошо.
+				.item
+					ul
+						li.full
+						li.full
+						li.full
+						li.empty
+						li.empty
+					span квалификация
+				.item
+					ul
+						li.full
+						li.full
+						li.full
+						li.full
+						li.empty
+					span внимание
+				.item
+					ul
+						li.full
+						li.full
+						li.full
+						li.full
+						li.full
+					span цена-качество
+		.doctor-info-item.list-of-reviews
+			strong Отзывы пациентов:
+			ul
+				li
+					.review-text-wrapper
+						.review-text-block
+							p Врач решил мою проблему, ответил на все вопросы. Все хорошо, спасибо
+						i
+					.review-author-block
+						strong Отлично!
+						span Флоренция
+						em 24/07/2014
+					.items-wrapper
+						.item
+							ul
+								li.full
+								li.full
+								li.full
+								li.empty
+								li.empty
+							span квалификация
+						.item
+							ul
+								li.full
+								li.full
+								li.full
+								li.empty
+								li.empty
+							span внимание
+						.item
+							ul
+								li.full
+								li.full
+								li.full
+								li.full
+								li.full
+							span цена-качество
+				li
+					.review-text-wrapper
+						.review-text-block
+							p Прием оправдал все мои ожидания.
+						i
+					.review-author-block
+						strong Отлично!
+						span Илья
+						em 30/06/2013
+					.items-wrapper
+						.item
+							ul
+								li.full
+								li.full
+								li.full
+								li.empty
+								li.empty
+							span квалификация
+						.item
+							ul
+								li.full
+								li.full
+								li.full
+								li.full
+								li.empty
+							span внимание
+						.item
+							ul
+								li.full
+								li.full
+								li.full
+								li.full
+								li.full
+							span цена-качество
+		.send-review-block
+			a(href='#') Оставить отзыв
+			span нам важно ваше мнение! 
 	div(data-role='footer', data-position='fixed')
 		.fixed-inn
 			.w-500
 				.to-form-doctor-btn
-					a(href='#') записаться <i></i>
+					a(href='#doctor-form', data-transition='slide') записаться <i></i>
 				.call-doctor-btn
 					a(href='#')
 						i
