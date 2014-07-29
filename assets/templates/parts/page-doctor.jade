@@ -1,5 +1,5 @@
 div(data-role='page', id='page-doctor')
-	div#rightPanel(data-role='panel', data-position='right', data-display='reveal')
+	div#rightPanelDoctor.rightPanel(data-role='panel', data-position='right', data-display='reveal')
 		.aside-header
 			span.logo-small
 			div.city-dropdown-wrapper 
@@ -38,7 +38,7 @@ div(data-role='page', id='page-doctor')
 		.fixed-inn
 			a.back-link(href='#find-doctor', data-transition='slide', data-direction='reverse')
 			strong Информация о враче
-			a.panel-btn(href='#rightPanel')
+			a.panel-btn(href='#rightPanelDoctor')
 		.fixed-inn.w-500
 			
 	div.ui-content(role='main')
@@ -46,5 +46,9 @@ div(data-role='page', id='page-doctor')
 	div(data-role='footer', data-position='fixed')
 		.fixed-inn
 			.w-500
-				a.to-form-doctor-btn(htef='#') записаться
+				.to-form-doctor-btn
+					a(href='#') записаться <i></i>
+				.call-doctor-btn
+					a(href='#')
+						i
 	div.mask-overlay

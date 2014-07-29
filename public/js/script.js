@@ -1,6 +1,6 @@
 $(function() {
   var verticalCenter;
-  $('ul[data-input=\"#filterSpec-input\"] > li').click(function(e) {
+  $('ul[data-input=\"#filterSpec-input\"] > li:not(".part")').click(function(e) {
     var text;
     e.preventDefault();
     $(this).addClass('selected').siblings().removeClass('selected');
@@ -8,7 +8,7 @@ $(function() {
     $('.f-s > a').html(text + '<span/><i/>');
     return $(this).parents('#select-specialist').find('.back-link').click();
   });
-  $('ul[data-input=\"#filterMetro-input\"] > li').click(function(e) {
+  $('ul[data-input=\"#filterMetro-input\"] > li:not(".part")').click(function(e) {
     var text;
     e.preventDefault();
     $(this).addClass('selected').siblings().removeClass('selected');

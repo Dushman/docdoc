@@ -1,2 +1,67 @@
 #page-doctor .ui-panel-page-content-open + .mask-overlay
 	display block
+
+#page-doctor div[data-role='footer']
+	background-color #fff
+	padding 0 1em
+	text-align center
+	position relative
+
+.to-form-doctor-btn
+	display inline-block
+	position relative
+	overflow hidden
+	border 3px solid #e9d9d3
+	border-radius 28px
+
+.to-form-doctor-btn > a
+	text-decoration none
+	text-transform uppercase
+	border 2px solid #cd4005
+	background-color #fc5512
+	display block
+	font-size 15px
+	line-height 15px
+	position relative
+	padding 13px 50px 13px 17px
+	letter-spacing 1px
+	border-radius 26px
+
+.to-form-doctor-btn > a,
+.to-form-doctor-btn > a:hover,
+.to-form-doctor-btn > a:active,
+.to-form-doctor-btn > a:visited
+	color #fff
+	text-shadow none
+	text-decoration none
+
+.to-form-doctor-btn > a > i
+	display block
+	position absolute
+	right 15px
+	top 13.5px
+	sprite($s-envelope)
+
+.call-doctor-btn
+	float right
+	border 3px solid #ccebc3
+	overflow hidden
+	border-radius 100%
+
+.call-doctor-btn > a
+	border-radius 100%
+	border 2px solid #fff
+	background-color #36b00e
+	display block
+	width 43px
+	height 43px
+	position relative
+
+.call-doctor-btn > a > i
+	display block
+	position absolute
+	left 50%
+	top 50%
+	margin-left -9.5px
+	margin-top -9.5px
+	sprite($s-call-icon)

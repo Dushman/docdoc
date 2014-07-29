@@ -47,13 +47,13 @@
                 </div>
             </div>
             <div data-role="footer">
-                <div class="call-us"><strong>Поможем найти врача </strong><span>звоните <a href='tel:+84952367276'>8 (495) 236-72-76</a></span><i class="iphone-bg"></i>
+                <div class="call-us"><strong>Поможем найти врача </strong><span>звоните <a href='tel:8-495-236-72-76'>8 (495) 236-72-76</a></span><i class="iphone-bg"></i>
                 </div><a href="http://docdoc.ru/" class="link-to-site">Перейти на основную версию сайта</a><i></i>
             </div>
         </div>
     </div>
     <div data-role="page" id="find-doctor">
-        <div id="rightPanel" data-role="panel" data-position="right" data-display="reveal">
+        <div id="rightPanel" data-role="panel" data-position="right" data-display="reveal" class="rightPanel">
             <div class="aside-header"><span class="logo-small"></span>
                 <div class="city-dropdown-wrapper">
                     <select>
@@ -361,7 +361,7 @@
         <div class="mask-overlay"></div>
     </div>
     <div data-role="page" id="page-doctor">
-        <div id="rightPanel" data-role="panel" data-position="right" data-display="reveal">
+        <div id="rightPanelDoctor" data-role="panel" data-position="right" data-display="reveal" class="rightPanel">
             <div class="aside-header"><span class="logo-small"></span>
                 <div class="city-dropdown-wrapper">
                     <select>
@@ -399,14 +399,18 @@
         <div data-role="header" data-position="fixed" class="fixed">
             <div class="fixed-inn">
                 <a href="#find-doctor" data-transition="slide" data-direction="reverse" class="back-link"></a><strong>Информация о враче</strong>
-                <a href="#rightPanel" class="panel-btn"></a>
+                <a href="#rightPanelDoctor" class="panel-btn"></a>
             </div>
             <div class="fixed-inn w-500"></div>
         </div>
         <div role="main" class="ui-content"></div>
         <div data-role="footer" data-position="fixed">
             <div class="fixed-inn">
-                <div class="w-500"><a htef="#" class="to-form-doctor-btn">записаться</a>
+                <div class="w-500">
+                    <div class="to-form-doctor-btn"><a href="#">записаться <i></i></a>
+                    </div>
+                    <div class="call-doctor-btn"><a href="#"><i></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -423,6 +427,7 @@
         </div>
         <div role="main" class="ui-content c-content">
             <ul datarole="listview" data-filter="true" data-input="#filterSpec-input">
+                <li class="part">A</li>
                 <li><strong>Акушер</strong><span>оказание помощи беременным и роженицам во время родов</span><em>235</em><i></i>
                 </li>
                 <li><strong>Аллерголог</strong><span>лечение и профилактика аллергических заболеваний</span><em>46</em><i></i>
@@ -431,8 +436,10 @@
                 </li>
                 <li><strong>Анестезиолог</strong><span>подготовка к операции и реабилитация после</span><em>897</em><i></i>
                 </li>
+                <li class="part">B</li>
                 <li><strong>Венеролог</strong><span>диагностика и лечение венерических, кожных и урологических заболеваний</span><em>45</em><i></i>
                 </li>
+                <li class="part">Г</li>
                 <li><strong>Гастроэнтеролог</strong><span>диагностика и лечение заболеваний органов желудочно-кишечного тракта</span><em>56</em><i></i>
                 </li>
                 <li><strong>Гастроэндекренолог</strong><span>подготовка к операции и реабилитация после</span><em>1</em><i></i>
@@ -453,6 +460,7 @@
         </div>
         <div role="main" class="ui-content c-content">
             <ul datarole="listview" data-filter="true" data-input="#filterMetro-input">
+                <li class="part">A</li>
                 <li><strong>Авиамоторная</strong><i></i>
                 </li>
                 <li><strong>Автозаводская</strong><i></i>
@@ -461,12 +469,16 @@
                 </li>
                 <li><strong>Александровский сад</strong><i></i>
                 </li>
+                <li class="part">M</li>
                 <li><strong>Менделеевская</strong><i></i>
                 </li>
+                <li class="part">K</li>
                 <li><strong>Краснопресненская</strong><i></i>
                 </li>
+                <li class="part">H</li>
                 <li><strong>Новослободская</strong><i></i>
                 </li>
+                <li class="part">C</li>
                 <li><strong>Серпуховская</strong><i></i>
                 </li>
                 <li><strong>Шhоссе Энтузиастов</strong><i></i>
