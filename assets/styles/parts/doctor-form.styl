@@ -4,11 +4,6 @@
 #doctor-form .doctor-info-block
 	padding-left 20px
 
-.doctor-order-form > form 
-	display block
-	overflow hidden
-	padding 4px 20px 0 20px 
-
 .doctor-order-form > form .form-item
 	position relative
 	clear both
@@ -46,10 +41,10 @@
 
 .doctor-order-form > form .form-item textarea
 	resize none
-	min-height 90px
+	min-height 80px
 
 .doctor-order-form > form .form-item.item-3
-	margin-bottom 35px
+	margin-bottom 20px
 
 .send-button-wrap
 	position relative
@@ -68,21 +63,80 @@
 	font-size 15px
 	line-height 15px
 	position relative
-	padding 13px 50px 13px 17px
+	padding 13px 40px 13px 17px
 	letter-spacing 1px
 	border-radius 26px
 	font-family 'Circe-regular'
 	color #fff
 	cursor pointer
 	margin 0
-
-#doctor--form .doctor-order-form
 	position relative
 
-#doctor--form .doctor-order-form i.doctor-bottom
+.send-button-wrap > button > i
+	display block
+	position absolute
+	top 10px
+	right 20px
+	sprite($s-check)
+
+#doctor-form a.link-to-site 
+	text-decoration underline!important
+	background none
+	border none
+	text-shadow none
+	box-shadow(none)
+	display block
+	margin 0
+	padding 0
+	color #29aaac
+	font-size 11px
+	font-family 'Circe-regular'
+	text-align left
+	text-overflow none
+	overflow visible
+	line-height 16px
+
+#doctor-form .call-us
+	border-bottom 1px solid #bfbfbf
+	position relative
+	overflow hidden
+	clear both
+	padding 14px 0 15px 25px
+	margin 0 65px 10px 0
+
+#doctor-form .call-us > strong
+	display block
+	clear both
+	color #000
+	font-family 'Circe-bold'
+	font-size 14px
+	margin-bottom 1px
+
+#doctor-form .call-us > span
+	display block
+	clear both
+	font-size 12px
+
+#doctor-form .call-us > span > a
+	text-decoration none
+
+#doctor-form .call-us i.iphone-bg
 	display block
 	position absolute
 	left 0
-	bottom 0
+	top 14px
+	sprite($s-iphone-bg)
+
+#doctor-form .doctor-order-form
+	position relative
+	padding-right 36px
+	padding-left 36px
+
+#doctor-form .doctor-order-form i.doctor-bottom
+	display block
+	position absolute
+	right 5px
+	bottom 30px
+	sprite($s-doctor-form)
 
 
