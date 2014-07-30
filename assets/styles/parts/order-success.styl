@@ -11,5 +11,121 @@ a.close-btn
 	padding-left 36px
 	padding-right 36px
 
+.order-success-content
+	position relative
+	overflow hidden
+	clear both
+	gradient(#fefefe, #fdfdfd, #fafafa)
+	border 1px solid #bfbfbf
+	border-radius 20px
+	padding-top 65px
+
+.order-success-content > i.success-check
+	display block
+	position absolute
+	top 10px
+	left 50%
+	margin-left -24px
+	sprite($s-success-check)
+
+strong.success-title
+	display block
+	overflow hidden
+	clear both
+	border-bottom 1px solid #bfbfbf
+	color #fc5412
+	font-size 16px
+	font-weight 400
+	text-align center
+	padding-bottom 15px
+
+.success-text
+	position relative
+	overflow hidden
+	clear both
+	padding 15px 20px 30px 20px
+
+.success-text p.gray
+	display block
+	clear both
+	overflow hidden
+	text-align center
+	border-bottom 1px solid #bfbfbf
+	margin-bottom 15px
+	padding-bottom 15px
+	font-size 13px
+	line-height 17px
+
+.success-text p.green
+	display block
+	clear both
+	overflow hidden
+	text-align center
+	color #31adaf
+	margin 0
+	font-size 11px
+	line-height 17px
+
+.order-success-bottom-block
+	position relative
+	display table
+	clear both
+	padding-top 40px
+
+.link-to-favorites
+	position relative
+	overflow hidden
+	clear both
+	padding-bottom 50px
+	padding-left 27px
+
+.link-to-favorites i
+	display block
+	position absolute
+	left 0
+	top 3px
+	sprite($s-favorite)
+
+.link-to-favorites a
+	text-decoration none
+	color #fc5412
+	border-bottom 2px dotted #fc5412
+	font-size 15px
+	font-weight 400
+	font-family 'Circe-bold'
+	letter-spacing -.5px
+
+.link-to-favorites a:hover,
+.link-to-favorites a:active,
+.link-to-favorites a:visited
+	color #fc5412
+	text-decoration none
+	text-shadow none
+
+#order-success a.link-to-site 
+	text-decoration underline!important
+	background none
+	border-top 1px solid #bfbfbf
+	float left
+	text-shadow none
+	box-shadow(none)
+	margin 0
+	padding 10px 0 0 0
+	color #29aaac
+	font-size 11px
+	font-family 'Circe-regular'
+	text-align left
+	text-overflow none
+	overflow visible
+	line-height 16px
+	clear both
+
+.order-success-bottom-block i.doctor-bottom
+	display block
+	position absolute
+	left 175px
+	bottom -15px
+	sprite($s-doctor-success)
+
 #order-success .ui-panel-page-content-open + .mask-overlay
 	display block

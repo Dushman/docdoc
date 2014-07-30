@@ -1,6 +1,6 @@
 $(function() {
   var verticalCenter;
-  $('ul[data-input=\"#filterSpec-input\"] > li:not(".part")').click(function(e) {
+  $('ul[data-input=\"#filterSpec-input\"] > li:not(".ui-li-divider")').click(function(e) {
     var text;
     e.preventDefault();
     $(this).addClass('selected').siblings().removeClass('selected');
@@ -8,7 +8,7 @@ $(function() {
     $('.f-s > a').html(text + '<span/><i/>');
     return $(this).parents('#select-specialist').find('.back-link').click();
   });
-  $('ul[data-input=\"#filterMetro-input\"] > li:not(".part")').click(function(e) {
+  $('ul[data-input=\"#filterMetro-input\"] > li:not(".ui-li-divider")').click(function(e) {
     var text;
     e.preventDefault();
     $(this).addClass('selected').siblings().removeClass('selected');
@@ -18,7 +18,7 @@ $(function() {
   });
   verticalCenter = function() {
     var indexContent, indexTop, windowWidth;
-    windowWidth = $(window).width();
+    windowWidth = $('#index-page').width();
     indexContent = $('.vertical-center');
     indexTop = indexContent.height() / 2 + 10;
     if (windowWidth >= 500) {
