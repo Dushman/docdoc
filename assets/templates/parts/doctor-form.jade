@@ -1,6 +1,25 @@
-div(data-role='page', id='doctor-form')
-	div.fixed(data-role='header', data-position='fixed')
+div(data-role='page', id='doctor-form', data-title='Записаться на прием')
+	div.fixed(data-role='header', data-position='fixed', data-tap-toggle='false')
 		.fixed-inn
 			a.back-link(href='#page-doctor', data-transition='slide', data-direction='reverse')
 			strong Записаться на прием
 		.fixed-inn.w-500.doctor-info-block
+			.left-block
+				img(src='./public/img/pics/ava65-2.png', alt='Мельков Евгений Евгеньевич')
+			.right-block
+				h3.name Мельков Евгений Евгеньевич
+				strong.prof Хирург, Анестезиолог 
+	div.ui-content.doctor-order-form(role='main')
+		form(action='#')
+			.form-item.item-1
+				input(type='text', placeholder='Ваше имя...', autofocus)
+				i
+			.form-item.item-2
+				input(type='tel', placeholder='Ваш телефон...')
+				i
+			.form-item.item-3
+				textarea(cols='20',rows='10', placeholder='Ваш коментарий...')
+				i
+			.send-button-wrap
+				button(type='submit', data-role='none') <i></i> отправить
+		i.doctor-bottom

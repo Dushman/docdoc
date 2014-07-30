@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div data-role="page" id="index-page">
+    <div data-role="page" id="index-page" data-title="DocDoc.ru">
         <div data-role="header">
             <div class="city-dropdown-wrapper">
                 <select>
@@ -52,7 +52,7 @@
             </div>
         </div>
     </div>
-    <div data-role="page" id="find-doctor">
+    <div data-role="page" id="find-doctor" data-title="Анестезиологи (1 824)">
         <div id="rightPanel" data-role="panel" data-position="right" data-display="reveal" class="rightPanel">
             <div class="aside-header"><span class="logo-small"></span>
                 <div class="city-dropdown-wrapper">
@@ -88,7 +88,7 @@
             <div class="aside-foo"><a href="http://docdoc.ru/">Перейти на основную версию сайта</a>
             </div>
         </div>
-        <div data-role="header" data-position="fixed" class="fixed">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" class="fixed">
             <div class="fixed-inn">
                 <a href="#index-page" data-transition="slide" data-direction="reverse" class="back-link"></a><strong>Анестезиологи (1 824)</strong><span>м. Войковская</span>
                 <a href="#rightPanel" class="panel-btn"></a>
@@ -352,15 +352,17 @@
                 </li>
             </ul>
         </div>
-        <div data-role="footer" data-position="fixed">
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
             <div class="fixed-inn">
-                <div class="w-500"><span>подобрать врача по номеру</span>
+                <div class="w-500"><span class="filter-number">подобрать врача по номеру</span>
+                    <div class="call-doctor-btn"><a href="#"><i></i></a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="mask-overlay"></div>
     </div>
-    <div data-role="page" id="page-doctor">
+    <div data-role="page" id="page-doctor" data-title="Информация о враче">
         <div id="rightPanelDoctor" data-role="panel" data-position="right" data-display="reveal" class="rightPanel">
             <div class="aside-header"><span class="logo-small"></span>
                 <div class="city-dropdown-wrapper">
@@ -396,7 +398,7 @@
             <div class="aside-foo"><a href="http://docdoc.ru/">Перейти на основную версию сайта</a>
             </div>
         </div>
-        <div data-role="header" data-position="fixed" class="fixed">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" class="fixed">
             <div class="fixed-inn">
                 <a href="#find-doctor" data-transition="slide" data-direction="reverse" class="back-link"></a><strong>Информация о враче</strong>
                 <a href="#rightPanelDoctor" class="panel-btn"></a>
@@ -567,7 +569,7 @@
             <div class="send-review-block"><a href="#">Оставить отзыв</a><span>нам важно ваше мнение! </span>
             </div>
         </div>
-        <div data-role="footer" data-position="fixed">
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
             <div class="fixed-inn">
                 <div class="w-500">
                     <div class="to-form-doctor-btn"><a href="#doctor-form" data-transition="slide">записаться <i></i></a>
@@ -579,16 +581,39 @@
         </div>
         <div class="mask-overlay"></div>
     </div>
-    <div data-role="page" id="doctor-form">
-        <div data-role="header" data-position="fixed" class="fixed">
+    <div data-role="page" id="doctor-form" data-title="Записаться на прием">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" class="fixed">
             <div class="fixed-inn">
                 <a href="#page-doctor" data-transition="slide" data-direction="reverse" class="back-link"></a><strong>Записаться на прием</strong>
             </div>
-            <div class="fixed-inn w-500 doctor-info-block"></div>
+            <div class="fixed-inn w-500 doctor-info-block">
+                <div class="left-block">
+                    <img src="./public/img/pics/ava65-2.png" alt="Мельков Евгений Евгеньевич">
+                </div>
+                <div class="right-block">
+                    <h3 class="name">Мельков Евгений Евгеньевич</h3><strong class="prof">Хирург, Анестезиолог </strong>
+                </div>
+            </div>
+        </div>
+        <div role="main" class="ui-content doctor-order-form">
+            <form action="#">
+                <div class="form-item item-1">
+                    <input type="text" placeholder="Ваше имя..." autofocus><i></i>
+                </div>
+                <div class="form-item item-2">
+                    <input type="tel" placeholder="Ваш телефон..."><i></i>
+                </div>
+                <div class="form-item item-3">
+                    <textarea cols="20" rows="10" placeholder="Ваш коментарий..."></textarea><i></i>
+                </div>
+                <div class="send-button-wrap">
+                    <button type="submit" data-role="none"><i></i> отправить</button>
+                </div>
+            </form><i class="doctor-bottom"></i>
         </div>
     </div>
-    <div data-role="page" id="select-specialist">
-        <div data-role="header" data-position="fixed" class="fixed">
+    <div data-role="page" id="select-specialist" data-title="Выбрать специалиста">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" class="fixed">
             <div class="fixed-inn">
                 <a href="#index-page" data-transition="slidedown" class="back-link"></a><strong>Выбрать специалиста:</strong>
             </div>
@@ -620,8 +645,8 @@
             </ul>
         </div>
     </div>
-    <div data-role="page" id="select-metro">
-        <div data-role="header" data-position="fixed" class="fixed">
+    <div data-role="page" id="select-metro" data-title="Ближайшее метро">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" class="fixed">
             <div class="fixed-inn">
                 <a href="#index-page" data-transition="slidedown" class="back-link"></a><strong>Ближайшее метро:</strong>
             </div>
