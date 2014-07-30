@@ -5103,7 +5103,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
 
 .f-s a span {
   background-image: url("../img/sprite.png");
-  background-position: -153px -138px;
+  background-position: -181px -138px;
   width: 28px;
   height: 28px;
 }
@@ -5392,7 +5392,7 @@ div.fixed[data-role='header'] {
   right: 27px;
   top: 25px;
   background-image: url("../img/sprite.png");
-  background-position: -168px -114px;
+  background-position: -182px -114px;
   width: 20px;
   height: 20px;
 }
@@ -5531,12 +5531,9 @@ div[data-role='footer'] .fixed-inn span.filter-number {
   top: 50%;
   margin-top: -6.5px;
   background-image: url("../img/sprite.png");
-  background-position: -10px -216px;
+  background-position: -24px -216px;
   width: 20px;
   height: 13px;
-  padding-left: 15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 p.description {
@@ -5916,7 +5913,7 @@ p.description {
   left: 0;
   top: 0;
   background-image: url("../img/sprite.png");
-  background-position: 0px -216px;
+  background-position: -14px -216px;
   width: 10px;
   height: 13px;
 }
@@ -5979,7 +5976,7 @@ p.description {
   right: 15px;
   top: 14px;
   background-image: url("../img/sprite.png");
-  background-position: -44px -216px;
+  background-position: -58px -216px;
   width: 27px;
   height: 12px;
 }
@@ -6221,14 +6218,14 @@ strong.w-img i {
 
 strong.img-1 i {
   background-image: url("../img/sprite.png");
-  background-position: -30px -216px;
+  background-position: -44px -216px;
   width: 14px;
   height: 12px;
 }
 
 strong.img-2 i {
   background-image: url("../img/sprite.png");
-  background-position: -217px -187px;
+  background-position: 0px -216px;
   width: 14px;
   height: 13px;
 }
@@ -6397,7 +6394,7 @@ strong.img-4 {
   top: 0;
   right: 0;
   background-image: url("../img/sprite.png");
-  background-position: -71px -216px;
+  background-position: -85px -216px;
   width: 15px;
   height: 11px;
 }
@@ -6498,6 +6495,28 @@ strong.img-4 {
   font-size: 7px;
 }
 
+a.close-btn {
+  display: block;
+  text-indent: -9999em;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -7px;
+  background-image: url("../img/sprite.png");
+  background-position: -217px -187px;
+  width: 14px;
+  height: 14px;
+}
+
+.success-block {
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+#order-success .ui-panel-page-content-open + .mask-overlay {
+  display: block;
+}
+
 #doctor-form .doctor-info-block .left-block img {
   margin-bottom: 0;
 }
@@ -6522,21 +6541,21 @@ strong.img-4 {
 
 .doctor-order-form > form .form-item.item-1 > i {
   background-image: url("../img/sprite.png");
-  background-position: -181px -138px;
+  background-position: -88px -187px;
   width: 28px;
   height: 28px;
 }
 
 .doctor-order-form > form .form-item.item-2 > i {
   background-image: url("../img/sprite.png");
-  background-position: -88px -187px;
+  background-position: -116px -187px;
   width: 28px;
   height: 28px;
 }
 
 .doctor-order-form > form .form-item.item-3 > i {
   background-image: url("../img/sprite.png");
-  background-position: -116px -187px;
+  background-position: -153px -138px;
   width: 28px;
   height: 28px;
 }
@@ -6575,7 +6594,7 @@ strong.img-4 {
   border-radius: 28px;
 }
 
-.send-button-wrap > button {
+.send-button-wrap > a {
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid #cd4005;
@@ -6594,13 +6613,20 @@ strong.img-4 {
   position: relative;
 }
 
-.send-button-wrap > button > i {
+.send-button-wrap > a:hover,
+.send-button-wrap > a:active,
+.send-button-wrap > a:visited {
+  color: #fff;
+  text-shadow: none;
+}
+
+.send-button-wrap > a > i {
   display: block;
   position: absolute;
   top: 10px;
   right: 20px;
   background-image: url("../img/sprite.png");
-  background-position: -188px -114px;
+  background-position: -168px -114px;
   width: 14px;
   height: 20px;
 }
@@ -7019,6 +7045,16 @@ strong.img-4 {
     background-size: 103.5px;
     width: 103.5px;
     height: 135px;
+    background-repeat: no-repeat;
+  }
+
+  a.close-btn {
+    background-image: url("../img/retina/close-btn.png");
+    background-position: 0 0;
+    -webkit-background-size: 14px;
+    background-size: 14px;
+    width: 14px;
+    height: 14px;
     background-repeat: no-repeat;
   }
 }
