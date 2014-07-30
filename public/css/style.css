@@ -6517,10 +6517,10 @@ a.close-btn {
   position: relative;
   overflow: hidden;
   clear: both;
-  background: #fefefe, #fdfdfd, #fafafa;
-  background: -webkit-linear-gradient(#fefefe, #fdfdfd, #fafafa);
-  background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), color-stop(#fdfdfd), to(#fafafa));
-  background: linear-gradient(#fefefe, #fdfdfd, #fafafa);
+  background: #fff, #fdfdfd, #fafafa;
+  background: -webkit-linear-gradient(#fff, #fdfdfd, #fafafa);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(#fdfdfd), to(#fafafa));
+  background: linear-gradient(#fff, #fdfdfd, #fafafa);
   border: 1px solid #bfbfbf;
   border-radius: 20px;
   padding-top: 65px;
@@ -6848,6 +6848,23 @@ strong.success-title {
   background-position: -64px 0px;
   width: 104px;
   height: 135px;
+}
+
+.send-review-wrapper {
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.send-review-top-block {
+  position: relative;
+  overflow: hidden;
+  clear: both;
+  border-radius: 20px;
+  border: 1px solid #bfbfbf;
+  background: #fff, #fdfdfd, #fafafa;
+  background: -webkit-linear-gradient(#fff, #fdfdfd, #fafafa);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(#fdfdfd), to(#fafafa));
+  background: linear-gradient(#fff, #fdfdfd, #fafafa);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
