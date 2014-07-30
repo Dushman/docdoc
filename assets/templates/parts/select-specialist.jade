@@ -7,8 +7,7 @@ div(data-role='page', id='select-specialist',  data-title='Выбрать спе
 			input#filterSpec-input(data-type='search', placeholder='Быстрый поиск', data-clear-btn='false')
 			i
 	div.ui-content.c-content(role='main')
-		ul(datarole='listview', data-filter='true', data-input='#filterSpec-input')
-			li.part A
+		ul(data-role='listview', data-filter='true', data-input='#filterSpec-input', data-autodividers='true', data-inset='true')
 			li 
 				strong Акушер
 				span оказание помощи беременным и роженицам во время родов
@@ -29,13 +28,16 @@ div(data-role='page', id='select-specialist',  data-title='Выбрать спе
 				span подготовка к операции и реабилитация после
 				em 897
 				i
-			li.part B
+			li
+				strong Анестезиолог
+				span диагностика и лечение заболеваний органов желудочно-кишечного тракта
+				em 6456
+				i
 			li
 				strong Венеролог
 				span диагностика и лечение венерических, кожных и урологических заболеваний
 				em 45
 				i
-			li.part Г
 			li
 				strong Гастроэнтеролог
 				span диагностика и лечение заболеваний органов желудочно-кишечного тракта
@@ -45,9 +47,4 @@ div(data-role='page', id='select-specialist',  data-title='Выбрать спе
 				strong Гастроэндекренолог
 				span подготовка к операции и реабилитация после
 				em 1
-				i
-			li
-				strong Анестезиолог
-				span диагностика и лечение заболеваний органов желудочно-кишечного тракта
-				em 6456
 				i
