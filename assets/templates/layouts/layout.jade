@@ -5,10 +5,10 @@ html(lang='ru')
         title DocDoc
         meta(name='viewport', content='width=device-width, initial-scale=1.0, userscalable=no')
         link(href='./public/css/style.css', rel='stylesheet')
-    body
-        block content
         script(src='./public/js/libs/jquery/jquery.min.js')
         script(src='./public/js/libs/jquery-mobile/jquery-mobile-min.js')
+        script(src='http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=true')
+        script(src='./public/js/libs/infobox/infobox.js')
         script(src='./public/js/script.js')
-
-        
+    body
+        block content      

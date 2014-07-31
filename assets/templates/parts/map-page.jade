@@ -1,0 +1,87 @@
+div(data-role='page', id='map-page', data-title='Информация о враче')
+	div#rightPanelMap.rightPanel(data-role='panel', data-position='right', data-display='reveal')
+		.aside-header
+			span.logo-small
+			div.city-dropdown-wrapper 
+				select 
+					option Екатеринбург
+					option Москва
+					option Санкт-Петербург 
+				i
+		.aside-description
+			p На нашем портале вы можете выбрать врача и записаться к нему на прием.
+			p Мы поможем вам найти хорошего специалиста!
+		.aside-block.mb-15
+			strong О проекте
+			ul
+				li
+					a(href='#') О сервисе
+					i
+				li
+					a(href='#') Все врачи
+					i
+				li
+					a(href='#') Все клиники
+					i
+		.aside-block
+			strong Врачам и клиникам
+			ul
+				li
+					a(href='#') Личный кабинет
+					i
+				li
+					a(href='#') Регистрация
+					i
+		.aside-foo
+			a(href='http://docdoc.ru/') Перейти на основную версию сайта
+	div.fixed(data-role='header', data-position='fixed', data-tap-toggle='false')
+		.fixed-inn
+			a.back-link(href='#find-doctor', data-transition='slide', data-direction='reverse')
+			strong Информация о враче
+			a.panel-btn(href='#rightPanelMap')
+	div.ui-content.map-content(role='main')
+		div(id='map_canvas')
+		script.
+			$(document).on('pagecreate', '#map-page', function() {				
+			function initialize() {
+			var secheltLoc = new google.maps.LatLng(49.47216, -123.76307);
+			var myMapOptions = {
+			zoom: 15,
+			center: secheltLoc,
+			scrollwheel: false, 
+			mapTypeControl: false,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			var map = new google.maps.Map(document.getElementById('map_canvas'), myMapOptions);
+			var labelText = "City Hall";
+			var myOptions = {
+			content: labelText
+			,boxStyle: {
+			border: "1px solid black"
+			,textAlign: "center"
+			,fontSize: "8pt"
+			,width: "50px"
+			}
+			,disableAutoPan: true
+			,pixelOffset: new google.maps.Size(-25, 0)
+			,position: secheltLoc
+			,closeBoxURL: ""
+			,isHidden: false
+			,pane: "mapPane"
+			,enableEventPropagation: true
+			};
+			var ibLabel = new InfoBox(myOptions);
+			ibLabel.open(map);
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);	
+			});
+		a.close-map(href='#page-doctor', data-transition='fade')
+	div(data-role='footer', data-position='fixed', data-tap-toggle='false')
+		.fixed-inn
+			.w-500
+				.to-form-doctor-btn
+					a(href='#doctor-form', data-transition='slide') записаться <i></i>
+				.call-doctor-btn
+					a(href='#')
+						i
+	div.mask-overlay

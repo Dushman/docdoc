@@ -6,6 +6,11 @@
     <title>DocDoc</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, userscalable=no">
     <link href="./public/css/style.css" rel="stylesheet">
+    <script src="./public/js/libs/jquery/jquery.min.js"></script>
+    <script src="./public/js/libs/jquery-mobile/jquery-mobile-min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?v=3&amp;amp;sensor=true"></script>
+    <script src="./public/js/libs/infobox/infobox.js"></script>
+    <script src="./public/js/script.js"></script>
 </head>
 
 <body>
@@ -424,7 +429,7 @@
                     </div>
                     <div class="address-wrap"><i></i> ул. Клары Цеткин, д. 33, к. 28</div>
                     <div class="metro-wrap"><i></i> Войсковая</div>
-                    <a href="#" class="link-to-map"></a>
+                    <a href="#map-page" data-transition="fade" class="link-to-map"></a>
                 </div>
             </div>
         </div>
@@ -837,9 +842,99 @@
         </div>
         <div class="mask-overlay"></div>
     </div>
-    <script src="./public/js/libs/jquery/jquery.min.js"></script>
-    <script src="./public/js/libs/jquery-mobile/jquery-mobile-min.js"></script>
-    <script src="./public/js/script.js"></script>
+    <div data-role="page" id="map-page" data-title="Информация о враче">
+        <div id="rightPanelMap" data-role="panel" data-position="right" data-display="reveal" class="rightPanel">
+            <div class="aside-header"><span class="logo-small"></span>
+                <div class="city-dropdown-wrapper">
+                    <select>
+                        <option>Екатеринбург</option>
+                        <option>Москва</option>
+                        <option>Санкт-Петербург</option>
+                    </select><i></i>
+                </div>
+            </div>
+            <div class="aside-description">
+                <p>На нашем портале вы можете выбрать врача и записаться к нему на прием.</p>
+                <p>Мы поможем вам найти хорошего специалиста!</p>
+            </div>
+            <div class="aside-block mb-15"><strong>О проекте</strong>
+                <ul>
+                    <li><a href="#">О сервисе</a><i></i>
+                    </li>
+                    <li><a href="#">Все врачи</a><i></i>
+                    </li>
+                    <li><a href="#">Все клиники</a><i></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="aside-block"><strong>Врачам и клиникам</strong>
+                <ul>
+                    <li><a href="#">Личный кабинет</a><i></i>
+                    </li>
+                    <li><a href="#">Регистрация</a><i></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="aside-foo"><a href="http://docdoc.ru/">Перейти на основную версию сайта</a>
+            </div>
+        </div>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" class="fixed">
+            <div class="fixed-inn">
+                <a href="#find-doctor" data-transition="slide" data-direction="reverse" class="back-link"></a><strong>Информация о враче</strong>
+                <a href="#rightPanelMap" class="panel-btn"></a>
+            </div>
+        </div>
+        <div role="main" class="ui-content map-content">
+            <div id="map_canvas"></div>
+            <script>
+                $(document).on('pagecreate', '#map-page', function() {
+                    function initialize() {
+                        var secheltLoc = new google.maps.LatLng(49.47216, -123.76307);
+                        var myMapOptions = {
+                            zoom: 15,
+                            center: secheltLoc,
+                            scrollwheel: false,
+                            mapTypeControl: false,
+                            mapTypeId: google.maps.MapTypeId.ROADMAP
+                        };
+                        var map = new google.maps.Map(document.getElementById('map_canvas'), myMapOptions);
+                        var labelText = "City Hall";
+                        var myOptions = {
+                            content: labelText,
+                            boxStyle: {
+                                border: "1px solid black",
+                                textAlign: "center",
+                                fontSize: "8pt",
+                                width: "50px"
+                            },
+                            disableAutoPan: true,
+                            pixelOffset: new google.maps.Size(-25, 0),
+                            position: secheltLoc,
+                            closeBoxURL: "",
+                            isHidden: false,
+                            pane: "mapPane",
+                            enableEventPropagation: true
+                        };
+                        var ibLabel = new InfoBox(myOptions);
+                        ibLabel.open(map);
+                    }
+                    google.maps.event.addDomListener(window, 'load', initialize);
+                });
+            </script>
+            <a href="#page-doctor" data-transition="fade" class="close-map"></a>
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="fixed-inn">
+                <div class="w-500">
+                    <div class="to-form-doctor-btn"><a href="#doctor-form" data-transition="slide">записаться <i></i></a>
+                    </div>
+                    <div class="call-doctor-btn"><a href="#"><i></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mask-overlay"></div>
+    </div>
 </body>
 
 </html>
