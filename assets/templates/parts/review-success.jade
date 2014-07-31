@@ -1,0 +1,55 @@
+div(data-role='page', id='review-success', data-title='Вы оставили отзыв!')
+	div#rightPanelReview.rightPanel(data-role='panel', data-position='right', data-display='reveal')
+		.aside-header
+			span.logo-small
+			div.city-dropdown-wrapper 
+				select 
+					option Екатеринбург
+					option Москва
+					option Санкт-Петербург 
+				i
+		.aside-description
+			p На нашем портале вы можете выбрать врача и записаться к нему на прием.
+			p Мы поможем вам найти хорошего специалиста!
+		.aside-block.mb-15
+			strong О проекте
+			ul
+				li
+					a(href='#') О сервисе
+					i
+				li
+					a(href='#') Все врачи
+					i
+				li
+					a(href='#') Все клиники
+					i
+		.aside-block
+			strong Врачам и клиникам
+			ul
+				li
+					a(href='#') Личный кабинет
+					i
+				li
+					a(href='#') Регистрация
+					i
+		.aside-foo
+			a(href='http://docdoc.ru/') Перейти на основную версию сайта
+	div.fixed(data-role='header', data-position='fixed', data-tap-toggle='false')
+		.fixed-inn
+			a.close-btn(href='#page-doctor', data-transition='fade')
+			strong Вы оставили отзыв!
+			a.panel-btn(href='#rightPanelReview')
+	div.ui-content.success-block(role='main')
+		.order-success-content
+			strong.success-title Вы оставили отзыв!
+			.success-text
+				p.gray Спасибо за ваш отзыв. Нам важно ваше мнение.
+				p.green P.S: команда DocDoc благодарит вас за использавание услуг нашего портала!
+			i.success-check
+		.order-success-bottom-block
+			.link-to-favorites
+				a(href='#') Добавить  сайт в закладки
+				i
+			a.link-to-site(href='http://docdoc.ru/') Перейти на основную версию сайта
+			i.doctor-bottom
+	div.mask-overlay

@@ -741,9 +741,101 @@
         </div>
         <div role="main" class="ui-content send-review-wrapper">
             <form action="#">
-                <div class="send-review-top-block"></div>
+                <div class="send-review-top-block">
+                    <div class="send-review-title"><strong>Ваш отзыв:</strong>
+                        <p>Нам важно ваше мнение, пишите все о чем наболело.</p>
+                    </div>
+                    <div class="send-review-form">
+                        <div class="form-item item-1">
+                            <input type="text" placeholder="Ваше имя..."><i></i>
+                        </div>
+                        <div class="form-item item-2">
+                            <input type="tel" placeholder="Ваш номер..."><i></i>
+                        </div>
+                        <div class="form-item item-3"><a href="#" class="textarea-spoiler"><i></i> Добавить коментарий</a>
+                        </div>
+                        <div class="form-item item-4">
+                            <textarea cols="20" rows="10" placeholder="Ваш коментарий..."></textarea><i></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-rating-block">
+                    <div class="review-rating-item">
+                        <div class="range-wrap">
+                            <input type="range" min="1" max="5" value="5" data-highlight="true">
+                        </div><span>квалификация</span>
+                    </div>
+                    <div class="review-rating-item">
+                        <div class="range-wrap">
+                            <input type="range" min="1" max="5" value="3" data-highlight="true">
+                        </div><span>внимание</span>
+                    </div>
+                    <div class="review-rating-item">
+                        <div class="range-wrap">
+                            <input type="range" min="1" max="5" value="2" data-highlight="true">
+                        </div><span>цена- качество</span>
+                    </div>
+                </div>
+                <div class="send-review-btn-block"><a href="#review-success" data-transition="fade"><i></i> высказаться</a>
+                </div>
             </form>
         </div>
+    </div>
+    <div data-role="page" id="review-success" data-title="Вы оставили отзыв!">
+        <div id="rightPanelReview" data-role="panel" data-position="right" data-display="reveal" class="rightPanel">
+            <div class="aside-header"><span class="logo-small"></span>
+                <div class="city-dropdown-wrapper">
+                    <select>
+                        <option>Екатеринбург</option>
+                        <option>Москва</option>
+                        <option>Санкт-Петербург</option>
+                    </select><i></i>
+                </div>
+            </div>
+            <div class="aside-description">
+                <p>На нашем портале вы можете выбрать врача и записаться к нему на прием.</p>
+                <p>Мы поможем вам найти хорошего специалиста!</p>
+            </div>
+            <div class="aside-block mb-15"><strong>О проекте</strong>
+                <ul>
+                    <li><a href="#">О сервисе</a><i></i>
+                    </li>
+                    <li><a href="#">Все врачи</a><i></i>
+                    </li>
+                    <li><a href="#">Все клиники</a><i></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="aside-block"><strong>Врачам и клиникам</strong>
+                <ul>
+                    <li><a href="#">Личный кабинет</a><i></i>
+                    </li>
+                    <li><a href="#">Регистрация</a><i></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="aside-foo"><a href="http://docdoc.ru/">Перейти на основную версию сайта</a>
+            </div>
+        </div>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" class="fixed">
+            <div class="fixed-inn">
+                <a href="#page-doctor" data-transition="fade" class="close-btn"></a><strong>Вы оставили отзыв!</strong>
+                <a href="#rightPanelReview" class="panel-btn"></a>
+            </div>
+        </div>
+        <div role="main" class="ui-content success-block">
+            <div class="order-success-content"><strong class="success-title">Вы оставили отзыв!</strong>
+                <div class="success-text">
+                    <p class="gray">Спасибо за ваш отзыв. Нам важно ваше мнение.</p>
+                    <p class="green">P.S: команда DocDoc благодарит вас за использавание услуг нашего портала!</p>
+                </div><i class="success-check"></i>
+            </div>
+            <div class="order-success-bottom-block">
+                <div class="link-to-favorites"><a href="#">Добавить  сайт в закладки</a><i></i>
+                </div><a href="http://docdoc.ru/" class="link-to-site">Перейти на основную версию сайта</a><i class="doctor-bottom"></i>
+            </div>
+        </div>
+        <div class="mask-overlay"></div>
     </div>
     <script src="./public/js/libs/jquery/jquery.min.js"></script>
     <script src="./public/js/libs/jquery-mobile/jquery-mobile-min.js"></script>

@@ -6,3 +6,33 @@ div(data-role='page', id='send-review', data-title='Оставить отзыв'
 	div.ui-content.send-review-wrapper(role='main')
 		form(action='#')
 			.send-review-top-block
+				.send-review-title
+					strong Ваш отзыв:
+					p Нам важно ваше мнение, пишите все о чем наболело.
+				.send-review-form
+					.form-item.item-1
+						input(type='text', placeholder='Ваше имя...')
+						i
+					.form-item.item-2
+						input(type='tel', placeholder='Ваш номер...')
+						i
+					.form-item.item-3
+						a.textarea-spoiler(href='#') <i></i> Добавить коментарий
+					.form-item.item-4
+						textarea(cols='20',rows='10', placeholder='Ваш коментарий...')
+						i
+			.review-rating-block
+				.review-rating-item
+					.range-wrap
+						input(type='range', min='1', max='5', value='5', data-highlight='true')
+					span квалификация
+				.review-rating-item
+					.range-wrap
+						input(type='range', min='1', max='5', value='3', data-highlight='true')
+					span внимание
+				.review-rating-item
+					.range-wrap
+						input(type='range', min='1', max='5', value='2', data-highlight='true')
+					span цена- качество
+			.send-review-btn-block
+				a(href='#review-success', data-transition='fade') <i></i> высказаться

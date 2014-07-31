@@ -26,7 +26,12 @@ $(function() {
     }
   };
   verticalCenter();
-  return $(window).resize(function() {
+  $(window).resize(function() {
     return verticalCenter();
+  });
+  return $('.form-item.item-3 a.textarea-spoiler').click(function(e) {
+    e.preventDefault();
+    $(this).parents('.form-item.item-3').next().slideDown().find('textarea').focus();
+    return $(this).parents('.form-item.item-3').hide();
   });
 });
