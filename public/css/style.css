@@ -5449,6 +5449,8 @@ div.fixed[data-role='header'] {
   border-right: none;
   border-bottom: none;
   border-radius: 0;
+  text-overflow: unset;
+  white-space: unset;
 }
 
 .c-content ul[data-role='listview'] li.ui-li-divider {
@@ -7000,7 +7002,7 @@ strong.success-title {
     background-repeat: no-repeat;
   }
 
-  .c-content ul[datarole="listview"] li > i,
+  .c-content ul[data-role="listview"] li > i,
   .aside-block ul li i {
     background-image: url("../img/retina/gray-arrow.png");
     background-position: 0 0;
