@@ -12,18 +12,6 @@ $ ->
         text = $(this).find('strong').text()
         $('.f-m > a').html text + '<span/><i/>'
         $(this).parents('#select-metro').find('.back-link').click()
-    verticalCenter = ->
-        windowWidth = $('#index-page').width()
-        indexContent = $('.vertical-center')
-        indexTop = indexContent.height() / 2 + 10
-        indexContent.css 'margin-top', - indexTop + 'px'  if windowWidth >= 500
-    verticalCenter()
-    $(window).resize ->
-        verticalCenter()
-    $(document).on 'pageshow', '#index-page', ->
-        verticalCenter()
-    $(window).on 'orientationchange', ->
-        verticalCenter()
     $('.form-item.item-3 a.textarea-spoiler').click (e) ->
         e.preventDefault()
         $(this).parents('.form-item.item-3').next().slideDown().find('textarea').focus()
