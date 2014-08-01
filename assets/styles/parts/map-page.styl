@@ -9,6 +9,7 @@
 .ui-content.map-content
 	padding 0
 	min-height inherit
+	height 100%
 
 #map-page div[data-role='footer']
 	border-top 1px solid #999
@@ -28,3 +29,59 @@ a.close-map
 	width 31px
 	height 31px
 	sprite($s-map-btn)
+
+a[href^='http://maps.google.com/maps']
+	display none!important
+
+.gmnoprint div
+	background transparent!important
+
+.gmnoprint a,
+.gmnoprint span
+	display none!important
+
+.infobox-wrapper
+	display none
+
+.infobox-inn
+	position relative
+	overflow hidden
+	background-color #fff
+	border-radius 8px
+	-webkit-box-shadow 0 3px 6px rgba(0,0,0,.3)
+	-moz-box-shadow 0 3px 6px rgba(0,0,0,.3)
+	box-shadow 0 3px 6px rgba(0,0,0,.3)
+
+.infobox-inn .left-block
+	float left
+
+.infobox-inn .right-block
+	overflow hidden
+	padding 8px 5px 8px 10px
+
+.infobox-inn .right-block strong
+	display block
+	clear both
+	font-size 11px
+	line-height 14px
+	margin-bottom 4px
+	font-weight 400
+	color #000
+	font-family 'Circe-regular'
+
+.infobox-inn .right-block em
+	font-size 11px
+	line-height 14px
+	font-style normal
+	color #848484
+	font-family 'Circe-regular'
+	font-weight 400
+
+#infobox i.triangle
+	display block
+	position absolute
+	left 50%
+	bottom -17px
+	margin-left 0px
+	sprite($s-triangle-bottom)
+	margin-left -20px

@@ -43,38 +43,60 @@ div(data-role='page', id='map-page', data-title='Информация о вра�
 		div(id='map_canvas')
 		script.
 			$(document).on('pagecreate', '#map-page', function() {				
-			function initialize() {
-			var secheltLoc = new google.maps.LatLng(49.47216, -123.76307);
-			var myMapOptions = {
-			zoom: 15,
-			center: secheltLoc,
-			scrollwheel: false, 
-			mapTypeControl: false,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-			};
-			var map = new google.maps.Map(document.getElementById('map_canvas'), myMapOptions);
-			var labelText = "City Hall";
-			var myOptions = {
-			content: labelText
-			,boxStyle: {
-			border: "1px solid black"
-			,textAlign: "center"
-			,fontSize: "8pt"
-			,width: "50px"
-			}
-			,disableAutoPan: true
-			,pixelOffset: new google.maps.Size(-25, 0)
-			,position: secheltLoc
-			,closeBoxURL: ""
-			,isHidden: false
-			,pane: "mapPane"
-			,enableEventPropagation: true
-			};
-			var ibLabel = new InfoBox(myOptions);
-			ibLabel.open(map);
-			}
-			google.maps.event.addDomListener(window, 'load', initialize);	
+					var geocoder = new google.maps.Geocoder(),
+					mapOptions = {
+						zoom: 14,
+						scrollwheel: false,
+						navigationControl: false,
+						mapTypeControl: false,
+						scaleControl: false,
+						zoomControl: false,
+						streetViewControl: false,
+						mapTypeId: google.maps.MapTypeId.ROADMAP
+					},
+					map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+					geocoder.geocode( { 'address': 'ул. Клары Цеткин, д. 33, к. 28' },
+					function(results, status) {
+						if (status == google.maps.GeocoderStatus.OK) {
+							var mapLatLng = new google.maps.LatLng(
+							results[0].geometry.location.lat(), 
+							results[0].geometry.location.lng()
+						),
+						marker = new google.maps.Marker({
+							position: mapLatLng,
+							visible: false
+						});
+						map.setCenter(mapLatLng, mapOptions.zoom);
+							marker.setMap(map);
+						}
+						var myOptions = {
+							content: document.getElementById('infobox'),
+							boxStyle: {
+								width: '210px'
+							},
+							disableAutoPan: true,
+							pixelOffset: new google.maps.Size(-100, -14),
+							position: mapLatLng,
+							closeBoxURL: '',
+							isHidden: false,
+							alignBottom: true,
+							pane: 'mapPane',
+							enableEventPropagation: true,
+							infoBoxClearance: new google.maps.Size(1, 1)
+						};
+					var ibLabel = new InfoBox(myOptions);
+						ibLabel.open(map); 
+					});
 			});
+		.infobox-wrapper
+			#infobox
+				.infobox-inn
+					.left-block
+						img(src='./public/img/pics/ava65-2.png', alt='Мельков Евгений Евгеньевич')
+					.right-block
+						strong ул. Клары Цеткин, д. 33, к. 28
+						em м. Войковская
+				i.triangle
 		a.close-map(href='#page-doctor', data-transition='fade')
 	div(data-role='footer', data-position='fixed', data-tap-toggle='false')
 		.fixed-inn
