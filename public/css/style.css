@@ -5579,6 +5579,8 @@ p.description {
 }
 
 .rightPanel.ui-panel-position-right.ui-panel-display-reveal {
+  -webkit-box-shadow: none;
+  box-shadow: none;
   z-index: 1001;
 }
 

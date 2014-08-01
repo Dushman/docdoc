@@ -42,7 +42,7 @@ div(data-role='page', id='map-page', data-title='Информация о вра�
 	div.ui-content.map-content(role='main')
 		div(id='map_canvas')
 		script.
-			$(document).on('pagecreate', '#map-page', function() {				
+			$(document).on('pageshow', '#map-page', function() {				
 					var geocoder = new google.maps.Geocoder(),
 					mapOptions = {
 						zoom: 14,

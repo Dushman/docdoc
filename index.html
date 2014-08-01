@@ -887,7 +887,7 @@
         <div role="main" class="ui-content map-content">
             <div id="map_canvas"></div>
             <script>
-                $(document).on('pagecreate', '#map-page', function() {
+                $(document).on('pageshow', '#map-page', function() {
                     var geocoder = new google.maps.Geocoder(),
                         mapOptions = {
                             zoom: 14,
