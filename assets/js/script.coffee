@@ -20,6 +20,8 @@ $ ->
     verticalCenter()
     $(window).resize ->
         verticalCenter()
+    $(document).on 'pageshow', '#index-page', ->
+        verticalCenter()
     $('.form-item.item-3 a.textarea-spoiler').click (e) ->
         e.preventDefault()
         $(this).parents('.form-item.item-3').next().slideDown().find('textarea').focus()

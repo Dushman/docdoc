@@ -29,6 +29,9 @@ $(function() {
   $(window).resize(function() {
     return verticalCenter();
   });
+  $(document).on('pageshow', '#index-page', function() {
+    return verticalCenter();
+  });
   return $('.form-item.item-3 a.textarea-spoiler').click(function(e) {
     e.preventDefault();
     $(this).parents('.form-item.item-3').next().slideDown().find('textarea').focus();
