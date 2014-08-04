@@ -603,10 +603,10 @@
         <div role="main" class="ui-content doctor-order-form">
             <form action="#">
                 <div class="form-item item-1">
-                    <input type="text" placeholder="Ваше имя..."><i></i>
+                    <input type="text" placeholder="Ваше имя..." class="required"><i></i>
                 </div>
                 <div class="form-item item-2">
-                    <input type="tel" placeholder="Ваш телефон..."><i></i>
+                    <input type="tel" placeholder="Ваш телефон..." class="required"><i></i>
                 </div>
                 <div class="form-item item-3">
                     <textarea cols="20" rows="10" placeholder="Ваш коментарий..."></textarea><i></i>
@@ -673,6 +673,25 @@
             </div>
         </div>
         <div class="mask-overlay"></div>
+    </div>
+    <div data-role="page" id="order-error" data-title="Ошибка!">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" class="fixed">
+            <div class="fixed-inn">
+                <a href="#doctor-form" data-transition="flip" class="back-link"></a><strong>Записаться на прием</strong>
+            </div>
+        </div>
+        <div role="main" class="ui-content success-block">
+            <div class="order-success-content"><strong class="success-title order-title">Ошибка!</strong>
+                <div class="success-text">
+                    <p class="gray">Внимание! Ваша анкета записи не была отправлена. Попробуйте снова.Перед отправкой проверьте, все ли поля с информацией заполнены правильно.</p>
+                    <p class="green">P.S: команда DocDoc благодарит вас за использавание услуг нашего портала!</p>
+                </div><i class="success-check"></i>
+            </div>
+            <div class="order-success-bottom-block">
+                <div class="link-to-favorites"><a href="#doctor-form" data-transition="flip">Попробовать снова</a>
+                </div><a href="http://docdoc.ru/" class="link-to-site">Перейти на основную версию сайта</a><i class="doctor-bottom"></i>
+            </div>
+        </div>
     </div>
     <div data-role="page" id="select-specialist" data-title="Выбрать специалиста">
         <div data-role="header" data-position="fixed" data-tap-toggle="false" class="fixed">
@@ -841,6 +860,25 @@
             </div>
         </div>
         <div class="mask-overlay"></div>
+    </div>
+    <div data-role="page" id="review-error" data-title="Ошибка!">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" class="fixed">
+            <div class="fixed-inn">
+                <a href="#send-review" data-transition="flip" class="back-link"></a><strong>Оставить отзыв</strong>
+            </div>
+        </div>
+        <div role="main" class="ui-content success-block">
+            <div class="order-success-content"><strong class="success-title">Ошибка!</strong>
+                <div class="success-text">
+                    <p class="gray">Внимание! Ваш отзыв не был отправлен. Попробуйте снова.Перед отправкой проверьте, все ли поля с информацией заполнены правильно.</p>
+                    <p class="green">P.S: команда DocDoc благодарит вас за использавание услуг нашего портала!</p>
+                </div><i class="success-check"></i>
+            </div>
+            <div class="order-success-bottom-block">
+                <div class="link-to-favorites"><a href="#send-review" data-transition="flip">Попробовать снова</a>
+                </div><a href="http://docdoc.ru/" class="link-to-site">Перейти на основную версию сайта</a><i class="doctor-bottom"></i>
+            </div>
+        </div>
     </div>
     <div data-role="page" id="map-page" data-title="Информация о враче">
         <div id="rightPanelMap" data-role="panel" data-position="right" data-display="reveal" class="rightPanel">

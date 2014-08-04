@@ -1,0 +1,17 @@
+div(data-role='page', id='order-error', data-title='Ошибка!')
+	div.fixed(data-role='header', data-position='fixed', data-tap-toggle='false')
+		.fixed-inn
+			a.back-link(href='#doctor-form', data-transition='flip')
+			strong Записаться на прием
+	div.ui-content.success-block(role='main')
+		.order-success-content
+			strong.success-title.order-title Ошибка!
+			.success-text
+				p.gray Внимание! Ваша анкета записи не была отправлена. Попробуйте снова.Перед отправкой проверьте, все ли поля с информацией заполнены правильно.
+				p.green P.S: команда DocDoc благодарит вас за использавание услуг нашего портала!
+			i.success-check
+		.order-success-bottom-block
+			.link-to-favorites
+				a(href='#doctor-form', data-transition='flip') Попробовать снова
+			a.link-to-site(href='http://docdoc.ru/') Перейти на основную версию сайта
+			i.doctor-bottom
