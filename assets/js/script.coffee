@@ -24,3 +24,27 @@ $ ->
     $('.rightPanel').on 'panelbeforeclose', (event, ui) ->
         $(this).parents('div[data-role=\"page\"]').find('.mask-overlay').css 'display', 'none'
 
+    $('#send-review .send-review-btn-block').on 'click', (e) ->
+        link = $(this).find 'a'
+        form = $(this).parents 'form'
+        $('.send-review-form .form-item > .required').each ->
+            if $(this).val() is ''
+                link.attr('href', '#review-error').click()
+            else
+                link.attr('href', '#review-success').click()
+                form.submit()
+
+    $('#doctor-form .send-button-wrap').on 'click', (e) ->
+        link = $(this).find 'a'
+        form = $(this).parents 'form'
+        $('.doctor-order-form .form-item  .required').each ->
+            if $(this).val() is ''
+                link.attr('href', '#order-error').click()
+            else
+                link.attr('href', '#order-success').click()
+                form.submit()
+
+
+
+
+

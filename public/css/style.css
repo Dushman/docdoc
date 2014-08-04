@@ -6751,6 +6751,7 @@ strong.success-title {
 .doctor-order-form > form .form-item textarea {
   resize: none;
   height: 80px !important;
+  width: 100%;
 }
 
 .doctor-order-form > form .form-item input::-webkit-input-placeholder,
@@ -7001,6 +7002,7 @@ strong.success-title {
 .send-review-form .form-item textarea {
   resize: none;
   height: 80px !important;
+  width: 100%;
 }
 
 .send-review-form .form-item input::-webkit-input-placeholder,
@@ -7066,6 +7068,7 @@ a.textarea-spoiler > i {
   border-radius: 28px;
   margin: 0 20px;
   float: left;
+  z-index: 3;
 }
 
 .send-review-btn-block > a {
@@ -7080,6 +7083,7 @@ a.textarea-spoiler > i {
   padding: 13px 50px 13px 23px;
   letter-spacing: 1px;
   border-radius: 26px;
+  z-index: 1;
 }
 
 .send-review-btn-block > a,

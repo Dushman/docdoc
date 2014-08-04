@@ -23,7 +23,33 @@ $(function() {
   $('.rightPanel').on('panelbeforeopen', function(event, ui) {
     return $(this).parents('div[data-role=\"page\"]').find('.mask-overlay').css('display', 'block');
   });
-  return $('.rightPanel').on('panelbeforeclose', function(event, ui) {
+  $('.rightPanel').on('panelbeforeclose', function(event, ui) {
     return $(this).parents('div[data-role=\"page\"]').find('.mask-overlay').css('display', 'none');
+  });
+  $('#send-review .send-review-btn-block').on('click', function(e) {
+    var form, link;
+    link = $(this).find('a');
+    form = $(this).parents('form');
+    return $('.send-review-form .form-item > .required').each(function() {
+      if ($(this).val() === '') {
+        return link.attr('href', '#review-error').click();
+      } else {
+        link.attr('href', '#review-success').click();
+        return form.submit();
+      }
+    });
+  });
+  return $('#doctor-form .send-button-wrap').on('click', function(e) {
+    var form, link;
+    link = $(this).find('a');
+    form = $(this).parents('form');
+    return $('.doctor-order-form .form-item  .required').each(function() {
+      if ($(this).val() === '') {
+        return link.attr('href', '#order-error').click();
+      } else {
+        link.attr('href', '#order-success').click();
+        return form.submit();
+      }
+    });
   });
 });
