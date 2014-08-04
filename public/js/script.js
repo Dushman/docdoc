@@ -20,10 +20,10 @@ $(function() {
     $(this).parents('.form-item.item-3').next().slideDown().find('textarea').focus();
     return $(this).parents('.form-item.item-3').hide();
   });
-  $("#rightPanel").on("panelbeforeopen", function(event, ui) {
-    return $(this).parents("div[data-role=\"page\"]").find(".mask-overlay").css("display", "block");
+  $('.rightPanel').on('panelbeforeopen', function(event, ui) {
+    return $(this).parents('div[data-role=\"page\"]').find('.mask-overlay').css('display', 'block');
   });
-  return $("#rightPanel").on("panelbeforeclose", function(event, ui) {
-    return $(this).parents("div[data-role=\"page\"]").find(".mask-overlay").css("display", "none");
+  return $('.rightPanel').on('panelbeforeclose', function(event, ui) {
+    return $(this).parents('div[data-role=\"page\"]').find('.mask-overlay').css('display', 'none');
   });
 });
