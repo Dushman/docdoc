@@ -1,7 +1,3 @@
-#page-doctor .ui-panel-page-content-open + .mask-overlay,
-#map-page .ui-panel-page-content-open + .mask-overlay
-	display block
-
 #page-doctor div[data-role='footer'],
 #map-page div[data-role='footer']
 	background-color #fff
@@ -124,16 +120,18 @@
 .doctor-info-block .right-block
 	overflow hidden
 	position relative
-	padding-right 25px
+	padding-right 30px
 
 .doctor-info-block .right-block a.link-to-map
 	display block
 	text-indent -9999em
 	position absolute
-	top 5px
+	top -5px
 	right 0
 	text-decoration none
-	sprite($s-location_btn)
+	background transparent url('../img/pics/location_btn.png') no-repeat 100% 50%
+	width 30px
+	height 30px
 
 .doctor-info-block .right-block h3.name
 	margin 0 0 10px 0

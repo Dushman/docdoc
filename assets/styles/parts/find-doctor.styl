@@ -20,8 +20,11 @@ div[data-role='footer'] .fixed-inn span.filter-number
 	position absolute
 	right 0
 	top 50%
-	margin-top -6.5px
-	sprite($s-menu_btn)
+	margin-top -15px
+	background transparent url('../img/pics/menu_btn.png') no-repeat 100% 50%
+	width 30px
+	height 30px
+	z-index 2
 
 p.description
 	margin 0
@@ -191,9 +194,6 @@ p.description
 	z-index 1000
 	display none
 
-#find-doctor .ui-panel-page-content-open + .mask-overlay
-	display block
-
 .padding-zero
 	padding 0
 
@@ -339,3 +339,10 @@ p.description
 	right 15px
 	top 26px
 	sprite($s-green-arrow)
+
+#find-doctor .ui-select .ui-btn select,
+.rightPanel .ui-select .ui-btn select
+	height 25px
+	min-height 25px
+	top -5px
+	font-size 12px
