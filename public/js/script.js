@@ -43,7 +43,7 @@ $(function() {
     var form, link;
     link = $(this).find('a');
     form = $(this).parents('form');
-    return $('.doctor-order-form .form-item  .required').each(function() {
+    return $('.doctor-order-form .form-item .required').each(function() {
       if ($(this).val() === '') {
         return link.attr('href', '#order-error').click();
       } else {

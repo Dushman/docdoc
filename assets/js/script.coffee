@@ -37,7 +37,7 @@ $ ->
     $('#doctor-form .send-button-wrap').on 'click', (e) ->
         link = $(this).find 'a'
         form = $(this).parents 'form'
-        $('.doctor-order-form .form-item  .required').each ->
+        $('.doctor-order-form .form-item .required').each ->
             if $(this).val() is ''
                 link.attr('href', '#order-error').click()
             else

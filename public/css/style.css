@@ -6786,6 +6786,7 @@ strong.success-title {
   float: left;
   border: 3px solid #e9d9d3;
   border-radius: 28px;
+  z-index: 3;
 }
 
 .send-button-wrap > a {
@@ -6805,6 +6806,7 @@ strong.success-title {
   cursor: pointer;
   margin: 0;
   position: relative;
+  z-index: 1;
 }
 
 .send-button-wrap > a:hover,
