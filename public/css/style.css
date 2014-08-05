@@ -7996,6 +7996,8 @@ a[href^='http://maps.google.com/maps'] {
 
   #index-page div[data-role="footer"] .call-us {
     margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   #index-page div[data-role="footer"] > i {
