@@ -7187,6 +7187,8 @@ a.textarea-spoiler > i {
   padding: 0;
   min-height: inherit;
   height: 100%;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
 }
 
 #map-page div[data-role='footer'] {
@@ -7234,6 +7236,7 @@ a[href^='http://maps.google.com/maps'] {
 
 .infobox-inn {
   position: relative;
+  width: 210px;
   overflow: hidden;
   background-color: #fff;
   border-radius: 8px;
@@ -8060,6 +8063,39 @@ a[href^='http://maps.google.com/maps'] {
     padding: 0 150px;
   }
 
+  .panel-btn {
+    background-image: url("../img/pics/ipad/menu_btn.png");
+    background-position: 100% 50%;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+  }
+
+  a.close-map {
+    background-image: url("../img/pics/ipad/close_map_btn.png");
+    background-position: 0 0;
+    width: 47px;
+    height: 46px;
+    background-repeat: no-repeat;
+    top: 26px;
+    right: 24px;
+  }
+
+  .infobox-inn {
+    width: 310px;
+    margin-left: -50px;
+  }
+
+  #infobox i.triangle {
+    margin-left: -45px;
+  }
+
+  .infobox-inn .right-block strong,
+  .infobox-inn .right-block em {
+    font-size: 16px;
+  }
+
   div.fixed[data-role='header'] {
     padding: 0 30px;
   }
@@ -8471,6 +8507,26 @@ a[href^='http://maps.google.com/maps'] {
     background-size: 14.5px;
     width: 14.5px;
     height: 27.5px;
+    background-repeat: no-repeat;
+  }
+
+  .panel-btn {
+    background-image: url("../img/retina/ipad/menu_btn.png");
+    background-position: 100% 50%;
+    -webkit-background-size: 29.5px;
+    background-size: 29.5px;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+  }
+
+  a.close-map {
+    background-image: url("../img/retina/ipad/close_map_btn.png");
+    background-position: 0 0;
+    -webkit-background-size: 46.5px;
+    background-size: 46.5px;
+    width: 46.5px;
+    height: 46px;
     background-repeat: no-repeat;
   }
 }

@@ -949,16 +949,13 @@
                                 ),
                                     marker = new google.maps.Marker({
                                         position: mapLatLng,
-                                        visible: false
+                                        visible: true
                                     });
                                 map.setCenter(mapLatLng, mapOptions.zoom);
                                 marker.setMap(map);
                             }
                             var myOptions = {
                                 content: document.getElementById('infobox'),
-                                boxStyle: {
-                                    width: '210px'
-                                },
                                 disableAutoPan: true,
                                 pixelOffset: new google.maps.Size(-100, -14),
                                 position: mapLatLng,
