@@ -7857,6 +7857,19 @@ a[href^='http://maps.google.com/maps'] {
     top: 10px;
   }
 
+  #select-metro .c-content ul[data-role='listview'] li {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  #select-metro .c-content ul[data-role='listview'] li.ui-li-divider {
+    padding: 9px 0;
+  }
+
+  #select-metro .c-content ul[data-role='listview'] li.ui-li-divider:first-child {
+    padding-top: 0;
+  }
+
   .index-img-wrapper i {
     background-image: url("../img/pics/ipad/logo-h.png");
     background-position: 0 0;
@@ -8129,6 +8142,20 @@ a[href^='http://maps.google.com/maps'] {
     font-size: 14px;
     right: 58px;
     top: 10px;
+  }
+
+  #select-metro .c-content ul[data-role='listview'] li {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+
+  #select-metro .c-content ul[data-role='listview'] li.ui-li-divider {
+    font-size: 18px;
+    padding: 12px 0;
+  }
+
+  #select-metro .c-content ul[data-role='listview'] li.ui-li-divider:first-child {
+    padding-top: 0;
   }
 
   #index-page div[data-role='header'] {
