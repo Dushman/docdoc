@@ -7769,7 +7769,191 @@ a[href^='http://maps.google.com/maps'] {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .vertical-center {
-    padding: 0 278px;
+    padding: 0 335px;
+  }
+
+  .index-img-wrapper i {
+    background-image: url("../img/pics/ipad/logo-h.png");
+    background-position: 0 0;
+    width: 154px;
+    height: 53px;
+    background-repeat: no-repeat;
+  }
+
+  .city-dropdown-wrapper span:first-child {
+    font-size: 14px;
+  }
+
+  #index-page .city-dropdown-wrapper i {
+    top: 8px;
+  }
+
+  #index-page div[data-role='header'] {
+    padding-top: 1em;
+  }
+
+  .index-img-wrapper {
+    margin-top: 0;
+  }
+
+  #index-page div[data-role='footer'] > i {
+    background-image: url("../img/pics/ipad/doctor_image_bottom-h.png");
+    background-position: 0 0;
+    width: 88px;
+    height: 190px;
+    background-repeat: no-repeat;
+    right: 5px;
+    bottom: -45px;
+  }
+
+  #index-page ul.items-listing li.item-1 i {
+    background-image: url("../img/pics/ipad/note-icon-h.png");
+    background-position: 0 0;
+    width: 16px;
+    height: 20px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+  }
+
+  #index-page ul.items-listing li.item-2 i {
+    background-image: url("../img/pics/ipad/doctors-icon-h.png");
+    background-position: 0 0;
+    width: 16px;
+    height: 20px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+  }
+
+  #index-page ul.items-listing li.item-3 i {
+    background-image: url("../img/pics/ipad/reviews-icon-h.png");
+    background-position: 0 0;
+    width: 16px;
+    height: 20px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+  }
+
+  .f-s a span {
+    background-image: url("../img/pics/ipad/spec-h.png");
+    background-position: 0 0;
+    width: 31px;
+    height: 31px;
+    background-repeat: no-repeat;
+  }
+
+  .f-m a span {
+    background-image: url("../img/pics/ipad/metro-h.png");
+    background-position: 0 0;
+    width: 31px;
+    height: 31px;
+    background-repeat: no-repeat;
+  }
+
+  .find-doctor a.ui-link i {
+    background-image: url("../img/pics/ipad/lupa-white-h.png");
+    background-position: 0 0;
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    right: 24px;
+    top: 13px;
+  }
+
+  #index-page div[data-role='footer'] .call-us i.iphone-bg {
+    background-image: url("../img/pics/ipad/iphone-h.png");
+    background-position: 0 0;
+    width: 17px;
+    height: 28px;
+    background-repeat: no-repeat;
+  }
+
+  #index-page ul.items-listing {
+    padding-top: 34px;
+    max-width: none;
+    padding-right: 0;
+  }
+
+  #index-page ul.items-listing li {
+    padding-left: 23px;
+  }
+
+  #index-page ul.items-listing li strong {
+    font-size: 13px;
+  }
+
+  #index-page ul.items-listing li span {
+    font-size: 10px;
+  }
+
+  .index-main-block > h3:first-child {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+
+  .imb-content {
+    padding: 20px 22px 22px 22px;
+    margin-bottom: 22px;
+  }
+
+  .imb-content p {
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 20px;
+  }
+
+  .ui-page-theme-a .top-index-link a {
+    font-size: 14px;
+    padding: 12px 43px;
+  }
+
+  .top-index-link a i {
+    right: 15px;
+    top: 17px;
+  }
+
+  .top-index-link {
+    border-radius: 18.5px;
+  }
+
+  .find-doctor {
+    margin: 0 22px;
+  }
+
+  .find-doctor a.ui-link {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+
+  .find-doctor a.ui-link i {
+    top: 9px;
+    right: 18px;
+  }
+
+  #index-page div[data-role='footer'] {
+    padding-top: 22px;
+    padding-bottom: 25px;
+  }
+
+  #index-page div[data-role='footer'] .call-us > strong {
+    font-size: 15px;
+  }
+
+  #index-page div[data-role='footer'] .call-us > span {
+    font-size: 13px;
+  }
+
+  #index-page div[data-role='footer'] .call-us {
+    padding: 18px 0 18px 28px;
+    margin: 4px 110px 16px 0;
+  }
+
+  #index-page div[data-role='footer'] .call-us i.iphone-bg {
+    top: 19px;
+  }
+
+  #index-page div[data-role='footer'] a.link-to-site {
+    font-size: 13px;
+    letter-spacing: -0.5px;
   }
 }
 
@@ -7981,7 +8165,7 @@ a[href^='http://maps.google.com/maps'] {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .index-img-wrapper i {
     background-image: url("../img/retina/ipad/logo.png");
     background-position: 0 0;
@@ -7992,7 +8176,7 @@ a[href^='http://maps.google.com/maps'] {
     background-repeat: no-repeat;
   }
 
-  #index-page div[data-role="footer"] > i {
+  #index-page div[data-role='footer'] > i {
     background-image: url("../img/retina/ipad/doctor_image_bottom.png");
     background-position: 0 0;
     -webkit-background-size: 123px;
@@ -8045,20 +8229,20 @@ a[href^='http://maps.google.com/maps'] {
   .f-s a span {
     background-image: url("../img/retina/ipad/spec.png");
     background-position: 0 0;
-    -webkit-background-size: 43px;
-    background-size: 43px;
-    width: 43px;
-    height: 43px;
+    -webkit-background-size: 43.5px;
+    background-size: 43.5px;
+    width: 43.5px;
+    height: 43.5px;
     background-repeat: no-repeat;
   }
 
   .f-m a span {
     background-image: url("../img/retina/ipad/metro.png");
     background-position: 0 0;
-    -webkit-background-size: 43px;
-    background-size: 43px;
-    width: 43px;
-    height: 43px;
+    -webkit-background-size: 43.5px;
+    background-size: 43.5px;
+    width: 43.5px;
+    height: 43.5px;
     background-repeat: no-repeat;
   }
 
@@ -8069,6 +8253,100 @@ a[href^='http://maps.google.com/maps'] {
     background-size: 29.5px;
     width: 29.5px;
     height: 30px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .index-img-wrapper i {
+    background-image: url("../img/retina/ipad/logo-h.png");
+    background-position: 0 0;
+    width: 154px;
+    height: 53px;
+    -webkit-background-size: 154px;
+    background-size: 154px;
+    background-repeat: no-repeat;
+  }
+
+  #index-page div[data-role='footer'] > i {
+    background-image: url("../img/retina/ipad/doctor_image_bottom-h.png");
+    background-position: 0 0;
+    -webkit-background-size: 88px;
+    background-size: 88px;
+    width: 88px;
+    height: 189.5px;
+    background-repeat: no-repeat;
+  }
+
+  #index-page ul.items-listing li.item-1 i {
+    background-image: url("../img/retina/ipad/note-icon-h.png");
+    background-position: 0 0;
+    -webkit-background-size: 15.5px;
+    background-size: 15.5px;
+    width: 15.5px;
+    height: 19.5px;
+    background-repeat: no-repeat;
+  }
+
+  #index-page ul.items-listing li.item-2 i {
+    background-image: url("../img/retina/ipad/doctors-icon-h.png");
+    background-position: 0 0;
+    -webkit-background-size: 16px;
+    background-size: 16px;
+    width: 16px;
+    height: 19.5px;
+    background-repeat: no-repeat;
+  }
+
+  #index-page ul.items-listing li.item-3 i {
+    background-image: url("../img/retina/ipad/reviews-icon-h.png");
+    background-position: 0 0;
+    -webkit-background-size: 15.5px;
+    background-size: 15.5px;
+    width: 15.5px;
+    height: 19.5px;
+    background-repeat: no-repeat;
+  }
+
+  .f-s a span {
+    background-image: url("../img/retina/ipad/spec-h.png");
+    background-position: 0 0;
+    -webkit-background-size: 31px;
+    background-size: 31px;
+    width: 31px;
+    height: 31px;
+    background-repeat: no-repeat;
+    top: 3.5px;
+  }
+
+  .f-m a span {
+    background-image: url("../img/retina/ipad/metro-h.png");
+    background-position: 0 0;
+    -webkit-background-size: 31px;
+    background-size: 31px;
+    width: 31px;
+    height: 31px;
+    background-repeat: no-repeat;
+    top: 3.5px;
+  }
+
+  .find-doctor a.ui-link i {
+    background-image: url("../img/retina/ipad/lupa-white-h.png");
+    background-position: 0 0;
+    -webkit-background-size: 21.5px;
+    background-size: 21.5px;
+    width: 21.5px;
+    height: 21.5px;
+    background-repeat: no-repeat;
+  }
+
+  #index-page div[data-role="footer"] .call-us i.iphone-bg {
+    background-image: url("../img/retina/ipad/iphone-h.png");
+    background-position: 0 0;
+    -webkit-background-size: 17px;
+    background-size: 17px;
+    width: 17px;
+    height: 27.5px;
     background-repeat: no-repeat;
   }
 }
