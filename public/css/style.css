@@ -7960,10 +7960,11 @@ a[href^='http://maps.google.com/maps'] {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .vertical-center {
     padding: 0 278px;
+    margin-top: -5px;
   }
 
   #index-page ul.items-listing {
-    padding-top: 30px;
+    padding-top: 20px;
   }
 
   .index-main-block > h3:first-child {
@@ -7971,7 +7972,7 @@ a[href^='http://maps.google.com/maps'] {
   }
 
   .imb-content {
-    padding-top: 20px;
+    padding-top: 16px;
     padding-bottom: 24px;
   }
 
