@@ -7962,6 +7962,90 @@ a[href^='http://maps.google.com/maps'] {
     padding: 0 150px;
   }
 
+  div.fixed[data-role='header'] {
+    padding: 0 30px;
+  }
+
+  .fixed-inn {
+    padding: 22px 0;
+  }
+
+  .fixed .fixed-inn > strong {
+    font-size: 27px;
+  }
+
+  .fixed .fixed-inn .back-link {
+    background-image: url("../img/pics/ipad/back-link-bg.png");
+    background-position: 0 50%;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+  }
+
+  .fixed form.ui-filterable > i {
+    background-image: url("../img/pics/ipad/lupa-orange.png");
+    background-position: 0 0;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    top: 33px;
+    right: 185px;
+  }
+
+  .c-content ul[data-role='listview'] li > i {
+    background-image: url("../img/pics/ipad/gray-right-arrow.png");
+    background-position: 0 0;
+    width: 15px;
+    height: 28px;
+    background-repeat: no-repeat;
+    margin-top: -14px;
+    right: 30px;
+  }
+
+  .fixed form.ui-filterable input {
+    font-size: 20px;
+    border-width: 3px;
+    padding: 0 60px 0 30px;
+    height: 47px;
+    line-height: 47px;
+  }
+
+  .fixed form.ui-filterable {
+    padding: 25px 167px 8px 167px;
+  }
+
+  .ui-content.c-content {
+    padding-left: 72px;
+  }
+
+  .c-content ul[data-role='listview'] li {
+    padding: 15px 105px 15px 0;
+  }
+
+  .c-content ul[data-role='listview'] li.ui-li-divider:first-child {
+    padding-top: 0;
+  }
+
+  .c-content ul[data-role='listview'] li.ui-li-divider {
+    font-size: 18px;
+    padding: 12px 0;
+  }
+
+  .c-content ul[data-role='listview'] li > strong {
+    font-size: 20px;
+  }
+
+  .c-content ul[data-role='listview'] li > span {
+    font-size: 14px;
+  }
+
+  .c-content ul[data-role='listview'] li > em {
+    font-size: 14px;
+    right: 58px;
+    top: 10px;
+  }
+
   #index-page div[data-role='header'] {
     padding-top: 1em;
   }
@@ -8155,14 +8239,6 @@ a[href^='http://maps.google.com/maps'] {
     font-size: 17px;
     letter-spacing: -0.5px;
   }
-
-  div.fixed[data-role='header'] {
-    padding: 0 2em;
-  }
-
-  .ui-content.c-content {
-    padding-left: 4em;
-  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
@@ -8253,6 +8329,36 @@ a[href^='http://maps.google.com/maps'] {
     background-size: 29.5px;
     width: 29.5px;
     height: 30px;
+    background-repeat: no-repeat;
+  }
+
+  .fixed .fixed-inn .back-link {
+    background-image: url("../img/retina/ipad/back-link-bg.png");
+    background-position: 0 50%;
+    -webkit-background-size: 31px;
+    background-size: 31px;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+  }
+
+  .fixed form.ui-filterable > i {
+    background-image: url("../img/retina/ipad/lupa-orange.png");
+    background-position: 0 0;
+    -webkit-background-size: 29.5px;
+    background-size: 29.5px;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+  }
+
+  .c-content ul[data-role='listview'] li > i {
+    background-image: url("../img/retina/ipad/gray-right-arrow.png");
+    background-position: 0 0;
+    -webkit-background-size: 14.5px;
+    background-size: 14.5px;
+    width: 14.5px;
+    height: 27.5px;
     background-repeat: no-repeat;
   }
 }
