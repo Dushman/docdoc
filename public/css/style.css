@@ -8004,6 +8004,10 @@ a[href^='http://maps.google.com/maps'] {
   #index-page div[data-role="footer"] > i {
     bottom: -105px;
   }
+
+  #index-page div[data-role="footer"] .call-us i.iphone-bg {
+    top: 21px;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
