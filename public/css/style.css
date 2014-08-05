@@ -7912,7 +7912,7 @@ a[href^='http://maps.google.com/maps'] {
   }
 
   .f-s {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .find-doctor a.ui-link {
@@ -7960,6 +7960,36 @@ a[href^='http://maps.google.com/maps'] {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .vertical-center {
     padding: 0 278px;
+  }
+
+  #index-page ul.items-listing {
+    padding-top: 30px;
+  }
+
+  .index-main-block > h3:first-child {
+    padding-top: 20px;
+  }
+
+  .imb-content {
+    padding-top: 20px;
+    padding-bottom: 24px;
+  }
+
+  .imb-content p {
+    margin-bottom: 20px;
+  }
+
+  #index-page div[data-role="footer"] {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #index-page .ui-content {
+    padding-top: 18px;
+  }
+
+  .f-s {
+    margin-bottom: 16px;
   }
 }
 
