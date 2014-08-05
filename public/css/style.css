@@ -5049,7 +5049,6 @@ html body .ui-group-theme-a .ui-bar-inherit {
   position: relative;
   overflow: hidden;
   clear: both;
-  height: 49px;
   margin-top: -10px;
 }
 
@@ -7758,6 +7757,306 @@ a[href^='http://maps.google.com/maps'] {
     background-size: 103.5px;
     width: 103.5px;
     height: 14.5px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #index-page div[data-role="header"] {
+    padding-top: 1em;
+  }
+
+  .city-dropdown-wrapper span:first-child {
+    font-size: 16px;
+  }
+
+  .index-img-wrapper {
+    margin-top: 0;
+  }
+
+  .index-img-wrapper i {
+    background-image: url("../img/pics/ipad/logo.png");
+    background-position: 0 0;
+    width: 215px;
+    height: 74px;
+    background-repeat: no-repeat;
+  }
+
+  #index-page ul.items-listing {
+    padding-top: 46px;
+    max-width: none;
+    padding-right: 0;
+  }
+
+  #index-page .ui-content {
+    padding-top: 24px;
+  }
+
+  #index-page ul.items-listing li strong {
+    font-size: 18px;
+  }
+
+  #index-page ul.items-listing li span {
+    font-size: 13px;
+  }
+
+  #index-page div[data-role="footer"] > i {
+    background-image: url("../img/pics/ipad/doctor_image_bottom.png");
+    background-position: 0 0;
+    width: 123px;
+    height: 265px;
+    background-repeat: no-repeat;
+    right: -3px;
+    bottom: -45px;
+  }
+
+  #index-page ul.items-listing li {
+    padding-left: 32px;
+  }
+
+  #index-page ul.items-listing li.item-1 i {
+    background-image: url("../img/pics/ipad/note-icon.png");
+    background-position: 0 0;
+    width: 22px;
+    height: 28px;
+    background-repeat: no-repeat;
+  }
+
+  #index-page ul.items-listing li.item-2 i {
+    background-image: url("../img/pics/ipad/doctors-icon.png");
+    background-position: 0 0;
+    width: 26px;
+    height: 32px;
+    background-repeat: no-repeat;
+  }
+
+  #index-page ul.items-listing li.item-3 i {
+    background-image: url("../img/pics/ipad/reviews-icon.png");
+    background-position: 0 0;
+    width: 22px;
+    height: 27px;
+    background-repeat: no-repeat;
+  }
+
+  #index-page div[data-role="footer"] .call-us i.iphone-bg {
+    background-image: url("../img/pics/ipad/iphone.png");
+    background-position: 0 0;
+    width: 24px;
+    height: 39px;
+    background-repeat: no-repeat;
+  }
+
+  .f-s a span {
+    background-image: url("../img/pics/ipad/spec.png");
+    background-position: 0 0;
+    width: 43px;
+    height: 43px;
+    background-repeat: no-repeat;
+  }
+
+  .f-m a span {
+    background-image: url("../img/pics/ipad/metro.png");
+    background-position: 0 0;
+    width: 43px;
+    height: 43px;
+    background-repeat: no-repeat;
+  }
+
+  .find-doctor a.ui-link i {
+    background-image: url("../img/pics/ipad/lupa-white.png");
+    background-position: 0 0;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    right: 24px;
+    top: 13px;
+  }
+
+  .index-main-block > h3:first-child {
+    font-size: 28px;
+    padding-top: 28px;
+    padding-bottom: 8px;
+  }
+
+  .imb-content p {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 30px;
+  }
+
+  .imb-content {
+    padding: 28px 30px 30px 30px;
+    margin-bottom: 30px;
+  }
+
+  .ui-page-theme-a .top-index-link a {
+    font-size: 20px;
+    padding: 16px 60px;
+  }
+
+  .ui-page-theme-a .top-index-link a span {
+    top: 4.5px;
+  }
+
+  .top-index-link a i {
+    border-width: 7px;
+  }
+
+  .top-index-link {
+    border-radius: 26px;
+  }
+
+  .top-index-link a i {
+    right: 20px;
+    top: 23px;
+  }
+
+  .f-s {
+    margin-bottom: 30px;
+  }
+
+  .find-doctor a.ui-link {
+    font-size: 22px;
+    border-width: 3px;
+    padding: 20px 0 20px 50px;
+    border-radius: 45px;
+    letter-spacing: 3px;
+  }
+
+  .find-doctor {
+    margin: 0 30px;
+    border-width: 5px;
+    border-radius: 45px;
+  }
+
+  #index-page div[data-role="footer"] {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  #index-page div[data-role="footer"] .call-us {
+    padding: 25px 0 25px 40px;
+    margin: 4px 145px 40px 0;
+  }
+
+  #index-page div[data-role="footer"] .call-us > strong {
+    font-size: 22px;
+  }
+
+  #index-page div[data-role="footer"] .call-us i.iphone-bg {
+    top: 25px;
+  }
+
+  #index-page div[data-role="footer"] .call-us > span {
+    font-size: 18px;
+  }
+
+  #index-page div[data-role="footer"] a.link-to-site {
+    font-size: 17px;
+    letter-spacing: -0.5px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .vertical-center {
+    padding: 0 278px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .vertical-center {
+    padding: 0 150px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .index-img-wrapper i {
+    background-image: url("../img/retina/ipad/logo.png");
+    background-position: 0 0;
+    width: 214.5px;
+    height: 73.5px;
+    -webkit-background-size: 214.5px;
+    background-size: 214.5px;
+    background-repeat: no-repeat;
+  }
+
+  #index-page div[data-role="footer"] > i {
+    background-image: url("../img/retina/ipad/doctor_image_bottom.png");
+    background-position: 0 0;
+    -webkit-background-size: 123px;
+    background-size: 123px;
+    width: 123px;
+    height: 264.5px;
+    background-repeat: no-repeat;
+  }
+
+  #index-page ul.items-listing li.item-1 i {
+    background-image: url("../img/retina/ipad/note-icon.png");
+    background-position: 0 0;
+    -webkit-background-size: 21.5px;
+    background-size: 21.5px;
+    width: 21.5px;
+    height: 27.5px;
+    background-repeat: no-repeat;
+  }
+
+  #index-page ul.items-listing li.item-2 i {
+    background-image: url("../img/retina/ipad/doctors-icon.png");
+    background-position: 0 0;
+    -webkit-background-size: 22.5px;
+    background-size: 22.5px;
+    width: 22.5px;
+    height: 27.5px;
+    background-repeat: no-repeat;
+  }
+
+  #index-page ul.items-listing li.item-3 i {
+    background-image: url("../img/retina/ipad/reviews-icon.png");
+    background-position: 0 0;
+    -webkit-background-size: 21.5px;
+    background-size: 21.5px;
+    width: 21.5px;
+    height: 27px;
+    background-repeat: no-repeat;
+  }
+
+  #index-page div[data-role="footer"] .call-us i.iphone-bg {
+    background-image: url("../img/retina/ipad/iphone.png");
+    background-position: 0 0;
+    -webkit-background-size: 23.5px;
+    background-size: 23.5px;
+    width: 23.5px;
+    height: 38.5px;
+    background-repeat: no-repeat;
+  }
+
+  .f-s a span {
+    background-image: url("../img/retina/ipad/spec.png");
+    background-position: 0 0;
+    -webkit-background-size: 43px;
+    background-size: 43px;
+    width: 43px;
+    height: 43px;
+    background-repeat: no-repeat;
+  }
+
+  .f-m a span {
+    background-image: url("../img/retina/ipad/metro.png");
+    background-position: 0 0;
+    -webkit-background-size: 43px;
+    background-size: 43px;
+    width: 43px;
+    height: 43px;
+    background-repeat: no-repeat;
+  }
+
+  .find-doctor a.ui-link i {
+    background-image: url("../img/retina/ipad/lupa-white.png");
+    background-position: 0 0;
+    -webkit-background-size: 29.5px;
+    background-size: 29.5px;
+    width: 29.5px;
+    height: 30px;
     background-repeat: no-repeat;
   }
 }
