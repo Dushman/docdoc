@@ -7762,7 +7762,23 @@ a[href^='http://maps.google.com/maps'] {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  #index-page div[data-role="header"] {
+  .vertical-center {
+    position: relative;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .vertical-center {
+    padding: 0 278px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .vertical-center {
+    padding: 0 150px;
+  }
+
+  #index-page div[data-role='header'] {
     padding-top: 1em;
   }
 
@@ -7800,7 +7816,7 @@ a[href^='http://maps.google.com/maps'] {
     font-size: 13px;
   }
 
-  #index-page div[data-role="footer"] > i {
+  #index-page div[data-role='footer'] > i {
     background-image: url("../img/pics/ipad/doctor_image_bottom.png");
     background-position: 0 0;
     width: 123px;
@@ -7838,7 +7854,7 @@ a[href^='http://maps.google.com/maps'] {
     background-repeat: no-repeat;
   }
 
-  #index-page div[data-role="footer"] .call-us i.iphone-bg {
+  #index-page div[data-role='footer'] .call-us i.iphone-bg {
     background-image: url("../img/pics/ipad/iphone.png");
     background-position: 0 0;
     width: 24px;
@@ -7929,90 +7945,39 @@ a[href^='http://maps.google.com/maps'] {
     border-radius: 45px;
   }
 
-  #index-page div[data-role="footer"] {
+  #index-page div[data-role='footer'] {
     padding-top: 40px;
     padding-bottom: 40px;
   }
 
-  #index-page div[data-role="footer"] .call-us {
+  #index-page div[data-role='footer'] .call-us {
     padding: 25px 0 25px 40px;
     margin: 4px 145px 40px 0;
   }
 
-  #index-page div[data-role="footer"] .call-us > strong {
+  #index-page div[data-role='footer'] .call-us > strong {
     font-size: 22px;
   }
 
-  #index-page div[data-role="footer"] .call-us i.iphone-bg {
+  #index-page div[data-role='footer'] .call-us i.iphone-bg {
     top: 25px;
   }
 
-  #index-page div[data-role="footer"] .call-us > span {
+  #index-page div[data-role='footer'] .call-us > span {
     font-size: 18px;
   }
 
-  #index-page div[data-role="footer"] a.link-to-site {
+  #index-page div[data-role='footer'] a.link-to-site {
     font-size: 17px;
     letter-spacing: -0.5px;
   }
-}
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  .vertical-center {
-    padding: 0 278px;
-    margin-top: -15px;
-    position: relative;
+  div.fixed[data-role='header'] {
+    padding: 0 2em;
   }
 
-  #index-page ul.items-listing {
-    padding-top: 20px;
-  }
-
-  .index-main-block > h3:first-child {
-    padding-top: 15px;
-  }
-
-  .imb-content {
-    padding-top: 16px;
-    padding-bottom: 24px;
-    margin-bottom: 20px;
-  }
-
-  .imb-content p {
-    margin-bottom: 20px;
-  }
-
-  #index-page div[data-role="footer"] {
-    padding-top: 10px;
-    padding-bottom: 20px;
-  }
-
-  #index-page .ui-content {
-    padding-top: 18px;
-  }
-
-  .f-s {
-    margin-bottom: 16px;
-  }
-
-  #index-page div[data-role="footer"] .call-us {
-    margin-bottom: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  #index-page div[data-role="footer"] > i {
-    bottom: -105px;
-  }
-
-  #index-page div[data-role="footer"] .call-us i.iphone-bg {
-    top: 21px;
-  }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .vertical-center {
-    padding: 0 150px;
+  .ui-content.c-content {
+    padding-left: 4em;
   }
 }
 
