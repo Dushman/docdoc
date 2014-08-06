@@ -8243,6 +8243,132 @@ a[href^='http://maps.google.com/maps'] {
     padding: 0 150px;
   }
 
+  #doctor-form .doctor-info-block {
+    margin-left: 138px;
+    margin-right: 138px;
+    padding-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+
+  #doctor-form .doctor-order-form {
+    padding: 30px 195px 35px 195px;
+  }
+
+  .doctor-info-block .right-block h3.name {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .doctor-info-block .right-block .prof {
+    font-size: 16px;
+  }
+
+  .doctor-order-form > form .form-item {
+    margin-bottom: 15px;
+  }
+
+  .doctor-order-form > form .form-item > i {
+    left: 4px;
+  }
+
+  .doctor-order-form > form .form-item.item-1 > i {
+    background-image: url("../img/pics/ipad/of-1.png");
+    background-position: 0 0;
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+  }
+
+  .doctor-order-form > form .form-item.item-2 > i {
+    background-image: url("../img/pics/ipad/of-2.png");
+    background-position: 0 0;
+    width: 46px;
+    height: 45px;
+    background-repeat: no-repeat;
+  }
+
+  .doctor-order-form > form .form-item.item-3 > i {
+    background-image: url("../img/pics/ipad/of-3.png");
+    background-position: 0 0;
+    width: 46px;
+    height: 45px;
+    background-repeat: no-repeat;
+  }
+
+  .doctor-order-form > form .form-item.item-3 {
+    margin-bottom: 92px;
+  }
+
+  .doctor-order-form > form .form-item input[type="text"],
+  .doctor-order-form > form .form-item input[type="tel"],
+  .doctor-order-form > form .form-item textarea {
+    font-size: 20px;
+    padding: 12px 10px 13px 60px;
+    border-radius: 30px;
+  }
+
+  .doctor-order-form > form .form-item textarea {
+    height: 130px !important;
+  }
+
+  .send-button-wrap > a > i {
+    background-image: url("../img/pics/ipad/check-white.png");
+    background-position: 0 0;
+    width: 22px;
+    height: 32px;
+    background-repeat: no-repeat;
+    right: 28px;
+    top: 9px;
+  }
+
+  #doctor-form .doctor-order-form i.doctor-bottom {
+    background-image: url("../img/pics/ipad/doctor-order-bottom.png");
+    background-position: 0 0;
+    width: 155px;
+    height: 202px;
+    background-repeat: no-repeat;
+    right: 160px;
+    left: auto;
+    bottom: 65px;
+  }
+
+  .send-button-wrap {
+    border-width: 4px;
+    border-radius: 35px;
+    margin-bottom: 28px;
+  }
+
+  .send-button-wrap > a {
+    border-width: 3px;
+    font-size: 22px;
+    padding: 20px 68px 20px 30px;
+    border-radius: 35px;
+  }
+
+  #doctor-form .call-us > strong {
+    font-size: 22px;
+    letter-spacing: -1px;
+  }
+
+  #doctor-form .call-us > span {
+    font-size: 18px;
+  }
+
+  #doctor-form a.link-to-site {
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+
+  #doctor-form .call-us {
+    padding: 28px 0 28px 38px;
+    margin-bottom: 25px;
+  }
+
+  #doctor-form .call-us > i.iphone-bg {
+    top: 28px;
+  }
+
   .ui-panel-page-content-open.ui-panel-position-right {
     margin-right: 500px;
     right: 500px;
@@ -8597,7 +8723,8 @@ a[href^='http://maps.google.com/maps'] {
     background-repeat: no-repeat;
   }
 
-  #index-page div[data-role='footer'] .call-us i.iphone-bg {
+  #index-page div[data-role='footer'] .call-us i.iphone-bg,
+  #doctor-form .call-us i.iphone-bg {
     background-image: url("../img/pics/ipad/iphone.png");
     background-position: 0 0;
     width: 24px;
@@ -8767,7 +8894,8 @@ a[href^='http://maps.google.com/maps'] {
     background-repeat: no-repeat;
   }
 
-  #index-page div[data-role="footer"] .call-us i.iphone-bg {
+  #index-page div[data-role="footer"] .call-us i.iphone-bg,
+  #doctor-form .call-us i.iphone-bg {
     background-image: url("../img/retina/ipad/iphone.png");
     background-position: 0 0;
     -webkit-background-size: 23.5px;
@@ -8894,6 +9022,50 @@ a[href^='http://maps.google.com/maps'] {
     background-size: 14.5px;
     width: 14.5px;
     height: 27px;
+    background-repeat: no-repeat;
+  }
+
+  .doctor-order-form > form .form-item.item-1 > i {
+    background-image: url("../img/retina/ipad/of-1.png");
+    background-position: 0 0;
+    -webkit-background-size: 45px;
+    background-size: 45px;
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+  }
+
+  .doctor-order-form > form .form-item.item-2 > i {
+    background-image: url("../img/retina/ipad/of-2.png");
+    background-position: 0 0;
+    -webkit-background-size: 45.5px;
+    background-size: 45.5px;
+    width: 45.5px;
+    height: 45px;
+    background-repeat: no-repeat;
+  }
+
+  .doctor-order-form > form .form-item.item-3 > i {
+    background-image: url("../img/retina/ipad/of-3.png");
+    background-position: 0 0;
+    -webkit-background-size: 45.5px;
+    background-size: 45.5px;
+    width: 45.5px;
+    height: 45px;
+    background-repeat: no-repeat;
+  }
+
+  .doctor-order-form > form .form-item > i {
+    top: 5px;
+  }
+
+  .send-button-wrap > a > i {
+    background-image: url("../img/retina/ipad/doctor-order-bottom.png");
+    background-position: 0 0;
+    -webkit-background-size: 155.5px;
+    background-size: 155.5px;
+    width: 155.5px;
+    height: 202.5px;
     background-repeat: no-repeat;
   }
 }
