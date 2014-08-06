@@ -8309,7 +8309,7 @@ a[href^='http://maps.google.com/maps'] {
   }
 
   .doctor-order-form > form .form-item textarea {
-    height: 130px !important;
+    height: 140px !important;
   }
 
   .send-button-wrap > a > i {
