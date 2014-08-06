@@ -5586,7 +5586,7 @@ p.description {
 .rightPanel.ui-panel-position-right.ui-panel-display-reveal {
   -webkit-box-shadow: none;
   box-shadow: none;
-  z-index: 1001;
+  z-index: 2001;
 }
 
 .aside-foo {
@@ -7776,6 +7776,95 @@ a[href^='http://maps.google.com/maps'] {
     padding: 0 335px;
   }
 
+  .ui-panel-page-content-open.ui-panel-position-right {
+    margin-right: 370px;
+  }
+
+  .ui-panel.ui-panel-open {
+    width: 370px;
+  }
+
+  .ui-panel-animate.ui-panel-page-content-position-right {
+    left: 0;
+    right: 0;
+    -webkit-transform: translate3d(-370px, 0, 0);
+    -ms-transform: translate3d(-370px, 0, 0);
+    -webkit-transform: translate3d(-370px, 0, 0);
+    transform: translate3d(-370px, 0, 0);
+  }
+
+  .rightPanel {
+    height: 100%;
+  }
+
+  .rightPanel .ui-panel-inner {
+    padding: 20px 0 30px 25px;
+    position: relative;
+    min-height: 100%;
+  }
+
+  .rightPanel .ui-panel-inner .aside-header {
+    padding-right: 30px;
+    margin-bottom: 20px;
+  }
+
+  .rightPanel .ui-panel-inner .aside-header .logo-small {
+    background-image: url("../img/pics/ipad/logo-aside-h.png");
+    background-position: 0 0;
+    width: 88px;
+    height: 30px;
+    background-repeat: no-repeat;
+  }
+
+  .aside-description {
+    padding-right: 50px;
+    margin-bottom: 20px;
+  }
+
+  .aside-description p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .aside-block > strong:first-child {
+    font-size: 13px;
+    margin-bottom: 11px;
+  }
+
+  .aside-block ul li {
+    font-size: 14px;
+  }
+
+  .aside-block ul li a,
+  .aside-block ul li a:hover,
+  .aside-block ul li a:active,
+  .aside-block ul li a:visited {
+    padding: 16px 50px 16px 15px;
+  }
+
+  .aside-foo {
+    position: absolute;
+    left: 25px;
+    bottom: 0;
+    padding-bottom: 30px;
+  }
+
+  .aside-foo a {
+    font-size: 13px;
+    margin-left: 0;
+    letter-spacing: -0.5px;
+  }
+
+  .aside-block ul li i {
+    background-image: url("../img/pics/ipad/aside-arrow-h.png");
+    background-position: 0 0;
+    width: 11px;
+    height: 20px;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+    right: 20px;
+  }
+
   .panel-btn {
     background-image: url("../img/pics/ipad/menu_btn-h.png");
     background-position: 100% 50%;
@@ -7818,7 +7907,7 @@ a[href^='http://maps.google.com/maps'] {
   }
 
   #map-page div[data-role='footer'] .w-500 {
-    padding-left: 700px;
+    float: right;
     padding-right: 14px;
   }
 
@@ -7826,6 +7915,7 @@ a[href^='http://maps.google.com/maps'] {
     float: left;
     border-width: 3px;
     border-radius: 30px;
+    margin-right: 12px;
   }
 
   #map-page div[data-role='footer'] .to-form-doctor-btn > a {
@@ -8153,6 +8243,96 @@ a[href^='http://maps.google.com/maps'] {
     padding: 0 150px;
   }
 
+  .ui-panel-page-content-open.ui-panel-position-right {
+    margin-right: 500px;
+    right: 500px;
+  }
+
+  .ui-panel.ui-panel-open {
+    width: 500px;
+  }
+
+  .ui-panel-animate.ui-panel-page-content-position-right {
+    left: 0;
+    right: 0;
+    -webkit-transform: translate3d(-500px, 0, 0);
+    -ms-transform: translate3d(-500px, 0, 0);
+    -webkit-transform: translate3d(-500px, 0, 0);
+    transform: translate3d(-500px, 0, 0);
+  }
+
+  .rightPanel {
+    height: 100%;
+  }
+
+  .rightPanel .ui-panel-inner {
+    padding: 30px 0 40px 35px;
+    position: relative;
+    min-height: 100%;
+  }
+
+  .rightPanel .ui-panel-inner .aside-header {
+    padding-right: 30px;
+    margin-bottom: 25px;
+  }
+
+  .rightPanel .ui-panel-inner .aside-header .logo-small {
+    background-image: url("../img/pics/ipad/logo-aside.png");
+    background-position: 0 0;
+    width: 123px;
+    height: 42px;
+    background-repeat: no-repeat;
+  }
+
+  .aside-description {
+    padding-right: 50px;
+    margin-bottom: 30px;
+  }
+
+  .aside-description p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .aside-block > strong:first-child {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .aside-block ul li {
+    font-size: 18px;
+  }
+
+  .aside-block ul li a,
+  .aside-block ul li a:hover,
+  .aside-block ul li a:active,
+  .aside-block ul li a:visited {
+    padding: 22px 50px 22px 20px;
+  }
+
+  .aside-foo {
+    position: absolute;
+    left: 35px;
+    bottom: 0;
+    padding-bottom: 40px;
+  }
+
+  .aside-foo a {
+    font-size: 18px;
+    margin-left: 0;
+    letter-spacing: -0.5px;
+  }
+
+  .aside-block ul li i {
+    background-image: url("../img/pics/ipad/aside-arrow.png");
+    background-position: 0 0;
+    width: 15px;
+    height: 27px;
+    background-repeat: no-repeat;
+    margin-top: -13.5px;
+    right: 30px;
+  }
+
   .panel-btn {
     background-image: url("../img/pics/ipad/menu_btn.png");
     background-position: 100% 50%;
@@ -8195,7 +8375,7 @@ a[href^='http://maps.google.com/maps'] {
   }
 
   #map-page div[data-role='footer'] .w-500 {
-    padding-left: 350px;
+    float: right;
     padding-right: 14px;
   }
 
@@ -8203,6 +8383,7 @@ a[href^='http://maps.google.com/maps'] {
     float: left;
     border-width: 4px;
     border-radius: 40px;
+    margin-right: 18px;
   }
 
   #map-page div[data-role='footer'] .to-form-doctor-btn > a {
@@ -8695,6 +8876,26 @@ a[href^='http://maps.google.com/maps'] {
     height: 27.5px;
     background-repeat: no-repeat;
   }
+
+  .rightPanel .ui-panel-inner .aside-header .logo-small {
+    background-image: url("../img/retina/ipad/logo-aside.png");
+    background-position: 0 0;
+    -webkit-background-size: 122.5px;
+    background-size: 122.5px;
+    width: 122.5px;
+    height: 42px;
+    background-repeat: no-repeat;
+  }
+
+  .aside-block ul li i {
+    background-image: url("../img/retina/ipad/aside-arrow.png");
+    background-position: 0 0;
+    -webkit-background-size: 14.5px;
+    background-size: 14.5px;
+    width: 14.5px;
+    height: 27px;
+    background-repeat: no-repeat;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
@@ -8856,6 +9057,26 @@ a[href^='http://maps.google.com/maps'] {
     -webkit-background-size: 20px;
     background-size: 20px;
     width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+  }
+
+  .rightPanel .ui-panel-inner .aside-header .logo-small {
+    background-image: url("../img/retina/ipad/logo-aside-h.png");
+    background-position: 0 0;
+    -webkit-background-size: 88px;
+    background-size: 88px;
+    width: 88px;
+    height: 30px;
+    background-repeat: no-repeat;
+  }
+
+  .aside-block ul li i {
+    background-image: url("../img/retina/ipad/aside-arrow-h.png");
+    background-position: 0 0;
+    -webkit-background-size: 11px;
+    background-size: 11px;
+    width: 11px;
     height: 20px;
     background-repeat: no-repeat;
   }
