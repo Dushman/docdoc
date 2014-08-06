@@ -8087,6 +8087,10 @@ a[href^='http://maps.google.com/maps'] {
     margin-left: -50px;
   }
 
+  .infobox-inn .right-block {
+    padding: 14px 5px 14px 14px;
+  }
+
   #infobox i.triangle {
     margin-left: -45px;
   }
@@ -8094,6 +8098,58 @@ a[href^='http://maps.google.com/maps'] {
   .infobox-inn .right-block strong,
   .infobox-inn .right-block em {
     font-size: 16px;
+  }
+
+  .infobox-inn .right-block strong {
+    margin-bottom: 6px;
+  }
+
+  #map-page div[data-role='footer'] .w-500 {
+    padding-left: 350px;
+    padding-right: 14px;
+  }
+
+  #map-page div[data-role='footer'] .to-form-doctor-btn {
+    float: left;
+    border-width: 4px;
+    border-radius: 40px;
+  }
+
+  #map-page div[data-role='footer'] .to-form-doctor-btn > a {
+    font-size: 22px;
+    line-height: 22px;
+    padding: 20px 80px 20px 30px;
+    border-width: 3px;
+    border-radius: 40px;
+  }
+
+  #map-page div[data-role='footer'] .to-form-doctor-btn > a > i {
+    background-image: url("../img/pics/ipad/envelope-white.png");
+    background-position: 0 0;
+    width: 41px;
+    height: 17px;
+    background-repeat: no-repeat;
+    top: 22px;
+    right: 23px;
+  }
+
+  .call-doctor-btn {
+    border-width: 4px;
+  }
+
+  .call-doctor-btn > a {
+    width: 66px;
+    height: 66px;
+  }
+
+  .call-doctor-btn > a > i {
+    background-image: url("../img/pics/ipad/phone-white.png");
+    background-position: 0 0;
+    width: 27px;
+    height: 27px;
+    background-repeat: no-repeat;
+    margin-left: -13.5px;
+    margin-top: -13.5px;
   }
 
   div.fixed[data-role='header'] {
@@ -8527,6 +8583,26 @@ a[href^='http://maps.google.com/maps'] {
     background-size: 46.5px;
     width: 46.5px;
     height: 46px;
+    background-repeat: no-repeat;
+  }
+
+  #map-page div[data-role='footer'] .to-form-doctor-btn > a > i {
+    background-image: url("../img/retina/ipad/envelope-white.png");
+    background-position: 0 0;
+    -webkit-background-size: 40.5px;
+    background-size: 40.5px;
+    width: 40.5px;
+    height: 17px;
+    background-repeat: no-repeat;
+  }
+
+  .call-doctor-btn > a > i {
+    background-image: url("../img/retina/ipad/phone-white.png");
+    background-position: 0 0;
+    -webkit-background-size: 27.5px;
+    background-size: 27.5px;
+    width: 27.5px;
+    height: 27.5px;
     background-repeat: no-repeat;
   }
 }
