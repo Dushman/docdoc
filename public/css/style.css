@@ -7796,25 +7796,25 @@ a[href^='http://maps.google.com/maps'] {
   }
 
   .infobox-inn {
-    width: 230px;
-    margin-left: -20px;
+    width: 310px;
+    margin-left: -50px;
   }
 
   .infobox-inn .right-block {
-    padding: 10px 10px 5px 10px;
+    padding: 14px 5px 14px 14px;
   }
 
   #infobox i.triangle {
-    margin-left: -20px;
+    margin-left: -45px;
   }
 
   .infobox-inn .right-block strong,
   .infobox-inn .right-block em {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .infobox-inn .right-block strong {
-    margin-bottom: 4px;
+    margin-bottom: 6px;
   }
 
   #map-page div[data-role='footer'] .w-500 {
