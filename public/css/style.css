@@ -9060,6 +9060,16 @@ a[href^='http://maps.google.com/maps'] {
   }
 
   .send-button-wrap > a > i {
+    background-image: url("../img/retina/ipad/check-white.png");
+    background-position: 0 0;
+    -webkit-background-size: 22px;
+    background-size: 22px;
+    width: 22px;
+    height: 31.5px;
+    background-repeat: no-repeat;
+  }
+
+  #doctor-form .doctor-order-form i.doctor-bottom {
     background-image: url("../img/retina/ipad/doctor-order-bottom.png");
     background-position: 0 0;
     -webkit-background-size: 155.5px;
