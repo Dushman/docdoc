@@ -7782,6 +7782,94 @@ a[href^='http://maps.google.com/maps'] {
     padding: 0 335px;
   }
 
+  a.close-btn {
+    background-image: url("../img/pics/ipad/close-btn-h.png");
+    background-position: 0 50%;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+  }
+
+  .success-block {
+    padding: 40px 370px 30px 370px;
+  }
+
+  strong.success-title {
+    font-size: 17px;
+    padding-bottom: 18px;
+  }
+
+  .order-success-content {
+    padding-top: 70px;
+  }
+
+  .order-success-content > i.success-check {
+    background-image: url("../img/pics/ipad/success-check-h.png");
+    background-position: 0 0;
+    width: 49px;
+    height: 50px;
+    background-repeat: no-repeat;
+    margin-left: -25px;
+    top: 11px;
+  }
+
+  .success-text {
+    padding-top: 20px;
+  }
+
+  .success-text p.gray {
+    font-size: 14px;
+    line-height: 19px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .success-text p.green {
+    font-size: 12px;
+    line-height: 19px;
+  }
+
+  .order-success-bottom-block i.doctor-bottom {
+    background-image: url("../img/pics/ipad/doctor-success-bottom-h.png");
+    background-position: 0 0;
+    width: 79px;
+    height: 144px;
+    background-repeat: no-repeat;
+    left: auto;
+    right: -15px;
+    bottom: -40px;
+  }
+
+  .order-success-bottom-block {
+    display: block;
+    padding-top: 102px;
+  }
+
+  .link-to-favorites {
+    padding-left: 23px;
+    padding-bottom: 23px;
+  }
+
+  .link-to-favorites a {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
+  .link-to-favorites i {
+    background-image: url("../img/pics/ipad/favorites-bg-h.png");
+    background-position: 0 0;
+    width: 20px;
+    height: 15px;
+    background-repeat: no-repeat;
+  }
+
+  #order-success a.link-to-site,
+  #review-success a.link-to-site {
+    font-size: 13px;
+    padding-top: 14px;
+  }
+
   #doctor-form .doctor-info-block {
     margin-left: 325px;
     margin-right: 325px;
@@ -9576,6 +9664,47 @@ a[href^='http://maps.google.com/maps'] {
     background-size: 111.5px;
     width: 111.5px;
     height: 145px;
+    background-repeat: no-repeat;
+  }
+
+  .order-success-content > i.success-check {
+    background-image: url("../img/retina/ipad/success-check-h.png");
+    background-position: 0 0;
+    -webkit-background-size: 51px;
+    background-size: 51px;
+    width: 51px;
+    height: 51.5px;
+    background-repeat: no-repeat;
+  }
+
+  a.close-btn {
+    background-image: url("../img/retina/ipad/close-btn-h.png");
+    background-position: 0 50%;
+    -webkit-background-size: 15px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+  }
+
+  .link-to-favorites i {
+    background-image: url("../img/retina/ipad/favorite-bg-h.png");
+    background-position: 0 0;
+    -webkit-background-size: 20px;
+    background-size: 20px;
+    width: 20px;
+    height: 14.5px;
+    background-repeat: no-repeat;
+  }
+
+  #order-success .success-block i.doctor-bottom,
+  #review-success .success-block i.doctor-bottom,
+  #order-error .success-block i.doctor-bottom,
+  #review-error .success-block i.doctor-bottom {
+    background-image: url("../img/retina/ipad/doctor-success-bottom-h.png");
+    background-position: 0 0;
+    -webkit-background-size: 79px;
+    background-size: 79px;
+    width: 79px;
+    height: 144px;
     background-repeat: no-repeat;
   }
 }
