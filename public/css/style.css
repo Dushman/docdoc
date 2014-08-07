@@ -8494,6 +8494,151 @@ a[href^='http://maps.google.com/maps'] {
     padding: 0 150px;
   }
 
+  .send-review-wrapper {
+    padding-left: 196px;
+    padding-right: 196px;
+    padding-top: 40px;
+  }
+
+  .send-review-form .form-item.item-1 > i {
+    background-image: url("../img/pics/ipad/fr-1.png");
+    background-position: 0 0;
+    width: 43px;
+    height: 43px;
+    background-repeat: no-repeat;
+  }
+
+  .send-review-form .form-item.item-2 > i {
+    background-image: url("../img/pics/ipad/fr-2.png");
+    background-position: 0 0;
+    width: 43px;
+    height: 43px;
+    background-repeat: no-repeat;
+  }
+
+  .send-review-form .form-item.item-4 > i {
+    background-image: url("../img/pics/ipad/fr-3.png");
+    background-position: 0 0;
+    width: 43px;
+    height: 43px;
+    background-repeat: no-repeat;
+  }
+
+  .send-review-btn-block {
+    border-width: 4px;
+    border-radius: 36px;
+    margin: 0 0 0 30px;
+  }
+
+  .send-review-btn-block > a {
+    font-size: 22px;
+    border-width: 3px;
+    padding: 20px 85px 19px 40px;
+    border-radius: 36px;
+  }
+
+  .send-review-btn-block > a > i {
+    background-image: url("../img/pics/ipad/check-white.png");
+    background-position: 0 0;
+    width: 22px;
+    height: 32px;
+    background-repeat: no-repeat;
+    top: 8px;
+    right: 38px;
+  }
+
+  .send-review-form .form-item input[type="text"],
+  .send-review-form .form-item input[type="tel"],
+  .send-review-form .form-item textarea {
+    font-size: 20px;
+    padding: 12px 10px 11px 60px;
+    border-radius: 26px;
+  }
+
+  .send-review-form .form-item textarea {
+    height: 135px !important;
+  }
+
+  .send-review-title strong {
+    font-size: 28px;
+  }
+
+  .send-review-title p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .send-review-title {
+    padding: 20px 60px;
+  }
+
+  .send-review-form {
+    padding: 25px 30px 0 30px;
+  }
+
+  .send-review-form .form-item {
+    margin-bottom: 16px;
+  }
+
+  .send-review-form .form-item.item-4 {
+    margin-bottom: 35px;
+  }
+
+  .send-review-top-block {
+    margin-bottom: 40px;
+  }
+
+  a.textarea-spoiler {
+    font-size: 22px;
+  }
+
+  a.textarea-spoiler > i {
+    border-width: 6px;
+    right: -20px;
+    top: 10px;
+  }
+
+  .review-rating-block .review-rating-item {
+    margin-bottom: 25px;
+  }
+
+  .review-rating-block {
+    margin-bottom: 70px;
+    padding-left: 53px;
+  }
+
+  .review-rating-block .review-rating-item > span {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .range-wrap {
+    margin-right: 16px;
+    width: 155px;
+    height: 22px;
+  }
+
+  .range-wrap div.ui-slider .ui-slider-track {
+    height: 22px;
+    width: 155px;
+    background: transparent url("../img/pics/ipad/rating-empty.png") no-repeat 0 0;
+  }
+
+  .range-wrap .ui-btn-active {
+    height: 22px;
+    width: 155px;
+    background: transparent url("../img/pics/ipad/rating-full.png") no-repeat 0 0;
+  }
+
+  .range-wrap .ui-slider-track .ui-btn.ui-slider-handle {
+    width: 22px;
+    height: 22px;
+    margin-left: -11px;
+    margin-right: -11px;
+    opacity: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  }
+
   #order-error .order-success-content > i.success-check,
   #review-error .order-success-content > i.success-check {
     background-image: url("../img/pics/ipad/error-bg.png");
@@ -9501,6 +9646,66 @@ a[href^='http://maps.google.com/maps'] {
     background-size: 71px;
     width: 71px;
     height: 71px;
+    background-repeat: no-repeat;
+  }
+
+  .send-review-form .form-item.item-1 > i {
+    background-image: url("../img/retina/ipad/fr-1.png");
+    background-position: 0 0;
+    -webkit-background-size: 43px;
+    background-size: 43px;
+    width: 43px;
+    height: 42.5px;
+    background-repeat: no-repeat;
+  }
+
+  .send-review-form .form-item.item-2 > i {
+    background-image: url("../img/retina/ipad/fr-2.png");
+    background-position: 0 0;
+    -webkit-background-size: 43px;
+    background-size: 43px;
+    width: 43px;
+    height: 42.5px;
+    background-repeat: no-repeat;
+  }
+
+  .send-review-form .form-item.item-4 > i {
+    background-image: url("../img/retina/ipad/fr-3.png");
+    background-position: 0 0;
+    -webkit-background-size: 43px;
+    background-size: 43px;
+    width: 43px;
+    height: 43px;
+    background-repeat: no-repeat;
+  }
+
+  .send-review-btn-block > a > i {
+    background-image: url("../img/retina/ipad/check-white.png");
+    background-position: 0 0;
+    -webkit-background-size: 22px;
+    background-size: 22px;
+    width: 22px;
+    height: 31.5px;
+    background-repeat: no-repeat;
+  }
+
+  .range-wrap div.ui-slider .ui-slider-track {
+    background-image: url("../img/retina/ipad/rating-empty.png");
+    background-position: 0 0;
+    -webkit-background-size: 155px;
+    background-size: 155px;
+    width: 155px;
+    height: 22px;
+    background-repeat: no-repeat;
+  }
+
+  .range-wrap .ui-btn-active {
+    background-image: url("../img/retina/ipad/rating-full.png");
+    background-position: 0 0;
+    -webkit-background-size: 155px;
+    background-size: 155px;
+    width: 155px;
+    height: 22px;
     background-repeat: no-repeat;
   }
 }
