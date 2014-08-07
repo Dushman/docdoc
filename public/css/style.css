@@ -7793,8 +7793,9 @@ a[href^='http://maps.google.com/maps'] {
 
   #order-error a.link-to-site,
   #review-error a.link-to-site {
-    font-size: 17px;
-    padding-top: 30px;
+    font-size: 13px;
+    padding-top: 16px;
+    lettr-spacing: -1px;
   }
 
   #review-error .link-to-favorites a,
