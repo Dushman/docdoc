@@ -7857,6 +7857,10 @@ a[href^='http://maps.google.com/maps'] {
     right: 40px;
   }
 
+  .send-review-form .form-item.item-3 {
+    padding-bottom: 10px;
+  }
+
   .range-wrap .ui-slider-track .ui-btn.ui-slider-handle {
     opacity: 0;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
