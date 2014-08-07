@@ -8441,7 +8441,7 @@ a[href^='http://maps.google.com/maps'] {
 
   .link-to-favorites {
     padding-left: 38px;
-    padding-bottom: 38px;
+    padding-bottom: 42px;
   }
 
   .link-to-favorites a {
@@ -8460,7 +8460,7 @@ a[href^='http://maps.google.com/maps'] {
   #order-success a.link-to-site,
   #review-success a.link-to-site {
     font-size: 17px;
-    padding-top: 26px;
+    padding-top: 30px;
   }
 
   #doctor-form .doctor-info-block {
