@@ -6745,6 +6745,9 @@ strong.success-title {
   text-shadow: none;
   padding: 8.5px 10px 9px 40px;
   border-radius: 20px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-appereance: none;
 }
 
 .doctor-order-form > form .form-item textarea {
@@ -6998,6 +7001,9 @@ strong.success-title {
   text-shadow: none;
   padding: 8.5px 10px 9px 40px;
   border-radius: 20px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-appereance: none;
 }
 
 .send-review-form .form-item textarea {
@@ -8378,7 +8384,7 @@ a[href^='http://maps.google.com/maps'] {
   }
 
   .success-block {
-    padding: 40px 195px 0 195px;
+    padding: 40px 195px 30px 195px;
   }
 
   strong.success-title {
@@ -8400,14 +8406,21 @@ a[href^='http://maps.google.com/maps'] {
     top: 15px;
   }
 
+  .success-text {
+    padding-top: 30px;
+  }
+
   .success-text p.gray {
     font-size: 20px;
     line-height: 26px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .success-text p.green {
     font-size: 16px;
     line-height: 26px;
+    margin-bottom: 30px;
   }
 
   .order-success-bottom-block i.doctor-bottom {
@@ -8417,23 +8430,37 @@ a[href^='http://maps.google.com/maps'] {
     height: 201px;
     background-repeat: no-repeat;
     left: auto;
-    right: 0;
+    right: -30px;
+    bottom: -56px;
   }
 
   .order-success-bottom-block {
     display: block;
+    padding-top: 225px;
+  }
+
+  .link-to-favorites {
+    padding-left: 38px;
+    padding-bottom: 32px;
   }
 
   .link-to-favorites a {
     font-size: 23px;
+    letter-spacing: -1px;
   }
 
   .link-to-favorites i {
     background-image: url("../img/pics/ipad/favorites-bg.png");
     background-position: 0 0;
-    width: 110px;
-    height: 201px;
+    width: 28px;
+    height: 20px;
     background-repeat: no-repeat;
+  }
+
+  #order-success a.link-to-site,
+  #review-success a.link-to-site {
+    font-size: 16px;
+    padding-top: 20px;
   }
 
   #doctor-form .doctor-info-block {
@@ -9271,14 +9298,6 @@ a[href^='http://maps.google.com/maps'] {
     background-repeat: no-repeat;
   }
 
-  .close-btn {
-    background-image: url("../img/retina/ipad/close-btn.png");
-    -webkit-background-size: 21px;
-    background-size: 21px;
-    width: 40px;
-    height: 40px;
-  }
-
   .order-success-content > i.success-check {
     background-image: url("../img/retina/ipad/success-check.png");
     background-position: 0 0;
@@ -9289,20 +9308,37 @@ a[href^='http://maps.google.com/maps'] {
     background-repeat: no-repeat;
   }
 
-  .order-success-bottom-block i.doctor-bottom {
-    background-image: url("../img/retina/ipad/doctor-success-bottom.png");
-    -webkit-background-size: 110px;
-    background-size: 110px;
-    width: 110px;
-    height: 201px;
+  a.close-btn {
+    background-image: url("../img/retina/ipad/close-btn.png");
+    background-position: 0 50%;
+    -webkit-background-size: 21px;
+    background-size: 21px;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
   }
 
   .link-to-favorites i {
-    background-image: url("../img/retina/ipad/favorites-bg.png");
+    background-image: url("../img/retina/ipad/favorite-bg.png");
+    background-position: 0 0;
+    -webkit-background-size: 28px;
+    background-size: 28px;
+    width: 28px;
+    height: 20px;
+    background-repeat: no-repeat;
+  }
+
+  #order-success .success-block i.doctor-bottom,
+  #review-success .success-block i.doctor-bottom,
+  #order-error .success-block i.doctor-bottom,
+  #review-error .success-block i.doctor-bottom {
+    background-image: url("../img/retina/ipad/doctor-success-bottom.png");
+    background-position: 0 0;
     -webkit-background-size: 110px;
     background-size: 110px;
     width: 110px;
     height: 201px;
+    background-repeat: no-repeat;
   }
 }
 
