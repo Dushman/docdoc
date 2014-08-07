@@ -7673,6 +7673,10 @@ a[href^='http://maps.google.com/maps'] {
     background-repeat: no-repeat;
   }
 
+  #order-error .order-success-bottom-block {
+    padding-top: 195px;
+  }
+
   #order-success .success-block i.doctor-bottom,
   #review-success .success-block i.doctor-bottom,
   #order-error .success-block i.doctor-bottom,
