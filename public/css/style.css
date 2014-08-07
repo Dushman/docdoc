@@ -7786,6 +7786,82 @@ a[href^='http://maps.google.com/maps'] {
     padding: 0 335px;
   }
 
+  .send-review-wrapper {
+    padding-left: 370px;
+    padding-right: 370px;
+    padding-top: 28px;
+  }
+
+  .send-review-title {
+    padding-top: 25px;
+    padding-bottom: 22px;
+  }
+
+  .send-review-title strong {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  .send-review-title p {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .send-review-form .form-item input[type="text"],
+  .send-review-form .form-item input[type="tel"],
+  .send-review-form .form-item textarea {
+    font-size: 14px;
+  }
+
+  a.textarea-spoiler {
+    font-size: 16px;
+  }
+
+  .send-review-top-block {
+    margin-bottom: 35px;
+  }
+
+  .review-rating-block .review-rating-item {
+    margin-bottom: 20px;
+  }
+
+  .send-review-form .form-item {
+    margin-bottom: 15px;
+  }
+
+  .send-review-form .form-item.item-4 {
+    margin-bottom: 30px;
+  }
+
+  .send-review-form .form-item textarea {
+    height: 95px !important;
+  }
+
+  .review-rating-block {
+    padding-left: 40px;
+    margin-bottom: 25px;
+  }
+
+  .send-review-btn-block {
+    margin-bottom: 20px;
+  }
+
+  .send-review-btn-block > a {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 15px 80px 15px 30px;
+  }
+
+  .send-review-btn-block > a > i {
+    top: 11px;
+    right: 40px;
+  }
+
+  .range-wrap .ui-slider-track .ui-btn.ui-slider-handle {
+    opacity: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  }
+
   #order-error .order-success-bottom-block i.doctor-bottom,
   #review-error .order-success-bottom-block i.doctor-bottom {
     right: 0px;
@@ -9988,6 +10064,49 @@ a[href^='http://maps.google.com/maps'] {
     background-size: 79px;
     width: 79px;
     height: 144px;
+    background-repeat: no-repeat;
+  }
+
+  .send-review-form .form-item.item-1 > i {
+    background-image: url("../img/retina/ipad/fr-1-h.png");
+    background-position: 0 0;
+    -webkit-background-size: 43px;
+    background-size: 43px;
+    width: 43px;
+    height: 42.5px;
+    background-repeat: no-repeat;
+    top: 5.5px;
+  }
+
+  .send-review-form .form-item.item-2 > i {
+    background-image: url("../img/retina/ipad/fr-2-h.png");
+    background-position: 0 0;
+    -webkit-background-size: 43px;
+    background-size: 43px;
+    width: 43px;
+    height: 42.5px;
+    background-repeat: no-repeat;
+    top: 5.5px;
+  }
+
+  .send-review-form .form-item.item-4 > i {
+    background-image: url("../img/retina/ipad/fr-3-h.png");
+    background-position: 0 0;
+    -webkit-background-size: 43px;
+    background-size: 43px;
+    width: 43px;
+    height: 43px;
+    background-repeat: no-repeat;
+    top: 5.5px;
+  }
+
+  .send-review-btn-block > a > i {
+    background-image: url("../img/retina/ipad/check-white-h.png");
+    background-position: 0 0;
+    -webkit-background-size: 22px;
+    background-size: 22px;
+    width: 22px;
+    height: 31.5px;
     background-repeat: no-repeat;
   }
 }
