@@ -8527,7 +8527,7 @@ a[href^='http://maps.google.com/maps'] {
   .send-review-btn-block {
     border-width: 4px;
     border-radius: 36px;
-    margin: 0 27px;
+    margin: 0 27px 20px 27px;
   }
 
   .send-review-btn-block > a {
