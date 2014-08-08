@@ -7795,6 +7795,115 @@ a[href^='http://maps.google.com/maps'] {
     padding: 0 335px;
   }
 
+  #find-doctor .padding-zero {
+    padding-left: 260px;
+    padding-right: 260px;
+  }
+
+  #find-doctor div[data-role='footer'] .w-500 {
+    float: right;
+    padding-right: 0;
+  }
+
+  #find-doctor div[data-role="footer"] {
+    padding: 0 30px;
+  }
+
+  #find-doctor div[data-role="footer"] .fixed-inn {
+    padding: 16px 0;
+  }
+
+  div[data-role="footer"] .fixed-inn span.filter-number {
+    margin-right: 13px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 55px;
+  }
+
+  #find-doctor div[data-role='header'] .w-500 {
+    margin-left: 230px;
+    margin-right: 230px;
+  }
+
+  #find-doctor div[data-role='header'] .w-500 p.description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .list-of-doctors > li > a .right-block h3.name {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 15px;
+  }
+
+  .list-of-doctors > li > a .right-block .prof {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .list-of-doctors > li > a .left-block {
+    margin-right: 20px;
+  }
+
+  .list-of-doctors > li > a .left-block .avatar-wrap {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 8px;
+  }
+
+  .list-of-doctors {
+    padding-left: 30px;
+  }
+
+  .list-of-doctors > li {
+    padding: 18px 40px 18px 5px;
+  }
+
+  .list-of-doctors > li > a .left-block .qty-reviews {
+    font-size: 10px;
+  }
+
+  .list-of-doctors > li > a .left-block .rating-wrap {
+    margin-bottom: 6px;
+  }
+
+  .list-of-doctors > li > a .left-block .rating-wrap strong:first-child {
+    font-size: 13px;
+    line-height: 13px;
+  }
+
+  .list-of-doctors > li > a .left-block .rating-wrap ul {
+    padding-top: 2px;
+    padding-left: 5px;
+  }
+
+  .list-of-doctors > li > a .left-block .rating-wrap ul li {
+    margin-left: 1px;
+  }
+
+  .list-of-doctors > li > a .right-block .skills-wrap > span {
+    font-size: 12px;
+  }
+
+  .address-wrap {
+    font-size: 12px;
+    padding-left: 15px;
+    height: 13px;
+    line-height: 13px;
+  }
+
+  .list-of-doctors > li > a > i {
+    right: 0;
+  }
+
+  .list-of-doctors > li > a .right-block .skills-wrap {
+    margin-bottom: 16px;
+  }
+
+  .list-of-doctors {
+    padding-left: 0;
+  }
+
   .send-review-wrapper {
     padding-left: 370px;
     padding-right: 370px;
