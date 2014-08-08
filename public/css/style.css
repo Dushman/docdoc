@@ -8936,7 +8936,10 @@ a[href^='http://maps.google.com/maps'] {
     width: 165px;
   }
 
-  .send-review-block > a {
+  .send-review-block > a,
+  .send-review-block > a:hover,
+  .send-review-block > a:active,
+  .send-review-block > a:visited {
     font-size: 22px;
   }
 
