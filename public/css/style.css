@@ -8696,6 +8696,14 @@ a[href^='http://maps.google.com/maps'] {
   .address-wrap {
     font-size: 16px;
     padding-left: 21px;
+    height: 19px;
+    line-height: 19px;
+  }
+
+  .address-wrap > i:first-child {
+    background: transparent url("../img/pics/ipad/location-green.png") no-repeat 0 0;
+    width: 14px;
+    height: 19px;
   }
 
   .list-of-doctors > li > a .right-block .skills-wrap {
@@ -9959,6 +9967,14 @@ a[href^='http://maps.google.com/maps'] {
     background-size: 14.5px;
     width: 14.5px;
     height: 27.5px;
+  }
+
+  .address-wrap > i:first-child {
+    background-image: url("../img/retina/ipad/location-green.png");
+    -webkit-background-size: 14px;
+    background-size: 14px;
+    width: 14px;
+    height: 19px;
   }
 }
 
