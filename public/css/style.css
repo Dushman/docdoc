@@ -10387,6 +10387,7 @@ a[href^='http://maps.google.com/maps'] {
     background-size: 16.5px;
     width: 16.5px;
     height: 13.5px;
+    top: 1px;
   }
 
   .doctor-info-block .right-block a.link-to-map {
