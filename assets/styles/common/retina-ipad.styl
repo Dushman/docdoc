@@ -127,7 +127,8 @@
         background-repeat:no-repeat;
     }
 
-    #map-page div[data-role='footer'] .to-form-doctor-btn > a > i{
+    #map-page div[data-role='footer'] .to-form-doctor-btn > a > i,
+    #page-doctor div[data-role='footer'] .to-form-doctor-btn > a > i{
         background-image:url('../img/retina/ipad/envelope-white.png');
         background-position:0 0;
         background-size:40.5px 17px;
@@ -325,14 +326,20 @@
         background-repeat:no-repeat;
     }
 
-     .list-of-doctors > li > a .left-block .rating-wrap ul li.full{
+     .list-of-doctors > li > a .left-block .rating-wrap ul li.full,
+     .doctor-info-block .left-block .rating-wrap ul li.full,
+     .total-review-block > .item > ul > li.full,
+    .list-of-reviews > ul > li .items-wrapper .item ul > li.full{
         background-image:url('../img/retina/ipad/list-doctor-full-star.png');
         background-size:13px 12.5px;
         width:13px;
         height:12.5px;
      }
 
-    .list-of-doctors > li > a .left-block .rating-wrap ul li.empty{
+    .list-of-doctors > li > a .left-block .rating-wrap ul li.empty,
+    .doctor-info-block .left-block .rating-wrap ul li.empty,
+    .total-review-block > .item > ul > li.empty,
+    .list-of-reviews > ul > li .items-wrapper .item ul > li.empty{
         background-image:url('../img/retina/ipad/list-doctor-empty-star.png');
         background-size:13px 12.5px;
         width:13px;
@@ -354,6 +361,48 @@
         width:14px;
         height:19px;
     }
+
+    .doctor-info-block .metro-wrap > i:first-child{
+        background-image:url('../img/retina/ipad/metro-bg.png');
+        background-size:16.5px 13.5px;
+        width:16.5px;
+        height:13.5px;
+    }
+
+    .doctor-info-block .right-block a.link-to-map{
+        background-image:url('../img/retina/ipad/orange-location.png');
+        background-size:18px 27px;
+    }
+
+    strong.img-1 i{
+        background-image:url('../img/retina/ipad/skill-1.png');
+        background-size:21px 18.5px;
+        width:21px;
+        height:18.5px;
+    }
+
+    strong.img-2 i{
+        background-image:url('../img/retina/ipad/skill-2.png');
+        background-size:21.5px 20px;
+        width:21.5px;
+        height:20px;
+    }
+
+    strong.img-3 i{
+        background-image:url('../img/retina/ipad/skill-3.png');
+        background-size:21.5px 9.5px;
+        width:21.5px;
+        height:9.5px;
+    }
+
+    strong.img-4 i{
+        background-image:url('../img/retina/ipad/skill-4.png');
+        background-size:21.5px 27px;
+        width:21.5px;
+        height:27px;
+    }
+
+    strong.img-1{padding-top:1px;}
 
 }
 
