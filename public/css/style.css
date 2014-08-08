@@ -5779,13 +5779,22 @@ p.description {
   margin-right: 1em;
 }
 
-.list-of-doctors > li > a .left-block img {
-  display: block;
-  clear: both;
+.list-of-doctors > li > a .left-block .avatar-wrap {
   overflow: hidden;
+  clear: both;
   border: 2px solid #257b7e;
+  background-color: #257b7e;
   border-radius: 5px;
   margin-bottom: 8px;
+  text-align: center;
+  width: 65px;
+  height: 65px;
+}
+
+.list-of-doctors > li > a .left-block img {
+  vertical-align: top;
+  display: inline-block;
+  border-radius: 3px;
 }
 
 .list-of-doctors > li > a .left-block .rating-wrap {
@@ -8623,14 +8632,22 @@ a[href^='http://maps.google.com/maps'] {
   .list-of-doctors > li > a .right-block h3.name {
     font-size: 22px;
     line-height: 26px;
+    margin-bottom: 25px;
   }
 
   .list-of-doctors > li > a .right-block .prof {
     font-size: 16px;
+    margin-bottom: 6px;
   }
 
   .list-of-doctors > li > a .left-block {
     margin-right: 28px;
+  }
+
+  .list-of-doctors > li > a .left-block .avatar-wrap {
+    width: 96px;
+    height: 96px;
+    margin-bottom: 12px;
   }
 
   .list-of-doctors {
@@ -8642,8 +8659,57 @@ a[href^='http://maps.google.com/maps'] {
   }
 
   .list-of-doctors > li > a .left-block .qty-reviews {
-    font-size: 12px;
-    letter-spacing: 0;
+    font-size: 13px;
+  }
+
+  .list-of-doctors > li > a .left-block .rating-wrap {
+    margin-bottom: 6px;
+  }
+
+  .list-of-doctors > li > a .left-block .rating-wrap strong:first-child {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 6px;
+  }
+
+  .list-of-doctors > li > a .left-block .rating-wrap ul {
+    padding-top: 0;
+    padding-left: 4px;
+  }
+
+  .list-of-doctors > li > a .left-block .rating-wrap ul li {
+    margin-left: 1px;
+  }
+
+  .list-of-doctors > li > a .left-block .rating-wrap ul li.full {
+    background: transparent url("../img/pics/ipad/list-doctor-full-star.png") no-repeat 0 0;
+    width: 13px;
+    height: 13px;
+  }
+
+  .list-of-doctors > li > a .left-block .rating-wrap ul li.empty {
+    background: transparent url("../img/pics/ipad/list-doctor-empty-star.png") no-repeat 0 0;
+    width: 13px;
+    height: 13px;
+  }
+
+  .list-of-doctors > li > a .right-block .skills-wrap > span {
+    font-size: 16px;
+  }
+
+  .address-wrap {
+    font-size: 16px;
+  }
+
+  .list-of-doctors > li > a .right-block .skills-wrap {
+    margin-bottom: 16px;
+  }
+
+  .list-of-doctors > li > a > i {
+    background: transparent url("../img/pics/ipad/list-doctor-arrow.png") no-repeat 0 0;
+    width: 15px;
+    height: 28px;
+    right: 30px;
   }
 
   .send-review-wrapper {
@@ -9865,13 +9931,41 @@ a[href^='http://maps.google.com/maps'] {
   }
 
   .top-sort-block .location-link {
-    background-image: url("../img/retina/ipad/rating-full.png");
+    background-image: url("../img/retina/ipad/orange-location.png");
     background-position: 0 0;
     -webkit-background-size: 18px;
     background-size: 18px;
     width: 18px;
     height: 27px;
     background-repeat: no-repeat;
+  }
+
+  .list-of-doctors > li > a .left-block .rating-wrap ul li.full {
+    background-image: url("../img/retina/ipad/list-doctor-full-star.png");
+    -webkit-background-size: 13px;
+    background-size: 13px;
+    width: 13px;
+    height: 12.5px;
+  }
+
+  .list-of-doctors > li > a .left-block .rating-wrap ul li.empty {
+    background-image: url("../img/retina/ipad/list-doctor-empty-star.png");
+    -webkit-background-size: 13px;
+    background-size: 13px;
+    width: 13px;
+    height: 12.5px;
+  }
+
+  .list-of-doctors > li > a .left-block .rating-wrap ul {
+    padding-top: 1px;
+  }
+
+  .list-of-doctors > li > a > i {
+    background-image: url("../img/retina/ipad/list-doctor-arrow.png");
+    -webkit-background-size: 14.5px;
+    background-size: 14.5px;
+    width: 14.5px;
+    height: 27.5px;
   }
 }
 
