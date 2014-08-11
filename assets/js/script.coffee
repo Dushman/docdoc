@@ -44,7 +44,7 @@ $ ->
                 link.attr('href', '#order-success').click()
                 form.submit()
 
-    if $(window).height() <= 300
+    if $(window).height() <= 700
         $(document).on("scrollstart", ->
             $(".hide-scroll").css "display", "none"
             $("#find-doctor div[data-role=\"header\"]").toolbar "updatePagePadding"
