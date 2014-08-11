@@ -55,8 +55,8 @@ $ ->
 
     hideHeader()
 
-    $(window).on 'orientationchange', () ->
-        hideHeader()
+    $(window).on 'orientationchange', (e) ->
+        e.hideHeader()
 
 
 

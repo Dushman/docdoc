@@ -65,7 +65,7 @@ $(function() {
     }
   };
   hideHeader();
-  return $(window).on('orientationchange', function() {
-    return hideHeader();
+  return $(window).on('orientationchange', function(e) {
+    return e.hideHeader();
   });
 });
