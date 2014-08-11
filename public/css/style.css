@@ -10894,10 +10894,10 @@ a[href^='http://maps.google.com/maps'] {
 }
 
 .ui-loader-default {
-  width: 6em;
-  height: 6em;
-  margin-left: -3em;
-  margin-top: -3em;
+  width: 5em;
+  height: 5em;
+  margin-left: -2.5em;
+  margin-top: -2.5em;
   opacity: 0.6;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
 }
@@ -10905,10 +10905,10 @@ a[href^='http://maps.google.com/maps'] {
 .ui-loader .ui-icon-loading {
   position: relative;
   text-indent: -9999em;
-  border-top: 1.1em solid rgba(24,177,172,0.3);
-  border-right: 1.1em solid rgba(24,177,172,0.3);
-  border-bottom: 1.1em solid rgba(24,177,172,0.3);
-  border-left: 1.1em solid #18b1ac;
+  border-top: 10px solid rgba(24,177,172,0.3);
+  border-right: 10px solid rgba(24,177,172,0.3);
+  border-bottom: 10px solid rgba(24,177,172,0.3);
+  border-left: 10px solid #18b1ac;
   -webkit-animation: load8 1.1s infinite linear;
   animation: load8 1.1s infinite linear;
   padding: 0;
