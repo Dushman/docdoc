@@ -52,9 +52,16 @@ $(function() {
       }
     });
   });
-  return $(document).on('scrollstart', function() {
+  $(document).on('scrollstart', function() {
     return $('.hide-scroll').css('display', 'none');
   }).on('scrollstop', function() {
     return $('.hide-scroll').css('display', 'block');
+  });
+  return $(window).on("orientationchange", function() {
+    if (window.orientation === 1) {
+      return $("div[data-role=\"header\"]").css({
+        "background-color": "yellow"
+      });
+    }
   });
 });
