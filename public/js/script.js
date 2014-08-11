@@ -56,7 +56,7 @@ $(function() {
     $('.hide-scroll').css('display', 'none');
     return $('#find-doctor div[data-role="header"]').toolbar('updatePagePadding');
   }).on('scrollstop', function() {
-    $('.hide-scroll').css('display', 'block');
-    return $('#find-doctor div[data-role="header"]').toolbar('updatePagePadding');
+    $('#find-doctor div[data-role="header"]').toolbar('updatePagePadding');
+    return $('.hide-scroll').css('display', 'block');
   });
 });
