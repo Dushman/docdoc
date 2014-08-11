@@ -64,5 +64,6 @@ $(function() {
       });
     }
   };
-  return hideHeader();
+  hideHeader();
+  return alert($(window).height());
 });

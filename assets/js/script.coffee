@@ -55,6 +55,8 @@ $ ->
 
     hideHeader()
 
+    alert($(window).height())
+
 
 
     
