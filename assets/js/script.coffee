@@ -45,7 +45,7 @@ $ ->
                 form.submit()
 
     hideHeader = ->
-        if $(window).height() < 700
+        if $(window).height() < 400
             $(document).on('scrollstart', ->
               $('.hide-scroll').css 'display', 'none'
               $('#find-doctor div[data-role=\"header\"]').toolbar 'updatePagePadding'
@@ -53,8 +53,7 @@ $ ->
               $('.hide-scroll').css 'display', 'block'
               $('#find-doctor div[data-role=\"header\"]').toolbar 'updatePagePadding'
 
-    $(window).on 'orientationchange', ->
-        hideHeader()  unless window.orientation is 0
+    hideHeader()
 
 
 
