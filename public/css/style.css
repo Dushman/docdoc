@@ -5065,7 +5065,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
   clear: both;
   position: relative;
   overflow: hidden;
-  border-radius: 17.5px;
+  border-radius: 17px;
 }
 
 .ui-page-theme-a .top-index-link a {
@@ -5080,7 +5080,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
   text-overflow: ellipsis;
   font-size: 13px;
   text-shadow: none;
-  border-radius: 17.5px;
+  border-radius: 17px;
 }
 
 .top-index-link a i {
