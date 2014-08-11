@@ -59,7 +59,7 @@ $(function() {
   });
   return $(window).on("orientationchange", function() {
     if (window.orientation === 1) {
-      return $("div[data-role=\"header\"]").css({
+      return $("div.fixed[data-role=\"header\"]").css({
         "background-color": "yellow"
       });
     }

@@ -50,7 +50,7 @@ $ ->
         $('.hide-scroll').css 'display', 'block'
 
     $(window).on "orientationchange", ->
-        $("div[data-role=\"header\"]").css "background-color": "yellow"  if window.orientation is 1
+        $("div.fixed[data-role=\"header\"]").css "background-color": "yellow"  if window.orientation is 1
 
 
 
