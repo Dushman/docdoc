@@ -44,12 +44,14 @@ $ ->
                 link.attr('href', '#order-success').click()
                 form.submit()
 
-    $(document).on('scrollstart', ->
-        $('.hide-scroll').css 'display', 'none'
-        $('#find-doctor div[data-role="header"]').toolbar 'updatePagePadding'
-    ).on 'scrollstop', ->
-        $('.hide-scroll').css 'display', 'block'
-        $('#find-doctor div[data-role="header"]').toolbar 'updatePagePadding' 
+    if $(window).height() <= 300
+        $(document).on("scrollstart", ->
+            $(".hide-scroll").css "display", "none"
+            $("#find-doctor div[data-role=\"header\"]").toolbar "updatePagePadding"
+        ).on "scrollstop", ->
+            $(".hide-scroll").css "display", "block"
+            $("#find-doctor div[data-role=\"header\"]").toolbar "updatePagePadding"
+
 
     
 
