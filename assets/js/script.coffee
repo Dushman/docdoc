@@ -47,7 +47,7 @@ $ ->
     $(document).on('scrollstart', ->
         $('.hide-scroll').css 'display', 'none'
         $('#find-doctor div[data-role="header"]').toolbar 'updatePagePadding'
-        ).on 'scrollstop', ->
+    ).on 'scrollstop', ->
         $('.hide-scroll').css 'display', 'block'
         $('#find-doctor div[data-role="header"]').toolbar 'updatePagePadding'
 
