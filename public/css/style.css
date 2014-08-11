@@ -10892,3 +10892,80 @@ a[href^='http://maps.google.com/maps'] {
     background-repeat: no-repeat;
   }
 }
+
+.ui-loader-default {
+  width: 6em;
+  height: 6em;
+  margin-left: -3em;
+  margin-top: -3em;
+  opacity: 0.6;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+}
+
+.ui-loader .ui-icon-loading {
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(24,177,172,0.3);
+  border-right: 1.1em solid rgba(24,177,172,0.3);
+  border-bottom: 1.1em solid rgba(24,177,172,0.3);
+  border-left: 1.1em solid #18b1ac;
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+  padding: 0;
+  background: none transparent;
+}
+
+.ui-loader .ui-icon-loading,
+.ui-loader .ui-icon-loading:after {
+  border-radius: 50%;
+  width: 6em;
+  height: 6em;
+}
+
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
