@@ -49,8 +49,8 @@ $ ->
         ).on 'scrollstop', ->
         $('.hide-scroll').css 'display', 'block'
 
-    $(window).on "orientationchange", ->
-        $("div.fixed[data-role=\"header\"]").css "background-color": "yellow"  if window.orientation is 1
+    $(window).on 'orientationchange', ->
+        $('body').css 'display': 'none'  if window.orientation is 0
 
 
 

@@ -57,10 +57,10 @@ $(function() {
   }).on('scrollstop', function() {
     return $('.hide-scroll').css('display', 'block');
   });
-  return $(window).on("orientationchange", function() {
-    if (window.orientation === 1) {
-      return $("div.fixed[data-role=\"header\"]").css({
-        "background-color": "yellow"
+  return $(window).on('orientationchange', function() {
+    if (window.orientation === 0) {
+      return $('body').css({
+        'display': 'none'
       });
     }
   });
