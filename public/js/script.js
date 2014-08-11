@@ -58,7 +58,7 @@ $(function() {
     return $('.hide-scroll').css('display', 'block');
   });
   return $(window).on('orientationchange', function() {
-    if (window.orientation === 0) {
+    if (window.orientation === 1) {
       return $('body').css({
         'display': 'none'
       });

@@ -50,7 +50,7 @@ $ ->
         $('.hide-scroll').css 'display', 'block'
 
     $(window).on 'orientationchange', ->
-        $('body').css 'display': 'none'  if window.orientation is 0
+        $('body').css 'display': 'none'  if window.orientation is 1
 
 
 
