@@ -42,7 +42,8 @@ div.ui-responsive-panel(data-role='page', id='map-page', data-title='Инфор�
 	div.ui-content.map-content(role='main')
 		div(id='map_canvas')
 		script.
-			$(document).on('pageshow', '#map-page', function() {				
+			$(document).on('pageshow', '#map-page', function() {
+				function mapInit(){				
 					var geocoder = new google.maps.Geocoder(),
 					mapOptions = {
 						zoom: 14,
@@ -84,6 +85,8 @@ div.ui-responsive-panel(data-role='page', id='map-page', data-title='Инфор�
 					var ibLabel = new InfoBox(myOptions);
 						ibLabel.open(map); 
 					});
+				}
+				mapInit();
 			});
 		.infobox-wrapper
 			#infobox

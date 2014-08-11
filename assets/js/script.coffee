@@ -46,11 +46,12 @@ $ ->
 
     $(document).on('scrollstart', ->
         $('.hide-scroll').css 'display', 'none'
+        $('#find-doctor div[data-role="header"]').toolbar 'updatePagePadding'
         ).on 'scrollstop', ->
         $('.hide-scroll').css 'display', 'block'
+        $('#find-doctor div[data-role="header"]').toolbar 'updatePagePadding'
 
-    $(window).on 'orientationchange', ->
-        $('body').css 'display': 'none'  if window.orientation is 1
+    
 
 
 

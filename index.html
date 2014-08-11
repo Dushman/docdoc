@@ -950,49 +950,52 @@
             <div id="map_canvas"></div>
             <script>
                 $(document).on('pageshow', '#map-page', function() {
-                    var geocoder = new google.maps.Geocoder(),
-                        mapOptions = {
-                            zoom: 14,
-                            scrollwheel: false,
-                            navigationControl: false,
-                            mapTypeControl: false,
-                            scaleControl: false,
-                            zoomControl: false,
-                            streetViewControl: false,
-                            mapTypeId: google.maps.MapTypeId.ROADMAP
-                        },
-                        map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-                    geocoder.geocode({
-                            'address': 'ул. Клары Цеткин, д. 33, к. 28'
-                        },
-                        function(results, status) {
-                            if (status == google.maps.GeocoderStatus.OK) {
-                                var mapLatLng = new google.maps.LatLng(
-                                    results[0].geometry.location.lat(),
-                                    results[0].geometry.location.lng()
-                                ),
-                                    marker = new google.maps.Marker({
-                                        position: mapLatLng,
-                                        visible: false
-                                    });
-                                map.setCenter(mapLatLng, mapOptions.zoom);
-                                marker.setMap(map);
-                            }
-                            var myOptions = {
-                                content: document.getElementById('infobox'),
-                                disableAutoPan: true,
-                                pixelOffset: new google.maps.Size(-100, -14),
-                                position: mapLatLng,
-                                closeBoxURL: '',
-                                isHidden: false,
-                                alignBottom: true,
-                                pane: 'mapPane',
-                                enableEventPropagation: true,
-                                infoBoxClearance: new google.maps.Size(1, 1)
-                            };
-                            var ibLabel = new InfoBox(myOptions);
-                            ibLabel.open(map);
-                        });
+                    function mapInit() {
+                        var geocoder = new google.maps.Geocoder(),
+                            mapOptions = {
+                                zoom: 14,
+                                scrollwheel: false,
+                                navigationControl: false,
+                                mapTypeControl: false,
+                                scaleControl: false,
+                                zoomControl: false,
+                                streetViewControl: false,
+                                mapTypeId: google.maps.MapTypeId.ROADMAP
+                            },
+                            map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+                        geocoder.geocode({
+                                'address': 'ул. Клары Цеткин, д. 33, к. 28'
+                            },
+                            function(results, status) {
+                                if (status == google.maps.GeocoderStatus.OK) {
+                                    var mapLatLng = new google.maps.LatLng(
+                                        results[0].geometry.location.lat(),
+                                        results[0].geometry.location.lng()
+                                    ),
+                                        marker = new google.maps.Marker({
+                                            position: mapLatLng,
+                                            visible: false
+                                        });
+                                    map.setCenter(mapLatLng, mapOptions.zoom);
+                                    marker.setMap(map);
+                                }
+                                var myOptions = {
+                                    content: document.getElementById('infobox'),
+                                    disableAutoPan: true,
+                                    pixelOffset: new google.maps.Size(-100, -14),
+                                    position: mapLatLng,
+                                    closeBoxURL: '',
+                                    isHidden: false,
+                                    alignBottom: true,
+                                    pane: 'mapPane',
+                                    enableEventPropagation: true,
+                                    infoBoxClearance: new google.maps.Size(1, 1)
+                                };
+                                var ibLabel = new InfoBox(myOptions);
+                                ibLabel.open(map);
+                            });
+                    }
+                    mapInit();
                 });
             </script>
             <div class="infobox-wrapper">

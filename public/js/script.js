@@ -52,16 +52,11 @@ $(function() {
       }
     });
   });
-  $(document).on('scrollstart', function() {
-    return $('.hide-scroll').css('display', 'none');
+  return $(document).on('scrollstart', function() {
+    $('.hide-scroll').css('display', 'none');
+    return $('#find-doctor div[data-role="header"]').toolbar('updatePagePadding');
   }).on('scrollstop', function() {
-    return $('.hide-scroll').css('display', 'block');
-  });
-  return $(window).on('orientationchange', function() {
-    if (window.orientation === 1) {
-      return $('body').css({
-        'display': 'none'
-      });
-    }
+    $('.hide-scroll').css('display', 'block');
+    return $('#find-doctor div[data-role="header"]').toolbar('updatePagePadding');
   });
 });
