@@ -48,8 +48,8 @@ $ ->
         $('.hide-scroll').css 'display', 'none'
         $('#find-doctor div[data-role="header"]').toolbar 'updatePagePadding'
     ).on 'scrollstop', ->
-        $('#find-doctor div[data-role="header"]').toolbar 'updatePagePadding'
         $('.hide-scroll').css 'display', 'block'
+        $('#find-doctor div[data-role="header"]').toolbar 'updatePagePadding'
 
     
 
