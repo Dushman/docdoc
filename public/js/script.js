@@ -54,7 +54,7 @@ $(function() {
     });
   });
   hideHeader = function() {
-    if ($(window).height() < 400) {
+    if ($(window).height() < 700) {
       return $(document).on('scrollstart', function() {
         $('.hide-scroll').css('display', 'none');
         return $('#find-doctor div[data-role=\"header\"]').toolbar('updatePagePadding');
@@ -64,5 +64,10 @@ $(function() {
       });
     }
   };
-  return hideHeader();
+  hideHeader();
+  return $(window).on('orientationchange', function() {
+    if (window.orientation !== 0) {
+      return hideHeader();
+    }
+  });
 });
