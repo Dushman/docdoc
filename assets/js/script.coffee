@@ -27,7 +27,7 @@ $ ->
     $('#send-review .send-review-btn-block').on 'click', (e) ->
         link = $(this).find 'a'
         form = $(this).parents 'form'
-        $('.send-review-form .form-item > .required').each ->
+        $('.send-review-form .form-item .required').each ->
             if $(this).val() is ''
                 link.attr('href', '#review-error').click()
             else
@@ -43,6 +43,14 @@ $ ->
             else
                 link.attr('href', '#order-success').click()
                 form.submit()
+
+    $(document).on('scrollstart', ->
+        $('.hide-scroll').css 'display', 'none'
+        ).on 'scrollstop', ->
+        $('.hide-scroll').css 'display', 'block'
+
+
+
 
 
 

@@ -30,7 +30,7 @@ $(function() {
     var form, link;
     link = $(this).find('a');
     form = $(this).parents('form');
-    return $('.send-review-form .form-item > .required').each(function() {
+    return $('.send-review-form .form-item .required').each(function() {
       if ($(this).val() === '') {
         return link.attr('href', '#review-error').click();
       } else {
@@ -39,7 +39,7 @@ $(function() {
       }
     });
   });
-  return $('#doctor-form .send-button-wrap').on('click', function(e) {
+  $('#doctor-form .send-button-wrap').on('click', function(e) {
     var form, link;
     link = $(this).find('a');
     form = $(this).parents('form');
@@ -51,5 +51,10 @@ $(function() {
         return form.submit();
       }
     });
+  });
+  return $(document).on('scrollstart', function() {
+    return $('.hide-scroll').css('display', 'none');
+  }).on('scrollstop', function() {
+    return $('.hide-scroll').css('display', 'block');
   });
 });
