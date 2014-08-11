@@ -53,8 +53,6 @@ $ ->
               $('.hide-scroll').css 'display', 'block'
               $('#find-doctor div[data-role=\"header\"]').toolbar 'updatePagePadding'
 
-    hideHeader()
-
     $(window).on 'orientationchange', ->
         hideHeader()  unless window.orientation is 0
 
