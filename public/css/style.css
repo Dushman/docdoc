@@ -7311,7 +7311,7 @@ a[href^='http://maps.google.com/maps'] {
   margin-left: -20px;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
   .index-img-wrapper i {
     background-image: url("../img/retina/logo.png");
     background-position: 0 0;
