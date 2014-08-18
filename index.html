@@ -729,7 +729,8 @@
             </form>
         </div>
         <div role="main" class="ui-content c-content">
-            <ul data-role="listview" data-filter="true" data-input="#filterSpec-input" data-autodividers="true">
+            <ul id="listSpec" data-role="listview" data-filter="true" data-input="#filterSpec-input" data-autodividers="false">
+                <li data-role="list-divider">А</li>
                 <li><strong>Акушер</strong><span>оказание помощи беременным и роженицам во время родов</span><em>235</em><i></i>
                 </li>
                 <li><strong>Аллерголог</strong><span>лечение и профилактика аллергических заболеваний</span><em>46</em><i></i>
@@ -740,8 +741,10 @@
                 </li>
                 <li><strong>Анестезиолог</strong><span>диагностика и лечение заболеваний органов желудочно-кишечного тракта</span><em>6456</em><i></i>
                 </li>
+                <li data-role="list-divider">В</li>
                 <li><strong>Венеролог</strong><span>диагностика и лечение венерических, кожных и урологических заболеваний</span><em>45</em><i></i>
                 </li>
+                <li data-role="list-divider">Г</li>
                 <li><strong>Гастроэнтеролог</strong><span>диагностика и лечение заболеваний органов желудочно-кишечного тракта</span><em>56</em><i></i>
                 </li>
                 <li><strong>Гастроэндекренолог</strong><span>подготовка к операции и реабилитация после</span><em>1</em><i></i>
@@ -759,7 +762,8 @@
             </form>
         </div>
         <div role="main" class="ui-content c-content">
-            <ul data-role="listview" data-filter="true" data-input="#filterMetro-input" data-autodividers="true">
+            <ul id="listMetro" data-role="listview" data-filter="true" data-inset="true" data-input="#filterMetro-input" data-autodividers="false">
+                <li data-role="list-divider">А</li>
                 <li><strong>Авиамоторная</strong><i></i>
                 </li>
                 <li><strong>Автозаводская</strong><i></i>
@@ -768,16 +772,21 @@
                 </li>
                 <li><strong>Александровский сад</strong><i></i>
                 </li>
+                <li data-role="list-divider">М</li>
                 <li><strong>Менделеевская</strong><i></i>
                 </li>
+                <li data-role="list-divider">К</li>
                 <li><strong>Краснопресненская</strong><i></i>
                 </li>
                 <li><strong>Клександровский сад</strong><i></i>
                 </li>
+                <li data-role="list-divider">Н</li>
                 <li><strong>Новослободская</strong><i></i>
                 </li>
+                <li data-role="list-divider">С</li>
                 <li><strong>Серпуховская</strong><i></i>
                 </li>
+                <li data-role="list-divider">Ш</li>
                 <li><strong>Шhоссе Энтузиастов</strong><i></i>
                 </li>
             </ul>
@@ -951,7 +960,7 @@
         <div role="main" class="ui-content map-content">
             <div id="map_canvas"></div>
             <script>
-                $(document).on('pageshow', '#map-page', function() {
+                $(document).on('pageinit', '#map-page', function() {
                     function mapInit() {
                         var geocoder = new google.maps.Geocoder(),
                             mapOptions = {

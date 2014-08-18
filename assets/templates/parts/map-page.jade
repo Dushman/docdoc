@@ -42,7 +42,7 @@ div.ui-responsive-panel(data-role='page', id='map-page', data-title='Инфор�
 	div.ui-content.map-content(role='main')
 		div(id='map_canvas')
 		script.
-			$(document).on('pageshow', '#map-page', function() {
+			$(document).on('pageinit', '#map-page', function() {
 				function mapInit(){				
 					var geocoder = new google.maps.Geocoder(),
 					mapOptions = {

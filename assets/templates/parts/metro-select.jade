@@ -7,8 +7,9 @@ div(data-role='page', id='select-metro', data-title='Ближайшее метр
 			input#filterMetro-input(data-type='search', placeholder='Поиск по названию...', data-clear-btn='false')
 			i
 	div.ui-content.c-content(role='main')
-		ul(data-role='listview', data-filter='true', data-input='#filterMetro-input', data-autodividers='true')
-			li 
+		ul#listMetro(data-role='listview', data-filter='true', data-inset='true', data-input='#filterMetro-input', data-autodividers='false')
+			li(data-role='list-divider') А
+			li
 				strong Авиамоторная
 				i
 			li
@@ -20,21 +21,26 @@ div(data-role='page', id='select-metro', data-title='Ближайшее метр
 			li
 				strong Александровский сад
 				i
+			li(data-role='list-divider') М
 			li
 				strong Менделеевская
 				i
+			li(data-role='list-divider') К
 			li
 				strong Краснопресненская
 				i
 			li
 				strong Клександровский сад
 				i
+			li(data-role='list-divider') Н
 			li
 				strong Новослободская
 				i
+			li(data-role='list-divider') С
 			li
 				strong Серпуховская
 				i
+			li(data-role='list-divider') Ш
 			li
 				strong Шhоссе Энтузиастов
 				i

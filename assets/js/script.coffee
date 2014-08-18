@@ -5,6 +5,7 @@ $ ->
         text = $(this).find('strong').text()
         $('.f-s > a').html text + '<span/><i/>'
         $(this).parents('#select-specialist').find('.back-link').click()
+        $('#listSpec .ui-li-divider').show()
 
     $('ul[data-input=\"#filterMetro-input\"] > li:not(".ui-li-divider")').click (e) ->
         e.preventDefault()
@@ -12,6 +13,7 @@ $ ->
         text = $(this).find('strong').text()
         $('.f-m > a').html text + '<span/><i/>'
         $(this).parents('#select-metro').find('.back-link').click()
+        $('#listMetro .ui-li-divider').show()
 
     $('.form-item.item-3 a.textarea-spoiler').click (e) ->
         e.preventDefault()
@@ -54,6 +56,29 @@ $ ->
               $('#find-doctor div[data-role=\"header\"]').toolbar 'updatePagePadding'
 
     hideHeader()
+
+    $('input#filterMetro-input').on 'keyup', ->
+        if $(this).val() is 0
+            $('#listMetro .ui-li-divider').show()
+        else
+            $('#listMetro .ui-li-divider').hide()
+
+    $('input#filterSpec-input').on 'keyup', ->
+        if $(this).val() is 0
+            $('#listSpec .ui-li-divider').show()
+        else
+            $('#listSpec .ui-li-divider').hide()
+
+    $('input#filterMetro-input').on 'focusout', ->
+        $('#listMetro .ui-li-divider').show()
+
+    $('input#filterSpec-input').on 'focusout', ->
+        $('#listSpec .ui-li-divider').show()
+
+
+
+
+
 
 
 
